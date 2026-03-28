@@ -4,42 +4,25 @@ TCMB Elektronik Veri Dağıtım Sistemi (EVDS) için [Model Context Protocol](ht
 
 Claude, GPT ve diğer LLM'ler üzerinden doğal dilde TCMB verilerine erişim sağlar: döviz kurları, enflasyon, faiz, GSYH, cari denge ve binlerce ekonomik seri.
 
-## Araçlar
-
-| Araç | Açıklama |
-|------|----------|
-| `evds_ara` | Anahtar kelimeyle seri arar. Popüler seriler (enflasyon, döviz, faiz, usd, gsyh vb.) için anında eşleşme. |
-| `evds_meta` | Bir serinin metadata'sını getirir: ad, frekans, tarih aralığı, birim. |
-| `evds_cek` | Bir veya daha fazla serinin verisini çeker. Frekans dönüşümü ve formül desteği. |
-| `evds_analiz` | Veri çeker ve istatistiksel analiz uygular: özet, yüzde değişim, korelasyon, OLS, ARIMA. |
-
 ## Kurulum
 
-### 1. API Anahtarı
-
-[EVDS](https://evds3.tcmb.gov.tr) sitesinden ücretsiz API anahtarı alın. Sonra iki yöntemden biriyle tanımlayın:
-
-```bash
-# Seçenek A: Config dosyası (önerilen)
-echo '{"api_key": "ANAHTARINIZ"}' > ~/.evds-mcp.json
-
-# Seçenek B: Ortam değişkeni
-export EVDS_API_KEY=ANAHTARINIZ
-```
-
-### 2. Tek Komutla Kurulum (Claude Code)
+[EVDS](https://evds2.tcmb.gov.tr) sitesinden ücretsiz API anahtarı alın, ardından tek komutla kurun:
 
 ```bash
 claude mcp add -e EVDS_API_KEY=ANAHTARINIZ evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp serve
 ```
 
-API anahtarını `~/.evds-mcp.json` dosyasından okutmak isterseniz `-e` bayrağını atlayabilirsiniz:
+API anahtarını config dosyasında tutmayı tercih ederseniz:
 
 ```bash
+echo '{"api_key": "ANAHTARINIZ"}' > ~/.evds-mcp.json
 claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp serve
 ```
 
-### 3. Claude Desktop
+<details>
+<summary>Claude Desktop / Kaynak koddan çalıştırma</summary>
+
+### Claude Desktop
 
 `claude_desktop_config.json` dosyasına ekleyin:
 
@@ -57,7 +40,7 @@ claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp e
 }
 ```
 
-### 4. Kaynak Koddan Çalıştırma
+### Kaynak Koddan Çalıştırma
 
 ```bash
 git clone https://github.com/orhoncan/evds-mcp.git
@@ -66,9 +49,16 @@ uv sync
 uv run evds-mcp serve
 ```
 
-### 4. Claude'dan İsteme
+</details>
 
-Doğrudan repo bağlantısını vererek Claude'dan MCP'yi kendisine kurmasını isteyebilirsiniz.
+## Araçlar
+
+| Araç | Açıklama |
+|------|----------|
+| `evds_ara` | Anahtar kelimeyle seri arar. Popüler seriler (enflasyon, döviz, faiz, usd, gsyh vb.) için anında eşleşme. |
+| `evds_meta` | Bir serinin metadata'sını getirir: ad, frekans, tarih aralığı, birim. |
+| `evds_cek` | Bir veya daha fazla serinin verisini çeker. Frekans dönüşümü ve formül desteği. |
+| `evds_analiz` | Veri çeker ve istatistiksel analiz uygular: özet, yüzde değişim, korelasyon, OLS, ARIMA. |
 
 ## Kullanım Örnekleri
 
@@ -82,7 +72,7 @@ Doğrudan repo bağlantısını vererek Claude'dan MCP'yi kendisine kurmasını 
 → TP.FG.J0 — TÜFE Genel Endeks (2003=100)
 ```
 
-Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner. Böylece satırlarca veri gelmesini önler, bu liste zamanla genişleyecek fakat ne kadar net yönlendiriseniz o kadar verimli çalışır.
+Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner. Bu liste zamanla genişleyecek; ne kadar net yönlendirirseniz o kadar verimli çalışır.
 
 ### Veri Çekme
 
@@ -116,8 +106,6 @@ Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizl
 - `korelasyon` — Pearson/Spearman korelasyon matrisi
 - `ols` — OLS regresyon (R², F-testi, Durbin-Watson)
 - `arima` — ARIMA/SARIMA tahmin + güven aralıkları
-
-İleride daha farklı analizleri eklemeyi planlıyorum.
 
 ## Gereksinimler
 
