@@ -17,7 +17,7 @@ Claude, GPT ve diğer LLM'ler üzerinden doğal dilde TCMB verilerine erişim sa
 
 ### 1. API Anahtarı
 
-[EVDS](https://evds2.tcmb.gov.tr) sitesinden ücretsiz API anahtarı alın. Sonra iki yöntemden biriyle tanımlayın:
+[EVDS](https://evds3.tcmb.gov.tr) sitesinden ücretsiz API anahtarı alın. Sonra iki yöntemden biriyle tanımlayın:
 
 ```bash
 # Seçenek A: Config dosyası (önerilen)
