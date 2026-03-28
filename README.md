@@ -51,6 +51,10 @@ uv sync
 uv run evds-mcp serve
 ```
 
+### 4. Claude'den İsteme
+
+Doğrudan repo bağlantısını vererek Claude'dan MCP'yi kendisine kurmasını isteyebilirsiniz.
+
 ## Kullanım Örnekleri
 
 ### Seri Arama
