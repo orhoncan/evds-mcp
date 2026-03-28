@@ -1,8 +1,8 @@
-# evds-mcp
+# EVDS MCP Sunucusu
 
-TCMB Elektronik Veri Dağıtım Sistemi (EVDS) için [Model Context Protocol](https://modelcontextprotocol.io/) sunucusu.
+TCMB Elektronik Veri Dağıtım Sistemi (EVDS) için [Model Context Protocol](https://modelcontextprotocol.io/) sunucusu. Becerilere kıyasla daha öngörülebilir düzende çıktı sunar.
 
-Claude, GPT ve diğer LLM'ler üzerinden doğal dilde TCMB verilerine erişim sağlar: döviz kurları, enflasyon, faiz, GSYH, cari denge ve binlerce ekonomik seri.
+Claude, GPT ve diğer LLM'ler üzerinden doğal dilde TCMB verilerine erişim sağlar: döviz kurları, enflasyon, faiz, GSYH, cari denge ve binlerce ekonomik seriye ulaşımı kolaylaştırır.
 
 ## Kurulum
 
@@ -19,10 +19,10 @@ echo '{"api_key": "ANAHTARINIZ"}' > ~/.evds-mcp.json
 claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp serve
 ```
 
-<details>
-<summary>Claude Desktop / Kaynak koddan çalıştırma</summary>
 
-### Claude Desktop
+
+### Claude Desktop / Kaynak koddan çalıştırma
+#### Claude Desktop
 
 `claude_desktop_config.json` dosyasına ekleyin:
 
@@ -49,7 +49,8 @@ uv sync
 uv run evds-mcp serve
 ```
 
-</details>
+### Claude'dan vb. İsteme
+Doğrudan repo bağlantısını paylaşarak Claude'dan ya da diğer sağlayıcılardan kurulum yapmasını isteyebilirsiniz.
 
 ## Araçlar
 
