@@ -51,7 +51,7 @@ uv sync
 uv run evds-mcp serve
 ```
 
-### 4. Claude'den İsteme
+### 4. Claude'dan İsteme
 
 Doğrudan repo bağlantısını vererek Claude'dan MCP'yi kendisine kurmasını isteyebilirsiniz.
 
@@ -67,7 +67,7 @@ Doğrudan repo bağlantısını vererek Claude'dan MCP'yi kendisine kurmasını 
 → TP.FG.J0 — TÜFE Genel Endeks (2003=100)
 ```
 
-Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner.
+Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner. Böylece satırlarca veri gelmesini önler, bu liste zamanla genişleyecek fakat ne kadar net yönlendiriseniz o kadar verimli çalışır.
 
 ### Veri Çekme
 
@@ -101,6 +101,8 @@ Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizl
 - `korelasyon` — Pearson/Spearman korelasyon matrisi
 - `ols` — OLS regresyon (R², F-testi, Durbin-Watson)
 - `arima` — ARIMA/SARIMA tahmin + güven aralıkları
+
+İleride daha farklı analizleri eklemeyi planlıyorum.
 
 ## Gereksinimler
 
