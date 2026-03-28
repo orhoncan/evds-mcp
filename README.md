@@ -27,22 +27,37 @@ echo '{"api_key": "ANAHTARINIZ"}' > ~/.evds-mcp.json
 export EVDS_API_KEY=ANAHTARINIZ
 ```
 
-### 2. Claude Code / Claude Desktop
+### 2. Tek Komutla Kurulum (Claude Code)
 
-Claude Code `settings.json` veya Claude Desktop `claude_desktop_config.json` dosyasına ekleyin:
+```bash
+claude mcp add -e EVDS_API_KEY=ANAHTARINIZ evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp serve
+```
+
+API anahtarını `~/.evds-mcp.json` dosyasından okutmak isterseniz `-e` bayrağını atlayabilirsiniz:
+
+```bash
+claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp serve
+```
+
+### 3. Claude Desktop
+
+`claude_desktop_config.json` dosyasına ekleyin:
 
 ```json
 {
   "mcpServers": {
     "evds-mcp": {
-      "command": "uv",
-      "args": ["run", "--directory", "/EVDS-MCP/YOLU", "evds-mcp", "serve"]
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/orhoncan/evds-mcp", "evds-mcp", "serve"],
+      "env": {
+        "EVDS_API_KEY": "ANAHTARINIZ"
+      }
     }
   }
 }
 ```
 
-### 3. Doğrudan Çalıştırma
+### 4. Kaynak Koddan Çalıştırma
 
 ```bash
 git clone https://github.com/orhoncan/evds-mcp.git
