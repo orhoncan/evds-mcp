@@ -2,11 +2,11 @@
 
 TCMB Elektronik Veri Dağıtım Sistemi (EVDS) için [Model Context Protocol](https://modelcontextprotocol.io/) sunucusu. Becerilere kıyasla daha öngörülebilir düzende çıktı sunar.
 
-Claude, GPT ve diğer LLM'ler üzerinden doğal dilde TCMB verilerine erişim sağlar: döviz kurları, enflasyon, faiz, GSYH, cari denge ve binlerce ekonomik seriye ulaşımı kolaylaştırır.
+Claude, GPT ve diğer LLM'ler üzerinden doğal dilde TCMB verilerine erişim sağlar. Döviz kurları, enflasyon, faiz, GSYH, cari denge ve binlerce ekonomik seriye ulaşımı kolaylaştırır.
 
 ## Kurulum
 
-[EVDS](https://evds2.tcmb.gov.tr) sitesinden ücretsiz API anahtarı alın, ardından tek komutla kurun:
+[EVDS](https://evds3.tcmb.gov.tr) sitesinden ücretsiz API anahtarı alın, ardından tek komutla kurun.
 
 ```bash
 claude mcp add -e EVDS_API_KEY=ANAHTARINIZ evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp serve
@@ -73,7 +73,7 @@ Doğrudan repo bağlantısını paylaşarak Claude'dan ya da diğer sağlayıcı
 → TP.FG.J0 — TÜFE Genel Endeks (2003=100)
 ```
 
-Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner. Bu liste zamanla genişleyecek; ne kadar net yönlendirirseniz o kadar verimli çalışır.
+Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner. Bu liste zamanla genişleyecek; ne kadar net yönlendirirseniz o kadar verimli çalışır. Bazı sık kullanılan kelimeler çok uzun listeler döndürdüğü için performans kaybı olabiliyor.
 
 ### Veri Çekme
 
@@ -82,7 +82,7 @@ Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizl
 → 29 gözlem, günlük USD/TRY kurları
 
 > evds_cek(["TP.FG.J0"], frekans="aylik", formul="yillik_yuzde")
-→ Yıllık TÜFE enflasyonu (%)
+→ Yıllık TÜFE (%)
 ```
 
 **Frekans:** `gunluk`, `haftalik`, `aylik`, `ceyreklik`, `yillik`
@@ -95,7 +95,7 @@ Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizl
 → Tanımlayıcı istatistikler + trend tespiti
 
 > evds_analiz(["TP.DK.USD.A", "TP.FG.J0"], analiz_turu="korelasyon")
-→ Korelasyon matrisi + sözel yorum
+→ Korelasyon matrisi + sözel yorumlama
 
 > evds_analiz(["TP.FG.J0"], analiz_turu="arima", parametreler={"tahmin_donemi": 6})
 → ARIMA/SARIMA tahmini + güven aralıkları
