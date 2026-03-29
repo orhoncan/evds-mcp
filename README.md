@@ -73,7 +73,7 @@ Doğrudan repo bağlantısını paylaşarak Claude'dan ya da diğer sağlayıcı
 → TP.FG.J0 — TÜFE Genel Endeks (2003=100)
 ```
 
-Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner. Bu liste zamanla genişleyecek; ne kadar net yönlendirirseniz o kadar verimli çalışır. Bazı sık kullanılan kelimeler çok uzun listeler döndürdüğü için performans kaybı olabiliyor.
+Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner. Bu liste zamanla genişleyecek ama ne kadar net yönlendirirseniz o kadar verimli çalışır. Bazı sık kullanılan kelimeler çok uzun listeler döndürdüğü için performans kaybı olabiliyor.
 
 ### Veri Çekme
 
@@ -96,6 +96,9 @@ Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizl
 
 > evds_analiz(["TP.DK.USD.A", "TP.FG.J0"], analiz_turu="korelasyon")
 → Korelasyon matrisi + sözel yorumlama
+ya da aynı sonuç için;
+> USD alış kuru ile TÜFE arasında son 1 yıllık korelasyona bak.
+→ Korelasyon matrisi + sözel yorumlama
 
 > evds_analiz(["TP.FG.J0"], analiz_turu="arima", parametreler={"tahmin_donemi": 6})
 → ARIMA/SARIMA tahmini + güven aralıkları
@@ -107,6 +110,23 @@ Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizl
 - `korelasyon` — Pearson/Spearman korelasyon matrisi
 - `ols` — OLS regresyon (R², F-testi, Durbin-Watson)
 - `arima` — ARIMA/SARIMA tahmin + güven aralıkları
+
+## Ekran Görüntüleri
+
+<img width="811" height="335" alt="image" src="https://github.com/user-attachments/assets/f8cfd940-4eb2-481c-94b6-19270e1e616c" />
+<p></p>
+<p></p>
+<img width="954" height="189" alt="image" src="https://github.com/user-attachments/assets/185d3099-d033-4f40-be4e-73eb0886df8b" />
+<p></p>
+<p></p>
+<img width="982" height="480" alt="image" src="https://github.com/user-attachments/assets/db9cd61b-a7a4-4b9c-8aac-a4365ddf0899" />
+<p></p>
+
+
+## Yapılacaklar
+
+- Serilerin aranması ve kullanılması konusunda iyileştirmeler
+- Ekonometrik modellerin çeşitlendirilmesi
 
 ## Gereksinimler
 
