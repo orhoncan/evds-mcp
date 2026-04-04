@@ -8,27 +8,28 @@ from evds_mcp.server import mcp
 
 def main():
     parser = argparse.ArgumentParser(description="EVDS MCP Server")
-    subparsers = parser.add_subparsers(dest="command")
-
-    serve_parser = subparsers.add_parser("serve", help="Run the MCP server")
-    serve_parser.add_argument(
+    parser.add_argument(
         "--transport",
         choices=["stdio", "streamable-http"],
         default="stdio",
     )
-
-    subparsers.add_parser("version", help="Print version")
+    parser.add_argument(
+        "--version", "-v",
+        action="store_true",
+        help="Print version and exit",
+    )
+    # Accept "serve" as optional positional for backward compat
+    parser.add_argument("command", nargs="?", default=None)
 
     args = parser.parse_args()
 
-    if args.command == "version":
+    if args.version or args.command == "version":
         from evds_mcp._version import __version__
 
         print(f"evds-mcp v{__version__}")
         sys.exit(0)
 
-    transport = getattr(args, "transport", "stdio")
-    mcp.run(transport=transport)
+    mcp.run(transport=args.transport)
 
 
 if __name__ == "__main__":

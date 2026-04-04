@@ -9,14 +9,14 @@ Claude, GPT ve diğer LLM'ler üzerinden doğal dilde TCMB verilerine erişim sa
 [EVDS](https://evds3.tcmb.gov.tr) sitesinden ücretsiz API anahtarı alın, ardından tek komutla kurun.
 
 ```bash
-claude mcp add -e EVDS_API_KEY=ANAHTARINIZ evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp serve
+claude mcp add -e EVDS_API_KEY=ANAHTARINIZ evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp
 ```
 
 API anahtarını config dosyasında tutmayı tercih ederseniz:
 
 ```bash
 echo '{"api_key": "ANAHTARINIZ"}' > ~/.evds-mcp.json
-claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp serve
+claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp
 ```
 
 
@@ -31,7 +31,7 @@ claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp e
   "mcpServers": {
     "evds-mcp": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/orhoncan/evds-mcp", "evds-mcp", "serve"],
+      "args": ["--from", "git+https://github.com/orhoncan/evds-mcp", "evds-mcp"],
       "env": {
         "EVDS_API_KEY": "ANAHTARINIZ"
       }
@@ -46,7 +46,7 @@ claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp e
 git clone https://github.com/orhoncan/evds-mcp.git
 cd evds-mcp
 uv sync
-uv run evds-mcp serve
+uv run evds-mcp
 ```
 
 ### Claude'dan vb. İsteme
