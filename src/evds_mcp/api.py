@@ -170,7 +170,7 @@ class EVDSClient:
 
         for g in eslesen_gruplar:
             grup_kodu = g["DATAGROUP_CODE"]
-            grup_adi = g.get("DATAGROUP_NAME_TR", "")
+            grup_adi = g.get("DATAGROUP_NAME", "") or g.get("DATAGROUP_NAME_TR", "")
             frekans = g.get("FREQUENCY_STR", "")
 
             seriler = await self.seri_listesi(grup_kodu)
@@ -185,7 +185,7 @@ class EVDSClient:
                     if len(sonuclar) < limit:
                         sonuclar.append({
                             "seri_kodu": seri_kodu,
-                            "seri_adi": s.get("SERIE_NAME_TR", ""),
+                            "seri_adi": s.get("SERIE_NAME", "") or s.get("SERIE_NAME_TR", ""),
                             "frekans": s.get("FREQUENCY_STR", frekans),
                             "grup_kodu": grup_kodu,
                             "grup_adi": grup_adi,
