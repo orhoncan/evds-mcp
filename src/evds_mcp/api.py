@@ -160,7 +160,7 @@ class EVDSClient:
 
         eslesen_gruplar = []
         for g in gruplar:
-            ad = g.get("DATAGROUP_NAME_TR", "").lower()
+            ad = (g.get("DATAGROUP_NAME", "") or g.get("DATAGROUP_NAME_TR", "")).lower()
             kod = g.get("DATAGROUP_CODE", "").lower()
             if kelime in ad or kelime in kod:
                 eslesen_gruplar.append(g)

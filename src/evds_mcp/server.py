@@ -111,12 +111,12 @@ async def evds_meta(seri_kodu: str) -> dict:
             if s.get("SERIE_CODE") == seri_kodu:
                 return {
                     "seri_kodu": seri_kodu,
-                    "seri_adi": s.get("SERIE_NAME_TR", ""),
+                    "seri_adi": s.get("SERIE_NAME", "") or s.get("SERIE_NAME_TR", ""),
                     "frekans": s.get("FREQUENCY_STR", g.get("FREQUENCY_STR", "")),
                     "baslangic": s.get("START_DATE", ""),
                     "bitis": s.get("END_DATE", ""),
-                    "birim": s.get("DATASOURCE_TR", ""),
-                    "kaynak": g.get("DATASOURCE_TR", "TCMB"),
+                    "birim": s.get("DATASOURCE", "") or s.get("DATASOURCE_TR", ""),
+                    "kaynak": g.get("DATASOURCE", "TCMB"),
                 }
 
     return {"hata": True, "kod": "SERI_BULUNAMADI", "mesaj": f"Seri bulunamadı: {seri_kodu}"}
