@@ -8,6 +8,71 @@ import numpy as np
 import pandas as pd
 
 
+def analiz_baglam(df: pd.DataFrame) -> dict:
+    """Bağlam analizi: MoM, YoY, min/max, trend yönü, dip noktası.
+    
+    Tek serili DataFrame alır. Son 18 gözlem üzerinden:
+    - Aylık değişim (MoM)
+    - Yıllık değişim (YoY, 12 gözlem varsa)
+    - Min/maks ve dönemleri
+    - Trend yönü (son 6 ay vs önceki 6 ay)
+    - Dip noktası ve toparlanma süresi
+    """
+    if len(df.columns) == 0:
+        return {"hata": True, "kod": "ANALIZ_HATASI", "mesaj": "Veri bulunamadı"}
+    
+    col = df.columns[0]
+    seri = df[col].dropna()
+    if len(seri) < 2:
+        return {"hata": True, "kod": "ANALIZ_HATASI", "mesaj": "Bağlam için en az 2 gözlem gerekli"}
+    
+    son_deger = float(seri.iloc[-1])
+    onceki_deger = float(seri.iloc[-2]) if len(seri) >= 2 else None
+    mom = round(son_deger - onceki_deger, 2) if onceki_deger is not None else None
+    yoy = round(son_deger - float(seri.iloc[-13]), 2) if len(seri) >= 13 else None
+    
+    window = seri.tail(18)
+    min_val = float(window.min())
+    max_val = float(window.max())
+    min_idx = window.idxmin()
+    max_idx = window.idxmax()
+    
+    # Trend: son 6 ay vs önceki 6 ay
+    trend = "belirsiz"
+    if len(seri) >= 12:
+        son_6 = seri.tail(6).mean()
+        onceki_6 = seri.tail(12).head(6).mean()
+        if onceki_6 != 0:
+            degisim = (son_6 - onceki_6) / abs(onceki_6) * 100
+            if degisim > 5:
+                trend = "yükseliş"
+            elif degisim < -5:
+                trend = "düşüş"
+            else:
+                trend = "yatay"
+    
+    dip = {
+        "deger": round(min_val, 4),
+        "tarih": min_idx.strftime("%Y-%m-%d") if hasattr(min_idx, "strftime") else str(min_idx),
+        "toparlanma_suresi": len(window) - 1 - list(window.index).index(min_idx) if min_idx in window.index else 0,
+    }
+    
+    return {
+        "son_deger": round(son_deger, 4),
+        "onceki_deger": round(onceki_deger, 4) if onceki_deger else None,
+        "mom": mom,
+        "mom_yonu": "yukarı" if (mom or 0) > 0 else ("aşağı" if (mom or 0) < 0 else "yatay"),
+        "yoy": yoy,
+        "yoy_yonu": "yukarı" if (yoy or 0) > 0 else ("aşağı" if (yoy or 0) < 0 else "yatay") if yoy is not None else None,
+        "min": round(min_val, 4),
+        "min_tarih": dip["tarih"],
+        "max": round(max_val, 4),
+        "max_tarih": max_idx.strftime("%Y-%m-%d") if hasattr(max_idx, "strftime") else str(max_idx),
+        "trend": trend,
+        "dip": dip,
+        "gozlem": len(window),
+    }
+    
 def analiz_ozet(df: pd.DataFrame) -> dict[str, dict]:
     """Descriptive statistics for each column."""
     sonuclar = {}
@@ -210,4 +275,17 @@ def ozet_template(analiz_turu: str, sonuc: dict) -> str:
         son = sonuc["tahmin"][-1] if sonuc["tahmin"] else {}
         return f"{model_str}, AIC={sonuc['aic']}, son tahmin: {son.get('deger', '?')}"
 
+    if analiz_turu == "baglam":
+        s = sonuc
+        parts = [
+            f"son={s['son_deger']}",
+            f"MoM={'+' if s.get('mom', 0) > 0 else ''}{s.get('mom', 0)}",
+            f"trend={s['trend']}",
+            f"min={s['min']}",
+            f"max={s['max']}",
+        ]
+        if s.get('yoy'):
+            parts.append(f"YoY={'+' if s.get('yoy', 0) > 0 else ''}{s['yoy']}")
+        return "; ".join(parts)
+    
     return ""

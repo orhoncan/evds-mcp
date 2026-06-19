@@ -13,6 +13,7 @@ from fastmcp import FastMCP
 from evds_mcp.api import EVDSClient
 from evds_mcp.analysis import (
     analiz_arima,
+    analiz_baglam,
     analiz_degisim,
     analiz_korelasyon,
     analiz_ols,
@@ -190,11 +191,11 @@ async def evds_analiz(
     if err:
         return err
 
-    if analiz_turu not in ("ozet", "degisim", "korelasyon", "ols", "arima"):
+    if analiz_turu not in ("ozet", "degisim", "korelasyon", "ols", "arima", "baglam"):
         return {
             "hata": True,
             "kod": "ANALIZ_HATASI",
-            "mesaj": f"Geçersiz analiz türü: {analiz_turu}. Geçerli: ozet, degisim, korelasyon, ols, arima",
+            "mesaj": f"Geçersiz analiz türü: {analiz_turu}. Geçerli: ozet, degisim, korelasyon, ols, arima, baglam",
         }
 
     params = parametreler or {}
@@ -229,6 +230,14 @@ async def evds_analiz(
                     "mesaj": "OLS analizi için 'bagimli' parametresi gerekli.",
                 }
             sonuc = analiz_ols(df, bagimli=bagimli)
+        elif analiz_turu == "baglam":
+            if len(seriler) != 1:
+                return {
+                    "hata": True,
+                    "kod": "ANALIZ_HATASI",
+                    "mesaj": "Bağlam analizi tek seri üzerinde çalışır.",
+                }
+            sonuc = analiz_baglam(df)
         elif analiz_turu == "arima":
             if len(seriler) != 1:
                 return {

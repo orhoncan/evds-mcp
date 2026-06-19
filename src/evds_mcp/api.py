@@ -117,6 +117,24 @@ class EVDSClient:
         "cari denge": [("TP.ODEMELER.CARI1", "Cari İşlemler Dengesi", "bie_odenegdenam")],
         "cari açık": [("TP.ODEMELER.CARI1", "Cari İşlemler Dengesi", "bie_odenegdenam")],
         "rezerv": [("TP.AB.A01", "TCMB Brüt Döviz Rezervleri", "bie_abres")],
+        "güven endeksi": [
+            ("TP.GY1.N2", "Reel Kesim Güven Endeksi (ham)", "bie_rkgey2"),
+            ("TP.GY1.N2.MA", "Reel Kesim Güven Endeksi (MA)", "bie_rkgema"),
+        ],
+        "rkge": [
+            ("TP.GY1.N2", "Reel Kesim Güven Endeksi (ham)", "bie_rkgey2"),
+            ("TP.GY1.N2.MA", "Reel Kesim Güven Endeksi (MA)", "bie_rkgema"),
+        ],
+        "kapasite": [
+            ("TP.KKO2.IS.TOP", "Kapasite Kullanım Oranı - Toplam (ham)", "bie_kko2"),
+            ("TP.KKO.MA", "Kapasite Kullanım Oranı (MA)", "bie_kkoisma"),
+        ],
+        "kko": [
+            ("TP.KKO2.IS.TOP", "Kapasite Kullanım Oranı - Toplam (ham)", "bie_kko2"),
+            ("TP.KKO.MA", "Kapasite Kullanım Oranı (MA)", "bie_kkoisma"),
+        ],
+        "tüketici güveni": [("TP.TGE1.N1", "Tüketici Güven Endeksi (ham)", "bie_mbgven2")],
+        "tge": [("TP.TGE1.N1", "Tüketici Güven Endeksi (ham)", "bie_mbgven2")],
     }
 
     async def seri_ara(self, anahtar_kelime: str, limit: int = 25) -> dict:
@@ -232,7 +250,12 @@ class EVDSClient:
     def _parse_veri(
         self, seriler: list[str], baslangic: str, bitis: str, items: list[dict]
     ) -> dict:
-        """Parse EVDS items into structured output."""
+        """Parse EVDS items into structured output.
+
+        Sorts items by date, filters out rows where ALL value columns are null
+        (EVDS returns rows with null values before data is published), and
+        converts columns to proper types.
+        """
         df = pd.DataFrame(items)
 
         # Find date column
@@ -246,6 +269,9 @@ class EVDSClient:
         else:
             df[tarih_col] = pd.to_datetime(df[tarih_col], format="%d-%m-%Y")
 
+        # Sort by date (EVDS doesn't guarantee ordering)
+        df = df.sort_values(tarih_col).reset_index(drop=True)
+
         # Convert numeric columns
         for col in df.columns:
             if col != tarih_col and col not in ("UNIXTIME", "YEARWEEK"):
@@ -254,19 +280,34 @@ class EVDSClient:
         # Drop unnecessary columns
         df = df.drop(columns=[c for c in ("UNIXTIME", "YEARWEEK") if c in df.columns])
 
+        # Filter out rows where ALL value columns are null (pre-publication null rows)
+        value_cols = [c for c in df.columns if c != tarih_col]
+        if value_cols:
+            df = df.dropna(subset=value_cols, how="all")
+
         # Format output
         veri = []
+        null_rows_dropped = 0
         for _, row in df.iterrows():
             entry = {"tarih": row[tarih_col].strftime("%Y-%m-%d")}
+            all_null = True
             for col in df.columns:
                 if col != tarih_col:
                     val = row[col]
                     entry[col] = round(float(val), 4) if pd.notna(val) else None
+                    if pd.notna(val):
+                        all_null = False
+            if all_null:
+                null_rows_dropped += 1
+                continue
             veri.append(entry)
 
-        return {
+        result: dict = {
             "seriler": seriler,
             "tarih_araligi": [baslangic, bitis],
             "gozlem_sayisi": len(veri),
             "veri": veri,
         }
+        if null_rows_dropped > 0:
+            result["uyari"] = f"{null_rows_dropped} null gözlem filtrelendi (veri henüz yayınlanmamış olabilir)"
+        return result
