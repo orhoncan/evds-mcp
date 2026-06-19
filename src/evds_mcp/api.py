@@ -280,8 +280,11 @@ class EVDSClient:
         # Drop unnecessary columns
         df = df.drop(columns=[c for c in ("UNIXTIME", "YEARWEEK") if c in df.columns])
 
-        # Filter out rows where ALL value columns are null (pre-publication null rows)
+        # Count null rows BEFORE dropping them (otherwise warning never fires)
         value_cols = [c for c in df.columns if c != tarih_col]
+        null_rows_dropped = int(df[value_cols].isna().all(axis=1).sum()) if value_cols else 0
+        
+        # Filter out rows where ALL value columns are null (pre-publication null rows)
         if value_cols:
             df = df.dropna(subset=value_cols, how="all")
 

@@ -59,7 +59,7 @@ def analiz_baglam(df: pd.DataFrame) -> dict:
     
     return {
         "son_deger": round(son_deger, 4),
-        "onceki_deger": round(onceki_deger, 4) if onceki_deger else None,
+        "onceki_deger": round(onceki_deger, 4) if onceki_deger is not None else None,
         "mom": mom,
         "mom_yonu": "yukarı" if (mom or 0) > 0 else ("aşağı" if (mom or 0) < 0 else "yatay"),
         "yoy": yoy,
@@ -284,7 +284,7 @@ def ozet_template(analiz_turu: str, sonuc: dict) -> str:
             f"min={s['min']}",
             f"max={s['max']}",
         ]
-        if s.get('yoy'):
+        if s.get('yoy') is not None:
             parts.append(f"YoY={'+' if s.get('yoy', 0) > 0 else ''}{s['yoy']}")
         return "; ".join(parts)
     
