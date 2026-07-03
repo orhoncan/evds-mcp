@@ -6,7 +6,6 @@ from __future__ import annotations
 import sys
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta
-from typing import Optional
 
 from fastmcp import FastMCP
 
@@ -37,6 +36,8 @@ async def server_lifespan(server: FastMCP):
     else:
         sys.stderr.write("EVDS MCP: no API key found — tools will return error\n")
     yield {}
+    if _client is not None:
+        await _client.aclose()
     sys.stderr.write("EVDS MCP: shutting down\n")
 
 
@@ -99,28 +100,7 @@ async def evds_meta(seri_kodu: str) -> dict:
     if err:
         return err
 
-    gruplar = await _client.veri_gruplari()
-    if isinstance(gruplar, dict) and gruplar.get("hata"):
-        return gruplar
-
-    for g in gruplar:
-        grup_kodu = g.get("DATAGROUP_CODE", "")
-        seriler = await _client.seri_listesi(grup_kodu)
-        if isinstance(seriler, dict) and seriler.get("hata"):
-            continue
-        for s in seriler:
-            if s.get("SERIE_CODE") == seri_kodu:
-                return {
-                    "seri_kodu": seri_kodu,
-                    "seri_adi": s.get("SERIE_NAME", "") or s.get("SERIE_NAME_TR", ""),
-                    "frekans": s.get("FREQUENCY_STR", g.get("FREQUENCY_STR", "")),
-                    "baslangic": s.get("START_DATE", ""),
-                    "bitis": s.get("END_DATE", ""),
-                    "birim": s.get("DATASOURCE", "") or s.get("DATASOURCE_TR", ""),
-                    "kaynak": g.get("DATASOURCE", "TCMB"),
-                }
-
-    return {"hata": True, "kod": "SERI_BULUNAMADI", "mesaj": f"Seri bulunamadı: {seri_kodu}"}
+    return await _client.seri_bul(seri_kodu)
 
 
 @mcp.tool(
@@ -164,7 +144,8 @@ async def evds_cek(
     description=(
         "EVDS'den veri çeker ve istatistiksel analiz uygular. Tek adımda veri + analiz. "
         "Analiz türleri: ozet (tanımlayıcı istatistikler), degisim (yüzde değişim), "
-        "korelasyon (korelasyon matrisi), ols (OLS regresyon), arima (ARIMA tahmin). "
+        "korelasyon (korelasyon matrisi), ols (OLS regresyon), arima (ARIMA tahmin), "
+        "baglam (tek seri için MoM/YoY, min/max, trend, dip noktası). "
         "Her çıktı deterministik — aynı girdi her zaman aynı sonucu verir."
     ),
 )
@@ -179,13 +160,14 @@ async def evds_analiz(
 
     Args:
         seriler: Series codes (e.g. ["TP.FG.J0"])
-        analiz_turu: Analysis type — ozet, degisim, korelasyon, ols, arima
+        analiz_turu: Analysis type — ozet, degisim, korelasyon, ols, arima, baglam
         baslangic: Start date dd-mm-yyyy (default: 1 year ago)
         bitis: End date dd-mm-yyyy (default: today)
         parametreler: Type-specific params. degisim: {"periyot": "aylik"|"yillik"|"donemsel"}.
                      korelasyon: {"metot": "pearson"|"spearman"}.
                      ols: {"bagimli": "SERIES_CODE"}.
                      arima: {"tahmin_donemi": 12, "mevsimsel": true}.
+                     baglam: no params, single monthly series only.
     """
     err = _check_client()
     if err:

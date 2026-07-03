@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import asyncio
-from typing import Any
+import re
 
 import httpx
 import pandas as pd
@@ -12,6 +12,7 @@ BASE_URL = "https://evds3.tcmb.gov.tr/igmevdsms-dis"
 TIMEOUT = 60.0
 MAX_RETRIES = 3
 BACKOFF_BASE = 1.0
+MAX_ES_ZAMANLI_ISTEK = 8
 
 FREKANS = {
     "gunluk": 1, "isgunu": 2, "haftalik": 3, "ayda2": 4,
@@ -34,23 +35,68 @@ def _error(kod: str, mesaj: str, oneri: str = "") -> dict:
     return result
 
 
+def _tarih_parse(tarih: pd.Series) -> pd.Series:
+    """Parse EVDS date column into datetime.
+
+    EVDS returns different formats per frequency:
+    - daily / business / weekly / biweekly: "dd-mm-yyyy"
+    - monthly: "yyyy-m"
+    - quarterly: "yyyy-Qn"
+    - semiannual: "yyyy-Sn"
+    - yearly: bare integer yyyy
+    """
+    s = tarih.astype(str).str.strip()
+    ornek = s.iloc[0]
+
+    if re.fullmatch(r"\d{4}", ornek):
+        return pd.to_datetime(s, format="%Y")
+    if re.fullmatch(r"\d{4}-Q\d", ornek):
+        parcalar = s.str.extract(r"(\d{4})-Q(\d)")
+        return pd.to_datetime(pd.DataFrame({
+            "year": parcalar[0].astype(int),
+            "month": (parcalar[1].astype(int) - 1) * 3 + 1,
+            "day": 1,
+        }))
+    if re.fullmatch(r"\d{4}-S\d", ornek):
+        parcalar = s.str.extract(r"(\d{4})-S(\d)")
+        return pd.to_datetime(pd.DataFrame({
+            "year": parcalar[0].astype(int),
+            "month": (parcalar[1].astype(int) - 1) * 6 + 1,
+            "day": 1,
+        }))
+    if re.fullmatch(r"\d{4}-\d{1,2}", ornek):
+        return pd.to_datetime(s, format="%Y-%m")
+    if re.fullmatch(r"\d{1,2}-\d{1,2}-\d{4}", ornek):
+        return pd.to_datetime(s, format="%d-%m-%Y")
+    return pd.to_datetime(s, dayfirst=True, errors="coerce")
+
+
 class EVDSClient:
-    """Async EVDS API client."""
+    """Async EVDS API client with connection reuse and in-process caching."""
 
     def __init__(self, api_key: str):
         self.api_key = api_key
+        self._http: httpx.AsyncClient | None = None
+        self._grup_cache: list[dict] | None = None
+        self._seri_cache: dict[str, list[dict]] = {}
+
+    def _http_client(self) -> httpx.AsyncClient:
+        if self._http is None or self._http.is_closed:
+            self._http = httpx.AsyncClient(
+                timeout=TIMEOUT, headers={"key": self.api_key}
+            )
+        return self._http
+
+    async def aclose(self) -> None:
+        if self._http is not None and not self._http.is_closed:
+            await self._http.aclose()
 
     async def _request(self, url: str) -> dict | list | None:
         """Make HTTP request with retry. Returns parsed JSON or error dict."""
         last_error = None
         for attempt in range(MAX_RETRIES):
             try:
-                async with httpx.AsyncClient() as http:
-                    resp = await http.get(
-                        url,
-                        headers={"key": self.api_key},
-                        timeout=TIMEOUT,
-                    )
+                resp = await self._http_client().get(url)
                 if resp.status_code == 403:
                     return _error(
                         "API_KEY_GECERSIZ",
@@ -60,7 +106,18 @@ class EVDSClient:
                 if resp.status_code == 404:
                     return _error("SERI_BULUNAMADI", "İstenen kaynak bulunamadı.")
                 resp.raise_for_status()
-                return resp.json()
+                try:
+                    return resp.json()
+                except ValueError as e:
+                    # EVDS occasionally returns HTML error pages with HTTP 200
+                    last_error = e
+                    if attempt < MAX_RETRIES - 1:
+                        await asyncio.sleep(BACKOFF_BASE * (2 ** attempt))
+                        continue
+                    return _error(
+                        "GECERSIZ_YANIT",
+                        "API JSON yerine geçersiz yanıt döndürdü (servis geçici olarak sorunlu olabilir).",
+                    )
             except (httpx.TimeoutException, httpx.ConnectError, httpx.ReadError) as e:
                 last_error = e
                 if attempt < MAX_RETRIES - 1:
@@ -82,7 +139,12 @@ class EVDSClient:
         return result if isinstance(result, list) else []
 
     async def veri_gruplari(self, kategori_id: int | None = None) -> list[dict] | dict:
-        """Fetch data groups, optionally filtered by category."""
+        """Fetch data groups, optionally filtered by category.
+
+        The full (unfiltered) list is cached for the process lifetime.
+        """
+        if kategori_id is None and self._grup_cache is not None:
+            return self._grup_cache
         if kategori_id:
             url = f"{BASE_URL}/datagroups/mode=2&code={kategori_id}&type=json"
         else:
@@ -90,7 +152,10 @@ class EVDSClient:
         result = await self._request(url)
         if isinstance(result, dict) and result.get("hata"):
             return result
-        return result if isinstance(result, list) else []
+        result = result if isinstance(result, list) else []
+        if kategori_id is None and result:
+            self._grup_cache = result
+        return result
 
     # Popüler seri kısayolları — API araması öncesi hızlı eşleşme
     _POPULER = {
@@ -142,7 +207,7 @@ class EVDSClient:
 
         1. Check popular series shortcut dict — if exact match, return immediately
         2. Fetch all data groups, filter by keyword
-        3. For matching groups, fetch series lists (up to limit)
+        3. For matching groups, fetch series lists concurrently (up to limit)
 
         Returns:
             {"sonuclar": [...], "toplam": int}
@@ -178,22 +243,30 @@ class EVDSClient:
 
         eslesen_gruplar = []
         for g in gruplar:
-            ad = (g.get("DATAGROUP_NAME", "") or g.get("DATAGROUP_NAME_TR", "")).lower()
-            kod = g.get("DATAGROUP_CODE", "").lower()
-            if kelime in ad or kelime in kod:
+            kod = (g.get("DATAGROUP_CODE") or "").lower()
+            ad = (g.get("DATAGROUP_NAME") or g.get("DATAGROUP_NAME_TR") or "").lower()
+            if kod and (kelime in ad or kelime in kod):
                 eslesen_gruplar.append(g)
+
+        # Fetch series lists for matching groups concurrently (bounded)
+        sem = asyncio.Semaphore(MAX_ES_ZAMANLI_ISTEK)
+
+        async def _liste(g: dict) -> list[dict] | dict:
+            async with sem:
+                return await self.seri_listesi(g["DATAGROUP_CODE"])
+
+        listeler = await asyncio.gather(*(_liste(g) for g in eslesen_gruplar))
 
         sonuclar = list(populer)
         toplam_bulunan = len(populer)
 
-        for g in eslesen_gruplar:
-            grup_kodu = g["DATAGROUP_CODE"]
-            grup_adi = g.get("DATAGROUP_NAME", "") or g.get("DATAGROUP_NAME_TR", "")
-            frekans = g.get("FREQUENCY_STR", "")
-
-            seriler = await self.seri_listesi(grup_kodu)
+        for g, seriler in zip(eslesen_gruplar, listeler):
             if isinstance(seriler, dict) and seriler.get("hata"):
                 continue
+
+            grup_kodu = g["DATAGROUP_CODE"]
+            grup_adi = g.get("DATAGROUP_NAME") or g.get("DATAGROUP_NAME_TR") or ""
+            frekans = g.get("FREQUENCY_STR", "")
 
             for s in seriler:
                 seri_kodu = s.get("SERIE_CODE", "")
@@ -203,7 +276,7 @@ class EVDSClient:
                     if len(sonuclar) < limit:
                         sonuclar.append({
                             "seri_kodu": seri_kodu,
-                            "seri_adi": s.get("SERIE_NAME", "") or s.get("SERIE_NAME_TR", ""),
+                            "seri_adi": s.get("SERIE_NAME") or s.get("SERIE_NAME_TR") or "",
                             "frekans": s.get("FREQUENCY_STR", frekans),
                             "grup_kodu": grup_kodu,
                             "grup_adi": grup_adi,
@@ -212,11 +285,59 @@ class EVDSClient:
         return {"sonuclar": sonuclar, "toplam": toplam_bulunan}
 
     async def seri_listesi(self, grup_kodu: str) -> list[dict] | dict:
-        """Fetch series in a data group."""
+        """Fetch series in a data group. Successful responses are cached."""
+        if grup_kodu in self._seri_cache:
+            return self._seri_cache[grup_kodu]
         result = await self._request(f"{BASE_URL}/serieList/code={grup_kodu}&type=json")
         if isinstance(result, dict) and result.get("hata"):
             return result
-        return result if isinstance(result, list) else []
+        result = result if isinstance(result, list) else []
+        self._seri_cache[grup_kodu] = result
+        return result
+
+    async def seri_bul(self, seri_kodu: str) -> dict:
+        """Find a series across all data groups and return its metadata.
+
+        Scans group series lists concurrently and stops at the first match.
+        """
+        gruplar = await self.veri_gruplari()
+        if isinstance(gruplar, dict) and gruplar.get("hata"):
+            return gruplar
+
+        sem = asyncio.Semaphore(MAX_ES_ZAMANLI_ISTEK)
+
+        async def _tara(g: dict) -> dict | None:
+            grup_kodu = g.get("DATAGROUP_CODE") or ""
+            if not grup_kodu:
+                return None
+            async with sem:
+                seriler = await self.seri_listesi(grup_kodu)
+            if isinstance(seriler, dict):
+                return None
+            for s in seriler:
+                if s.get("SERIE_CODE") == seri_kodu:
+                    return {
+                        "seri_kodu": seri_kodu,
+                        "seri_adi": s.get("SERIE_NAME") or s.get("SERIE_NAME_TR") or "",
+                        "frekans": s.get("FREQUENCY_STR", g.get("FREQUENCY_STR", "")),
+                        "baslangic": s.get("START_DATE", ""),
+                        "bitis": s.get("END_DATE", ""),
+                        "birim": s.get("DATASOURCE") or s.get("DATASOURCE_TR") or "",
+                        "kaynak": g.get("DATASOURCE", "TCMB"),
+                    }
+            return None
+
+        tasks = [asyncio.create_task(_tara(g)) for g in gruplar]
+        try:
+            for fut in asyncio.as_completed(tasks):
+                sonuc = await fut
+                if sonuc is not None:
+                    return sonuc
+        finally:
+            for t in tasks:
+                t.cancel()
+
+        return _error("SERI_BULUNAMADI", f"Seri bulunamadı: {seri_kodu}")
 
     async def veri_cek(
         self,
@@ -245,7 +366,10 @@ class EVDSClient:
         if not items:
             return _error("VERI_YOK", "Belirtilen tarih aralığında veri bulunamadı.")
 
-        return self._parse_veri(seriler, baslangic, bitis, items)
+        try:
+            return self._parse_veri(seriler, baslangic, bitis, items)
+        except Exception as e:
+            return _error("VERI_FORMAT_HATASI", f"API yanıtı ayrıştırılamadı: {e}")
 
     def _parse_veri(
         self, seriler: list[str], baslangic: str, bitis: str, items: list[dict]
@@ -258,51 +382,34 @@ class EVDSClient:
         """
         df = pd.DataFrame(items)
 
+        # Drop metadata columns before type conversion
+        df = df.drop(columns=[c for c in ("UNIXTIME", "YEARWEEK") if c in df.columns])
+
         # Find date column
         tarih_col = "Tarih" if "Tarih" in df.columns else df.columns[0]
 
-        # Parse dates
-        tarih_str = str(df[tarih_col].iloc[0])
-        parcalar = tarih_str.split("-")
-        if len(parcalar[0]) == 4:
-            df[tarih_col] = pd.to_datetime(df[tarih_col], format="%Y-%m")
-        else:
-            df[tarih_col] = pd.to_datetime(df[tarih_col], format="%d-%m-%Y")
+        df[tarih_col] = _tarih_parse(df[tarih_col])
 
         # Sort by date (EVDS doesn't guarantee ordering)
         df = df.sort_values(tarih_col).reset_index(drop=True)
 
         # Convert numeric columns
-        for col in df.columns:
-            if col != tarih_col and col not in ("UNIXTIME", "YEARWEEK"):
-                df[col] = pd.to_numeric(df[col], errors="coerce")
-
-        # Drop unnecessary columns
-        df = df.drop(columns=[c for c in ("UNIXTIME", "YEARWEEK") if c in df.columns])
-
-        # Count null rows BEFORE dropping them (otherwise warning never fires)
         value_cols = [c for c in df.columns if c != tarih_col]
-        null_rows_dropped = int(df[value_cols].isna().all(axis=1).sum()) if value_cols else 0
-        
-        # Filter out rows where ALL value columns are null (pre-publication null rows)
+        for col in value_cols:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+        # Filter out rows where ALL value columns are null (pre-publication rows)
+        null_rows_dropped = 0
         if value_cols:
+            null_rows_dropped = int(df[value_cols].isna().all(axis=1).sum())
             df = df.dropna(subset=value_cols, how="all")
 
-        # Format output
         veri = []
-        null_rows_dropped = 0
         for _, row in df.iterrows():
             entry = {"tarih": row[tarih_col].strftime("%Y-%m-%d")}
-            all_null = True
-            for col in df.columns:
-                if col != tarih_col:
-                    val = row[col]
-                    entry[col] = round(float(val), 4) if pd.notna(val) else None
-                    if pd.notna(val):
-                        all_null = False
-            if all_null:
-                null_rows_dropped += 1
-                continue
+            for col in value_cols:
+                val = row[col]
+                entry[col] = round(float(val), 4) if pd.notna(val) else None
             veri.append(entry)
 
         result: dict = {

@@ -71,6 +71,7 @@ def analiz_baglam(df: pd.DataFrame) -> dict:
         "trend": trend,
         "dip": dip,
         "gozlem": len(window),
+        "uyari": "MoM/YoY ve trend hesapları aylık frekans varsayar.",
     }
     
 def analiz_ozet(df: pd.DataFrame) -> dict[str, dict]:
@@ -173,7 +174,21 @@ def analiz_ols(df: pd.DataFrame, bagimli: str) -> dict:
     except ImportError:
         return {"hata": True, "kod": "ANALIZ_HATASI", "mesaj": "statsmodels paketi yüklü değil."}
 
+    if bagimli not in df.columns:
+        return {
+            "hata": True,
+            "kod": "ANALIZ_HATASI",
+            "mesaj": f"Bağımlı değişken veri içinde yok: {bagimli}. Mevcut kolonlar: {list(df.columns)}",
+        }
+
     data = df.dropna()
+    if len(data.columns) < 2:
+        return {
+            "hata": True,
+            "kod": "ANALIZ_HATASI",
+            "mesaj": "OLS için en az iki seri gerekli (bağımlı + bağımsız).",
+        }
+
     y = data[bagimli]
     X = data.drop(columns=[bagimli])
 

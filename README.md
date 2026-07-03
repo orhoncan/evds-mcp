@@ -19,6 +19,8 @@ echo '{"api_key": "ANAHTARINIZ"}' > ~/.evds-mcp.json
 claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp evds-mcp
 ```
 
+Her ikisi de tanımlıysa `EVDS_API_KEY` ortam değişkeni öncelik alır.
+
 
 
 ### Claude Desktop / Kaynak koddan çalıştırma
@@ -67,10 +69,10 @@ Doğrudan repo bağlantısını paylaşarak Claude'dan ya da diğer sağlayıcı
 
 ```
 > evds_ara("usd")
-→ TP.DK.USD.A — USD/TRY
+→ TP.DK.USD.A - USD/TRY
 
 > evds_ara("enflasyon")
-→ TP.FG.J0 — TÜFE Genel Endeks (2003=100)
+→ TP.FG.J0 - TÜFE Genel Endeks (2003=100)
 ```
 
 Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizlik`, `cari açık`, `rezerv` vb.) API'ye gitmeden anında sonuç döner. Bu liste zamanla genişleyecek ama ne kadar net yönlendirirseniz o kadar verimli çalışır. Bazı sık kullanılan kelimeler çok uzun listeler döndürdüğü için performans kaybı olabiliyor.
@@ -85,8 +87,8 @@ Popüler aramalar (`usd`, `eur`, `altın`, `faiz`, `enflasyon`, `gsyh`, `işsizl
 → Yıllık TÜFE (%)
 ```
 
-**Frekans:** `gunluk`, `haftalik`, `aylik`, `ceyreklik`, `yillik`
-**Formül:** `duzey`, `yuzde_degisim`, `fark`, `yillik_yuzde`, `yillik_fark`
+**Frekans:** `gunluk`, `isgunu`, `haftalik`, `ayda2`, `aylik`, `ceyreklik`, `6aylik`, `yillik`
+**Formül:** `duzey`, `yuzde_degisim`, `fark`, `yillik_yuzde`, `yillik_fark`, `yilsonu_yuzde`, `yilsonu_fark`, `hareketli_ort`, `hareketli_toplam`
 
 ### Analiz
 
@@ -105,11 +107,12 @@ ya da aynı sonuç için;
 ```
 
 **Analiz türleri:**
-- `ozet` — Ortalama, std, min/max, trend
-- `degisim` — Yüzde değişim (aylık/yıllık/dönemsel)
-- `korelasyon` — Pearson/Spearman korelasyon matrisi
-- `ols` — OLS regresyon (R², F-testi, Durbin-Watson)
-- `arima` — ARIMA/SARIMA tahmin + güven aralıkları
+- `ozet` - Ortalama, std, min/max, trend
+- `degisim` - Yüzde değişim (aylık/yıllık/dönemsel)
+- `korelasyon` - Pearson/Spearman korelasyon matrisi
+- `ols` - OLS regresyon (R², F-testi, Durbin-Watson)
+- `arima` - ARIMA/SARIMA tahmin + güven aralıkları
+- `baglam` - Tek seri için MoM/YoY, min/max, trend ve dip noktası (aylık seriler)
 
 ## Ekran Görüntüleri
 
@@ -127,6 +130,13 @@ ya da aynı sonuç için;
 
 - Serilerin aranması ve kullanılması konusunda iyileştirmeler
 - Ekonometrik modellerin çeşitlendirilmesi
+
+## Testler
+
+```bash
+uv sync --extra dev
+uv run pytest
+```
 
 ## Gereksinimler
 
