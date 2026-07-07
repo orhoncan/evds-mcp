@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/orhoncan-evds-mcp-badge.png)](https://mseep.ai/app/orhoncan-evds-mcp)
+
 # EVDS MCP Sunucusu
 
 TCMB Elektronik Veri Dağıtım Sistemi (EVDS) için [Model Context Protocol](https://modelcontextprotocol.io/) sunucusu. Becerilere kıyasla daha öngörülebilir düzende çıktı sunar.
