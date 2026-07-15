@@ -6,3 +6,6 @@ build/
 .venv/
 .pytest_cache/
 .DS_Store
+
+# Testler yayınlanmaz (lokal gelistirme + pre-push hook kullanir)
+tests/

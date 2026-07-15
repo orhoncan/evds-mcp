@@ -348,15 +348,42 @@ class EVDSClient:
         formul: str | None = None,
     ) -> dict:
         """Fetch time series data."""
+        seriler = [s.strip() for s in seriler if s and s.strip()]
+        if not seriler:
+            return _error(
+                "SERI_KODU_EKSIK",
+                "En az bir seri kodu gerekli.",
+                "Örnek: [\"TP.FG.J0\"] — kodları evds_ara ile bulabilirsiniz.",
+            )
+
         seri_str = "-".join(seriler)
         url = f"{BASE_URL}/series={seri_str}&startDate={baslangic}&endDate={bitis}&type=json"
 
+        # Bilinmeyen filtre adı sessizce URL'ye sızarsa EVDS beklenmedik/boş
+        # sonuç döner ve bu geçerli sonuç sanılabilir; ham sayısal kod geçişine
+        # izin ver, gerisini ağa çıkmadan reddet.
         if frekans:
-            kod = FREKANS.get(frekans.lower(), frekans)
-            url += f"&frequency={kod}"
+            if frekans.lower() in FREKANS:
+                url += f"&frequency={FREKANS[frekans.lower()]}"
+            elif frekans.isdigit():
+                url += f"&frequency={frekans}"
+            else:
+                return _error(
+                    "PARAMETRE_GECERSIZ",
+                    f"Geçersiz frekans: {frekans}",
+                    f"Geçerli değerler: {', '.join(FREKANS)}",
+                )
         if formul:
-            kod = FORMUL.get(formul.lower(), formul)
-            url += f"&formulas={kod}"
+            if formul.lower() in FORMUL:
+                url += f"&formulas={FORMUL[formul.lower()]}"
+            elif formul.isdigit():
+                url += f"&formulas={formul}"
+            else:
+                return _error(
+                    "PARAMETRE_GECERSIZ",
+                    f"Geçersiz formül: {formul}",
+                    f"Geçerli değerler: {', '.join(FORMUL)}",
+                )
 
         result = await self._request(url)
         if isinstance(result, dict) and result.get("hata"):
