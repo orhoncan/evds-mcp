@@ -9,3 +9,6 @@ build/
 
 # Testler yayınlanmaz (lokal gelistirme + pre-push hook kullanir)
 tests/
+
+# Katalog uretim scripti yayinlanmaz (lokal, data/*.csv yeterli)
+scripts/

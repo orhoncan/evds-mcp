@@ -1,0 +1,672 @@
+﻿grup_kodu,kategori_id,grup_adi,grup_adi_eng,frekans,kaynak
+bie_abanlbil,3001,Merkez Bankası Analitik Bilanço,Central Bank Analytical Balance Sheet,İŞ GÜNÜ,TCMB
+bie_abmbbil1,9995001,Merkez Bankası Haftalık Vaziyeti (Arşiv),Central Bank Weekly Statement (Archive),HAFTALIK(CUMA),TCMB
+bie_abres2,4003,Merkez Bankası Rezervleri,Central Bank Reserves,HAFTALIK(CUMA),TCMB
+bie_abreserv,4003,Toplam Uluslararası Rezervler,Total International Reserves,AYLIK,TCMB
+bie_abstby,9995001,MB Bilançosu-Stand By-09.12.1999 ve 18.12.2000 Tarihli Niyet Mektubu ile Belirlenmiş (Sabit) (Arşiv),CB Balance Sheet As Per The Letter Of Intent Dd 09.12.1999 & 18.12.2000 (At Fixed Cross Rates) (Archive),HAFTALIK(CUMA),TCMB
+bie_abstc2,3004,Merkez Bankası Bilançosu - Stand By (Cari),Central Bank Balance Sheet- Stand By (At Current Cross Rates),HAFTALIK(CUMA),TCMB
+bie_abstca,9995001,MB Bilançosu-Stand By-03.05.2001 Tarihli Niyet Mektubu ile Belirlenmiş (Cari) (Arşiv),CB Balance Sheet As Per The Letter Of Intent Dd 03.05.2001 (At Current Cross Rates) (Archive),HAFTALIK(CUMA),TCMB
+bie_absts2,9995001,MB Bilançosu-Stand By-18.01.2002 Tarihli Niyet Mektubu ile Belirlenmiş (Sabit) (Arşiv),CB Balance Sheet As Per The Letter Of Intent Dd 18.01.2002 (At Fixed Cross Rates) (Archive),HAFTALIK(CUMA),TCMB
+bie_absts3,9995001,MB Bilançosu-Stand By-05.04.2003 Tarihli Niyet Mektubu ile Belirlenmiş (Sabit) (Arşiv),CB Balance Sheet As Per The Letter Of Intent Dd 05.04.2003 (At Fixed Cross Rates) (Archive),HAFTALIK(CUMA),TCMB
+bie_absts4,9995001,MB Bilançosu-Stand By-26.04.2005 Tarihli Niyet Mektubu ile Belirlenmiş (Sabit) (Arşiv),CB Balance Sheet As Per The Letter Of Intent Dd 26.04.2005 (At Fixed Cross Rates) (Archive),HAFTALIK(CUMA),TCMB
+bie_abstsb,9995001,MB Bilançosu-Stand By-03.05.2001 Tarihli Niyet Mektubu ile Belirlenmiş (Sabit) (Arşiv),CB Balance Sheet As Per The Letter Of Intent Dd 03.05.2001 (At Fixed Cross Rates) (Archive),HAFTALIK(CUMA),TCMB
+bie_ackap,9999003,Şirket İstatistikleri-Açılan (Arşiv),Firms Statistics_Newly Established and Liquidated (Archive),AYLIK,TÜİK
+bie_ackap2,5003,Kurulan Kapanan Şirket İstatistikleri (TOBB),Statistics on Companies Established and Closed (UCCET),AYLIK,Türkiye Odalar ve Borsalar Birliği (TOBB)
+bie_akonutsat1,5002,Konut ve İş Yeri Satış İstatistikleri-Toplam Satışlar,House and Commercial Property Sales Statistics - Total sales,AYLIK,TÜİK
+bie_akonutsat2,5002,Konut ve İş Yeri Satış İstatistikleri-İpotekli Satışlar,House and Commercial Property Sales Statistics - Mortgaged sales,AYLIK,TÜİK
+bie_akonutsat3,5002,Konut ve İş Yeri Satış İstatistikleri-İlk El Satışlar,House and Commercial Property Sales Statistics - First sales,AYLIK,TÜİK
+bie_akonutsat4,5002,Konut ve İş Yeri Satış İstatistikleri-İkinci El Satışlar,House and Commercial Property Sales Statistics - Second hand sales,AYLIK,TÜİK
+bie_altinadt,2502,"Altın Para Basımı, Cumhuriyet ve Reşad Altını, Adet (HMB Darphane)","Gold Coin Minting, Republic and Resad Gold, Units (MoFT Mint)",AYLIK,"T.C. Hazine ve Maliye Bakanlığı, Darphane ve Damga Matbaası Genel Müdürlüğü"
+bie_altingr,2502,"Altın Para Basımı, Cumhuriyet ve Reşad Altını, Gram (HMB Darphane)","Gold Coin Minting, Republic and Resad Gold, Gram (MoFT Mint)",AYLIK,"T.C. Hazine ve Maliye Bakanlığı, Darphane ve Damga Matbaası Genel Müdürlüğü"
+bie_apifon,3002,TCMB Net Fonlaması ve TCMB Ağırlıklı Ortalama Fonlama Maliyeti,CBRT Net Funding and Weighted Average Funding Cost,İŞ GÜNÜ,TCMB
+bie_auihrulke,400702,Parasal Olmayan Altın İhracatı - Ülke Dağılımı,Non-Monetary Gold Export by Countries,AYLIK,TÜİK
+bie_auithulke,400702,Parasal Olmayan Altın İthalatı - Ülke Dağılımı,Non-Monetary Gold Import by Countries,AYLIK,TÜİK
+bie_bekodtufe,9991002,Piyasa Katılımcıları Anketi Tüketici Enflasyonu Beklentilerinin Olasılık Dağılımları (Arşiv),Survey of Market Participants Probability Distributions of Consumer Inflation Expectations (Archive),AYLIK,TCMB
+bie_bekodtufeyeni,1004,Tüketici Enflasyonu Beklentilerinin Olasılık Dağılımları,Probability Distributions of Consumer Inflation Expectations,AYLIK,TCMB
+bie_bftukkre,9998006,Krediler - Bankalar ve Finansman Şirketleri (Arşiv),Loans - Banks and Finance Companies (Archive),HAFTALIK(CUMA),"BANKALAR, FİNANSMAN ŞİRKETLERİ"
+bie_birimfiyat,2003,Konut Birim Fiyatları,Housing Unit Prices,ÜÇ AYLIK,TCMB
+bie_bisborcoran,550201,Finans Dışı Özel Sektör'ün Borç Servis Oranı,Non-Financial Private Sector Debt Service Ratio,ÜÇ AYLIK,Uluslararası Ödemeler Bankası (BIS)
+bie_biskredigsyih,550201,Finans Dışı Özel Sektörün Toplam Kredi Kullanımı (Kredi/GSYH Oranı),Total Credit Utilization of the Non-Financial Private Sector (Credit/GDP Ratio),ÜÇ AYLIK,Uluslararası Ödemeler Bankası (BIS)
+bie_bispolfaiz,550202,Merkez Bankaları Politika Faiz Oranı,Central Banks' Policy Interest Rate,AYLIK,Uluslararası Ödemeler Bankası (BIS)
+bie_bistopkredi,550201,Finans Dışı Sektörün Toplam Kredi Kullanımı,Total Credit Utilization in the Non-Financial Sector,ÜÇ AYLIK,Uluslararası Ödemeler Bankası (BIS)
+bie_bistopvaupar,550202,"Merkez Bankaları Toplam Varlıkları (milyar, Ulusal Para Birimi)","Central Banks' Total Assets (billions, Domestic Currency)",YILLIK,Uluslararası Ödemeler Bankası (BIS)
+bie_bistopvgdp,550202,Merkez Bankaları Toplam Varlıkları / GSYİH,Central Banks' Total Assets / GDP,ÜÇ AYLIK,Uluslararası Ödemeler Bankası (BIS)
+bie_bistopvusd,550202,Merkez Bankaları Toplam Varlıkları (milyar ABD doları),Central Banks' Total Assets (billions US dollars),ÜÇ AYLIK,Uluslararası Ödemeler Bankası (BIS)
+bie_bisttlref,3002,Türk Lirası Gecelik Referans Faiz Oranı (BIST-TLREF),Turkish Lira Overnight Reference Rate (BIST-TLREF),İŞ GÜNÜ,Borsa İstanbul
+bie_bk,2003,Değerlemesi Yapılan Konutların Birim Kiraları,Unit Rents of Appraised Residential Properties,ÜÇ AYLIK,TCMB
+bie_bkea,1001,Banka Kredileri Eğilim Anketi,Bank Loans Tendency Survey,ÜÇ AYLIK,TCMB
+bie_bmcuzb,9998006,Mevduat Bankalarının Gerçeğe uygun Değ.Farkı Kar/Zarara Yan.ve Sat.Hazır Menkul Değerler (Banka Grupları ve Menk. Kıym. Türlerine Göre (Arşiv),Deposit Money Banks' Sec. At Fair Value Thr. Profit Or Loss and Securities Available For Sale (By Bank Groups and Type Of Securities) (Archive),HAFTALIK(CUMA),BANKALAR
+bie_bosecbil,9998006,Seçilmiş Bilanço Büyüklükleri - Bankacılık Sektörü (Arşiv),Selected Balance Sheet Items - Banking Sector (Archive),HAFTALIK(CUMA),BANKALAR
+bie_brentpetrol,2503,Avrupa Brent Petrol Fiyatı,European Brent Crude Oil Price,İŞ GÜNÜ,ABD Enerji Bilgi Yönetim İdaresi (EIA)
+bie_brutdbalacaklitp,400403,Brüt Dış Borç - Tüm Sektörler - Alacaklı Dağılımı,Gross External Debt - All Sectors - By Creditor,ÜÇ AYLIK,TCMB
+bie_brutdbalckamu,400403,Brüt Dış Borç - Kamu Sektörü - Alacaklı Dağılımı,Gross External Debt - Public Sector - By Creditor,ÜÇ AYLIK,TCMB
+bie_brutdbalcozel,400403,Brüt Dış Borç - Özel Sektör - Alacaklı Dağılımı,Gross External Debt - Private Sector - By Creditor,ÜÇ AYLIK,TCMB
+bie_brutdbalctcmb,400403,Brüt Dış Borç - TCMB - Alacaklı Dağılımı,Gross External Debt - CBRT - By Creditor,ÜÇ AYLIK,TCMB
+bie_brutdbborclu,400403,Brüt Dış Borç - Tüm Sektörler - Borçlu Dağılımı,Gross External Debt - All Sectors - By Debtor,ÜÇ AYLIK,TCMB
+bie_brutdbdovkomp,400403,Brüt Dış Borç - Döviz Dağılımı,Gross External Debt - Currency Composition,ÜÇ AYLIK,TCMB
+bie_brutdborcozel,400403,Özel Sektörün Yurt Dışından Sağladığı Kredi ve Borç Senetleri Yükümlülükleri - Borçlu Dağılımı,Outstanding Loans and Debt Securities Received from Abroad by Private Sector - By borrower,ÜÇ AYLIK,TCMB
+bie_brutdbsdds,400403,Brüt Dış Borç - Tüm Sektörler - Enstrüman Dağılımı,Gross External Debt - All Sectors - By Instrument,ÜÇ AYLIK,TCMB
+bie_btocek,3503,Takas Odasında İşlem Gören Çek Adet ve Tutarları,Cheques Processed in Interbank Cheque Clearing Houses,AYLIK,İstanbul Takas ve Saklama Bankası A.Ş. (Takasbank)
+bie_byybil,9998006,Türkiye'de Yerleşiklerle İlgili Seçilmiş Bilanço Büyüklükleri - Bankaların Yurt Dışı Şubeleri (Arşiv),Selected Balance Sheet Sizes Related to Residents in Turkey - Banks' Foreign Branches (Archive),HAFTALIK(CUMA),BANKALAR
+bie_cdur2,100303,Dayanıklı Tüketim Malları,Durable Consumer Goods,AYLIK,TCMB
+bie_cgd,9992002,Çalışma Gün Değişkeni Ortalama Düzeltilmiş (Arşiv),Working Day Variable (Mean Corrected) (Archive),AYLIK,TÜİK
+bie_cli,9992001,Bileşik Öncü Göstergeler Endeksi (MBÖNCÜ) (Arşiv),Composite Leading Indicator (Mboncu_Sue) (Archive),AYLIK,TCMB
+bie_cli2,1504,Bileşik Öncü Göstergeler Endeksi,Composite Leading Indicator Index,AYLIK,TCMB
+bie_cndu2,100303,Dayanıksız Tüketim Malları,Non-Durable Consumer Goods,AYLIK,TCMB
+bie_cons2,100303,Tüketim Malları,Consumer Goods,AYLIK,TCMB
+bie_dbafod,4001,Dış Borç Anapara ve Faiz Ödemeleri ile Diğer Transferler,Debt Service and Other Transfers,HAFTALIK(ÇARŞAMBA),BANKALAR
+bie_dbdisborc,9997007,Dış Borçlar (Arşiv),Outstanding External Debt (Ministry Of Treasury and Finance) (Archive),ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_dbfy,2004,Dükkan Birim Fiyatları,Retail Property Unit Prices,YILLIK,TCMB
+bie_dfe,2004,Dükkan Fiyat Endeksi,Retail Property Price Index,ÜÇ AYLIK,TCMB
+bie_dibsh,9998006,Banka Dışı Yurt İçi ve Yurt Dışı Yerleşik Kesimlerle Tüm Yurt Dışı Yerleşik Kesimlerin Mülkiyetindeki Devlet İç Borçlanma Senetleri (Arşiv),Domestic and Foreign Non-Bank Settlements and All Foreign Settlements Owned by the State Domestic Debt Securities (Archive),HAFTALIK(CUMA),"TCMB, Takasbank, Bankalar, Aracılar ve MKK"
+bie_dibspiydeg,450302,"DİBS, Piyasa Değeri","GDDS, Market Value",HAFTALIK(CUMA),"TCMB, TAKASBANK, MKK, HMB, BANKALAR, ARACI KURUMLAR"
+bie_dibsvade,450302,"DİBS, Vade Dağılımı","GDDS, By Maturity",HAFTALIK(CUMA),"TCMB, TAKASBANK, MKK, HMB, BANKALAR, ARACI KURUMLAR"
+bie_dibsyazdeg,450302,"DİBS, Yazılı Değer","GDDS, Face Value",HAFTALIK(CUMA),"TCMB, TAKASBANK, MKK, HMB, BANKALAR, ARACI KURUMLAR"
+bie_disyukvd,450106,Dış Yükümlülükler Vade Ayrımı ve Ödenmiş Sermaye - Bankacılık Sektörü,Equity and Maturity Breakdown For Foreign Liabilities - Banking Sector,AYLIK,BANKALAR
+bie_dkdovizgn,9993002,Kurlar-Döviz Kurları (Arşiv),Exchange Rates (Archive),GÜNLÜK,TCMB
+bie_dkdovytl,2501,Döviz Kurları,Exchange Rates,GÜNLÜK,TCMB
+bie_dkefektif,9993002,Kurlar-Efektif Kurlar (Arşiv),Exchange Rates_Banknotes (Archive),GÜNLÜK,TCMB
+bie_dkefkytl,2501,Efektif Kurlar,Effective Exchange Rates,GÜNLÜK,TCMB
+bie_dkkurbil,2501,Konvertibl Olmayan Döviz Kurları,Non-Convertible Exchange Rates,GÜNLÜK,TCMB
+bie_dovefdep,9995002,Döviz ve Efektif Piyasaları Karşılaşan Döviz Depo Piyasası İşlemleri (İşlem tarihi itibariyle) (Arşiv),Foreign Exchange and Banknotes Market Fx Deposit Market Intermediated Transactions (As Of Transaction Date) (Archive),İŞ GÜNÜ,TCMB
+bie_dovefmud,9993002,Merkez Bankasınca Yapılan Doğrudan Döviz Müdahaleleri (Dalgalı Döviz Kuru Rejiminde) (Arşiv),Bank Under The Floating Exchange Rate Regime Direct Foreign Exchange Interventions Of The Central (Archive),İŞ GÜNÜ,TCMB
+bie_dtbec,9997002,Özel Ticaret Sistemine Göre Dış Ticaret Geniş Ekonomik Grupların Sınıflamasına (BEC) Göre Dış Ticaret (Arşiv),Foreign Trade By Special Trade System Foreign Trade By Classification Of Broad Economic Categories (Bec) (Archive),AYLIK,TÜİK
+bie_dtihfb10,400701,Dış Ticaret İhracat Birim Değer Endeksi-BEC Sınıflamasına Göre (2015=100),Foreign Trade Export Unit Value Index by Classification of BEC (2015=100),AYLIK,TÜİK
+bie_dtihfby,9997001,Dış Ticaret İhracat Birim Değer Endeksi-BEC Sınıflamasına Göre (2003=100) (Arşiv),Foreign Trade Export Unit Value Index By Classification Of BEC (2003=100) (Archive),AYLIK,TÜİK
+bie_dtihfiy,9997001,Dış Ticaret İhracat Birim Değer Endeksi-ISIC Rev.3 Sınıflamasına Göre (2003=100) (Arşiv),Foreign Trade Export Unit Value Index By Isic Rev.3 Classification (2003=100) (Archive),AYLIK,TÜİK
+bie_dtihmb10,400701,Dış Ticaret İhracat Miktar Endeksi-BEC Sınıflamasına Göre (2015=100),Foreign Trade Export Volume Index by Classification of BEC (2015=100),AYLIK,TÜİK
+bie_dtihmby,9997001,Dış Ticaret İhracat Miktar Endeksi-BEC Sınıflamasına Göre (2003=100) (Arşiv),Foreign Trade Export Volume Index By Classification Of BEC (2003=100) (Archive),AYLIK,TÜİK
+bie_dtihmiy,9997001,Dış Ticaret İhracat Miktar Endeksi-ISIC Rev.3 Sınıflamasına Göre (2003=100) (Arşiv),Foreign Trade Export Volume Index By Isic Rev.3 Classification (2003=100) (Archive),AYLIK,TÜİK
+bie_dtihrfiy,9997001,Dış Ticaret İhracat Fiyat Endeksi-ISIC Rev.3 Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Export Price Index By Isic Rev.3 Classification (1994=100) (Archive),AYLIK,TÜİK
+bie_dtihrfyb,9997001,Dış Ticaret İhracat Fiyat Endeksi-BEC Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Export Price Index By Classification Of BEC (1994=100) (Archive),AYLIK,TÜİK
+bie_dtihrfyp,9997001,Dış Ticaret İhracat Fiyat Endeksi-Planlama Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Export Price Index By Classification Of Planning (1994=100) (Archive),AYLIK,TÜİK
+bie_dtihrmik,9997001,Dış Ticaret İhracat Miktar Endeksi-ISIC Rev.3 Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Export Volume Index By Isic Rev.3 Classification (1994=100) (Archive),AYLIK,TÜİK
+bie_dtihrmkb,9997001,Dış Ticaret İhracat Miktar Endeksi-BEC Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Export Volume Index By Classification Of BEC (1994=100) (Archive),AYLIK,TÜİK
+bie_dtihrmkp,9997001,Dış Ticaret İhracat Miktar Endeksi-Planlama Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Export Volume Index By Classification Of Planning (1994=100) (Archive),AYLIK,TÜİK
+bie_dtisic,9997002,"Özel Ticaret Sistemine Göre Dış Ticaret Ekonomik Faaliyetlere (ISIC, Rev.3) Göre Dış Ticaret (Arşiv)","Foreign Trade By Special Trade System Foreign Trade By Economic Activities (Isic, Rev 3) (Archive)",AYLIK,TÜİK
+bie_dtitfb10,400701,Dış Ticaret İthalat Birim Değer Endeksi-BEC Sınıflamasına Göre (2015=100),Foreign Trade Import Unit Value Index by Classification of BEC (2015=100),AYLIK,TÜİK
+bie_dtitfby,9997001,Dış Ticaret İthalat Birim Değer Endeksi-BEC Sınıflamasına Göre (2003=100) (Arşiv),Foreign Trade Import Unit Value Index By Classification Of BEC (2003=100) (Archive),AYLIK,TÜİK
+bie_dtitfiy,9997001,Dış Ticaret İthalat Birim Değer Endeksi-ISIC REV.3 Sınıflamasına Göre (2003=100) (Arşiv),Foreign Trade Import Unit Value Index By Isic Rev.3 Classification (2003=100) (Archive),AYLIK,TÜİK
+bie_dtithfiy,9997001,Dış Ticaret İthalat Fiyat Endeksi-ISIC REV.3 Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Import Price Index By Isic Rev.3 Classification (1994=100) (Archive),AYLIK,TÜİK
+bie_dtithfyb,9997001,Dış Ticaret İthalat Fiyat Endeksi-BEC Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Import Price Index By Classification Of BEC (1994=100) (Archive),AYLIK,TÜİK
+bie_dtithfyp,9997001,Dış Ticaret İthalat Fiyat Endeksi-Planlama Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Import Price Index By Classification Of Planning (1994=100) (Archive),AYLIK,TÜİK
+bie_dtithmik,9997001,Dış Ticaret İthalat Miktar Endeksi-ISIC REV.3 Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Import Volume Index By Isic Rev.3 Classification (1994=100) (Archive),AYLIK,TÜİK
+bie_dtithmkb,9997001,Dış Ticaret İthalat Miktar Endeksi-BEC Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Import Volume Index By Classification Of BEC (1994=100) (Archive),AYLIK,TÜİK
+bie_dtithmkp,9997001,Dış Ticaret İthalat Miktar Endeksi-Planlama Sınıflamasına Göre (1994=100) (Arşiv),Foreign Trade Import Volume Index By Classification Of Planning (1994=100) (Archive),AYLIK,TÜİK
+bie_dtitmb10,400701,Dış Ticaret İthalat Miktar Endeksi-BEC Sınıflamasına Göre (2015=100),Foreign Trade Import Volume Index by Classification of BEC (2015=100),AYLIK,TÜİK
+bie_dtitmby,9997001,Dış Ticaret İthalat Miktar Endeksi-BEC Sınıflamasına Göre (2003=100) (Arşiv),Foreign Trade Import Volume Index By Classification Of BEC (2003=100) (Archive),AYLIK,TÜİK
+bie_dtitmiy,9997001,Dış Ticaret İthalat Miktar Endeksi-ISIC REV.3 Sınıflamasına Göre (2003=100) (Arşiv),Foreign Trade Import Volume Index By Isic Rev.3 Classification (2003=100) (Archive),AYLIK,TÜİK
+bie_ebondpiydeg,450303,"Genel Yönetim Eurobondları, Piyasa Değeri","Eurobond Issued by General Goverment, Market Value",HAFTALIK(CUMA),"TCMB, TAKASBANK, HMB, BANKALAR, ARACI KURUMLAR, TİCARİ VERİ SAĞLAYICILARI"
+bie_ebondvade,450303,"Genel Yönetim Eurobondları, Vade ve Para Dağılımı","Eurobond Issued by General Government, Maturity and Market Value",HAFTALIK(CUMA),"TCMB, TAKASBANK, HMB, BANKALAR, ARACI KURUMLAR, TİCARİ VERİ SAĞLAYICILARI"
+bie_ebondyazdeg,450303,"Genel Yönetim Eurobondları, Yazılı Değer","Eurobond Issued by General Goverment, Face Value",HAFTALIK(CUMA),"TCMB, TAKASBANK, HMB, BANKALAR, ARACI KURUMLAR, TİCARİ VERİ SAĞLAYICILARI"
+bie_eftemkt,99960,Elektronik Fon Transfer ve Elektronik Menkul Kıymet Transfer (EFT - EMKT) Sistemi İşlemleri (Arşiv),Turkish Interbank Clearing _ Rtgs & Ests Operations (Archive),İŞ GÜNÜ,TCMB
+bie_eftemkt2,3503,Elektronik Fon Transfer (EFT) Sistemi ve Elektronik Menkul Kıymet Transfer (EMKT) Sistemi İşlemleri,Electronic Fund Transfer (EFT) System and Electronic Securities Transfer (ESTS) System Transactions,İŞ GÜNÜ,TCMB
+bie_elektuketim,5003,"Türkiye Elektrik Enerjisi (Üretim, Tüketim, İhracat, İthalat) (TEİAŞ)","Turkey Electricity Energy (Production, Consumption, Export, Import) (TETC)",GÜNLÜK,Türkiye Elektrik İdaresi A.Ş. (TEİAŞ)
+bie_enfbek,1005,Sektörel Enflasyon Beklentileri,Sectoral Inflation Expectations,AYLIK,"TCMB, TÜİK"
+bie_fadth,9998002,"Bankalarca Uygulanabilecek Azami Faiz Oranları, Yabancı Para Mevduat (Arşiv)",Weighted Average Of Maximum Interest Rates Applicable To Fx Deposits (Archive),AYLIK,BANKALAR
+bie_fafaiz,9998002,"Bankalarca Uygulanabilecek Azami Faiz Oranları, TL Mevduat (Arşiv)",Weighted Average Of Maximum Interest Rates Applicable To Turkish Lira Deposits (Archive),AYLIK,TÜİK
+bie_fdvy,5005,Finansal Kesim Dışındaki Firmaların Döviz Varlık ve Yükümlülükleri,Foreign Exchange Assets and Liabilities of Non-Financial Companies,AYLIK,"Para ve Banka İstatistikleri, UYP, Özel Sektörün Yurtdışından Sağladığı Krediler"
+bie_feoktg,99940,Özel Kapsamlı TÜFE Göstergeleri (2003=100) (Arşiv),Indicators For The CPIs Having Specified Coverage (2003=100) (Archive) (Archive),AYLIK,TÜİK
+bie_fgtopfiy4,99940,Fiyat Endeksi (Toptan Eşya) (1987=100) (Arşiv),Wholesale Prices Index (1987=100) (Archive),AYLIK,TÜİK
+bie_fgtopfiy5,99940,Fiyat Endeksi (Toptan Eşya) (1994=100) (Arşiv),Wholesale Prices Index (1994=100) (Archive),AYLIK,TÜİK
+bie_fgtukfiy2,99940,Fiyat Endeksi (Tüketici) (1987=100) (Arşiv),Consumer Price Index (1987=100) (Archive),AYLIK,TÜİK
+bie_fgtukfiy3,99940,Fiyat Endeksi (Tüketici) (1994=100) (Arşiv),Consumer Price Index (1994=100) (Archive),AYLIK,TÜİK
+bie_fhany,1002,Finansal Hizmetler İstatistikleri,Financial Services Statistics,AYLIK,TCMB
+bie_fhge,1002,Finansal Hizmetler Güven Endeksi,Financial Services Confidence Index,AYLIK,TCMB
+bie_finhestnks1,450701,"S.1 Toplam Ekonomi (Konsolide Olmayan, Stok)","S.1 Total Economy (Non-Consolidated, Stock)",ÜÇ AYLIK,TCMB
+bie_finhestnks11,450701,"S.11 Finansal Olmayan Kuruluşlar (Konsolide Olmayan, Stok)","S.11 Non-financial Corporations (Non-Consolidated, Stock)",ÜÇ AYLIK,"TÜİK, Karşı SektörVerileri"
+bie_finhestnks12,450701,"S.12 Finansal Kuruluşlar (Konsolide Olmayan, Stok)","S.12 Financial Corporations (Non-Consolidated, Stock)",ÜÇ AYLIK,"BANKALAR,TCMB,SPK,MKK,TAKASBANK,ARACI KURULUŞLAR BİRLİĞİ,BDDK,BIST,SEDDK, TARSİM"
+bie_finhestnks121,450701,"S.121 TCMB (Konsolide Olmayan, Stok)","S.121 CBRT (Non-Consolidated, Stock)",ÜÇ AYLIK,TCMB
+bie_finhestnks122,450701,"S.122 Mevduat Kabul Eden Kuruluşlar (Konsolide Olmayan, Stok)","S.122 Deposit Taking Corporations (Non-Consolidated, Stock)",ÜÇ AYLIK,BANKALAR
+bie_finhestnks123,450701,"S.123 Para Piyasası Fonları (Konsolide Olmayan, Stok)","S.123 Money Market Funds (Non-Consolidated, Stock)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks124,450701,"S.124 Para Piyasası Fonları Dışındaki Yatırım Fonları (Konsolide Olmayan, Stok)","S.124 Non-MMF Investment Funds (Non-Consolidated, Stock)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks125,450701,"S.125 Diğer Finansal Aracılar (Konsolide Olmayan, Stok)","S.125 Other Financial Intermediaries (Non-Consolidated, Stock)",ÜÇ AYLIK,"Aracı Kuruluşlar Birliği, BDDK"
+bie_finhestnks126,450701,"S.126 Finansal Yardımcılar (Konsolide Olmayan, Stok)","S.126 Financial Auxiliaries (Non-Consolidated, Stock)",ÜÇ AYLIK,"BDDK,SPK,BIST,MKK"
+bie_finhestnks127,450701,"S.128 + S.129 Sigorta Şirketleri ve Emeklilik Fonları (Konsolide Olmayan, Stok)","S.128 + S.129 Insurance Corporations and Pension Funds (Non-Consolidated, Stock)",ÜÇ AYLIK,"SEDDK, TARSİM, TAKASBANK"
+bie_finhestnks128,450701,"S.128 Sigorta Şirketleri (Konsolide Olmayan, Stok)","S.128 Insurance Corporations (Non-Consolidated, Stock)",ÜÇ AYLIK,"SEDDK, TARSİM"
+bie_finhestnks129,450701,"S.129 Emeklilik Fonları (Konsolide Olmayan, Stok)","S.129 Pension Funds (Non-Consolidated, Stock)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks12t,450701,"S.121 + S.122 + S.123 Parasal ve Finansal Kuruluşlar (Konsolide Olmayan, Stok)","S.121 + S.122 + S.123 Monetary Financial Institutions (Non-Consolidated, Stock)",ÜÇ AYLIK,"BANKALAR,TCMB,MKK,TAKASBANK"
+bie_finhestnks13,450701,"S.13 Genel Yönetim (Konsolide Olmayan, Stok)","S.13 General Government (Non-Consolidated, Stock)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks1311,450701,"S.1311 Merkezi Yönetim (Konsolide Olmayan, Stok)","S.1311 Central Government (Non-Consolidated, Stock)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks1313,450701,"S.1313 Yerel Yönetimler (Konsolide Olmayan, Stok)","S.1313 Local Governments (Non-Consolidated, Stock)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks1314,450701,"S.1314 Sosyal Güvenlik Kuruluşları (Konsolide Olmayan, Stok)","S.1314 Social Security Institutions (Non-Consolidated, Stock)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks14,450701,"S.14 Hanehalkı (Konsolide Olmayan, Stok)","S.14 Households (Non-Consolidated, Stock)",ÜÇ AYLIK,Karşı Sektör Verileri
+bie_finhestnks15,450701,"S.15 Hanehalkına Hizmet Veren Kar Amacı Olmayan Kuruluşlar (Konsolide Olmayan, Stok)","S.15 Non-Profit Institutions Serving Households (Non-Consolidated, Stock)",ÜÇ AYLIK,"TÜİK, Karşı SektörVerileri"
+bie_finhestnks2,450701,"S.2 Dünyanın Geri Kalanı (Konsolide Olmayan, Stok)","S.2 Rest of The World (Non-Consolidated, Stock)",ÜÇ AYLIK,"BANKALAR, TCMB"
+bie_finhestnks6101,450704,S.1 Toplam Ekonomi (Konsolide Akım),"S.1 Total Economy (Consolidated, Flow)",ÜÇ AYLIK,TCMB
+bie_finhestnks61011,450704,S.11 Finansal Olmayan Kuruluşlar (Konsolide Akım),"S.11 Non-financial Corporations (Consolidated, Flow)",ÜÇ AYLIK,"TÜİK, Karşı SektörVerileri"
+bie_finhestnks61012,450704,S.12 Finansal Kuruluşlar (Konsolide Akım),"S.12 Financial Corporations (Consolidated, Flow)",ÜÇ AYLIK,"BANKALAR,TCMB,SPK,MKK,TAKASBANK,ARACI KURULUŞLAR BİRLİĞİ,BDDK,BIST,SEDDK, TARSİM"
+bie_finhestnks610121,450704,S.121 TCMB (Konsolide Akım),"S.121 CBRT (Consolidated, Flow)",ÜÇ AYLIK,TCMB
+bie_finhestnks610122,450704,S.122 Mevduat Kabul Eden Kuruluşlar (Konsolide Akım),"S.122 Deposit Taking Corporations (Consolidated, Flow)",ÜÇ AYLIK,BANKALAR
+bie_finhestnks610123,450704,S.123 Para Piyasası Fonları (Konsolide Akım),"S.123 Money Market Funds (Consolidated, Flow)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks610124,450704,S.124 Para Piyasası Fonları Dışındaki Yatırım Fonları (Konsolide Akım),"S.124 Non-MMF Investment Funds (Consolidated, Flow)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks610125,450704,S.125 Diğer Finansal Aracılar (Konsolide Akım),"S.125 Other Financial Intermediaries (Consolidated, Flow)",ÜÇ AYLIK,"Aracı Kuruluşlar Birliği, BDDK"
+bie_finhestnks610126,450704,S.126 Finansal Yardımcılar (Konsolide Akım),"S.126 Financial Auxiliaries (Consolidated, Flow)",ÜÇ AYLIK,"BDDK,SPK,BIST,MKK"
+bie_finhestnks610127,450704,S.128 + S.129 Sigorta Şirketleri ve Emeklilik Fonları (Konsolide Akım),"S.128 + S.129 Insurance Corporations and Pension Funds (Consolidated, Flow)",ÜÇ AYLIK,"SEDDK, TARSİM, TAKASBANK"
+bie_finhestnks610128,450704,S.128 Sigorta Şirketleri (Konsolide Akım),"S.128 Insurance Corporations (Consolidated, Flow)",ÜÇ AYLIK,"SEDDK, TARSİM"
+bie_finhestnks610129,450704,S.129 Emeklilik Fonları (Konsolide Akım),"S.129 Pension Funds (Consolidated, Flow)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks61012t,450704,S.121 + S.122 + S.123 Parasal ve Finansal Kuruluşlar (Konsolide Akım),"S.121 + S.122 + S.123 Monetary Financial Institutions (Consolidated, Flow)",ÜÇ AYLIK,"BANKALAR,TCMB,MKK,TAKASBANK"
+bie_finhestnks61013,450704,S.13 Genel Yönetim (Konsolide Akım),"S.13 General Government (Consolidated, Flow)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks6101311,450704,S.1311 Merkezi Yönetim (Konsolide Akım),"S.1311 Central Government (Consolidated, Flow)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks6101313,450704,S.1313 Yerel Yönetimler (Konsolide Akım),"S.1313 Local Governments (Consolidated, Flow)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks6101314,450704,S.1314 Sosyal Güvenlik Kuruluşları (Konsolide Akım),"S.1314 Social Security Institutions (Consolidated, Flow)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks61014,450704,S.14 Hanehalkı (Konsolide Akım),"S.14 Households (Consolidated, Flow)",ÜÇ AYLIK,Karşı Sektör Verileri
+bie_finhestnks61015,450704,S.15 Hanehalkına Hizmet Veren Kar Amacı Olmayan Kuruluşlar (Konsolide Akım),"S.15 Non-Profit Institutions Serving Households (Consolidated, Flow)",ÜÇ AYLIK,"TÜİK, Karşı SektörVerileri"
+bie_finhestnks6102,450704,S.2 Dünyanın Geri Kalanı (Konsolide Akım),"S.2 Rest of The World (Consolidated, Flow)",ÜÇ AYLIK,"BANKALAR, TCMB"
+bie_finhestnks6201,450702,"S.1 Toplam Ekonomi (Konsolide Olmayan, Akım)","S.1 Total Economy (Non-Consolidated, Flow)",ÜÇ AYLIK,TCMB
+bie_finhestnks62011,450702,"S.11 Finansal Olmayan Kuruluşlar (Konsolide Olmayan, Akım)","S.11 Non-financial Corporations (Non-Consolidated, Flow)",ÜÇ AYLIK,"TÜİK, Karşı SektörVerileri"
+bie_finhestnks62012,450702,"S.12 Finansal Kuruluşlar (Konsolide Olmayan, Akım)","S.12 Financial Corporations (Non-Consolidated, Flow)",ÜÇ AYLIK,"BANKALAR,TCMB,SPK,MKK,TAKASBANK,ARACI KURULUŞLAR BİRLİĞİ,BDDK,BIST,SEDDK, TARSİM"
+bie_finhestnks620121,450702,"S.121 TCMB (Konsolide Olmayan, Akım)","S.121 CBRT (Non-Consolidated, Flow)",ÜÇ AYLIK,TCMB
+bie_finhestnks620122,450702,"S.122 Mevduat Kabul Eden Kuruluşlar (Konsolide Olmayan, Akım)","S.122 Deposit Taking Corporations (Non-Consolidated, Flow)",ÜÇ AYLIK,BANKALAR
+bie_finhestnks620123,450702,"S.123 Para Piyasası Fonları (Konsolide Olmayan, Akım)","S.123 Money Market Funds (Non-Consolidated, Flow)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks620124,450702,"S.124 Para Piyasası Fonları Dışındaki Yatırım Fonları (Konsolide Olmayan, Akım)","S.124 Non-MMF Investment Funds (Non-Consolidated, Flow)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks620125,450702,"S.125 Diğer Finansal Aracılar (Konsolide Olmayan, Akım)","S.125 Other Financial Intermediaries (Non-Consolidated, Flow)",ÜÇ AYLIK,"Aracı Kuruluşlar Birliği, BDDK"
+bie_finhestnks620126,450702,"S.126 Finansal Yardımcılar (Konsolide Olmayan, Akım)","S.126 Financial Auxiliaries (Non-Consolidated, Flow)",ÜÇ AYLIK,"BDDK,SPK,BIST,MKK"
+bie_finhestnks620127,450702,"S.128 + S.129 Sigorta Şirketleri ve Emeklilik Fonları (Konsolide Olmayan, Akım)","S.128 + S.129 Insurance Corporations and Pension Funds (Non-Consolidated, Flow)",ÜÇ AYLIK,"SEDDK, TARSİM, TAKASBANK"
+bie_finhestnks620128,450702,"S.128 Sigorta Şirketleri (Konsolide Olmayan, Akım)","S.128 Insurance Corporations (Non-Consolidated, Flow)",ÜÇ AYLIK,"SEDDK, TARSİM"
+bie_finhestnks620129,450702,"S.129 Emeklilik Fonları (Konsolide Olmayan, Akım)","S.129 Pension Funds (Non-Consolidated, Flow)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks62012t,450702,"S.121 + S.122 + S.123 Parasal ve Finansal Kuruluşlar (Konsolide Olmayan, Akım)","S.121 + S.122 + S.123 Monetary Financial Institutions (Non-Consolidated, Flow)",ÜÇ AYLIK,"BANKALAR,TCMB,MKK,TAKASBANK"
+bie_finhestnks62013,450702,"S.13 Genel Yönetim (Konsolide Olmayan, Akım)","S.13 General Government (Non-Consolidated, Flow)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks6201311,450702,"S.1311 Merkezi Yönetim (Konsolide Olmayan, Akım)","S.1311 Central Government (Non-Consolidated, Flow)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks6201313,450702,"S.1313 Yerel Yönetimler (Konsolide Olmayan, Akım)","S.1313 Local Governments (Non-Consolidated, Flow)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks6201314,450702,"S.1314 Sosyal Güvenlik Kuruluşları (Konsolide Olmayan, Akım)","S.1314 Social Security Institutions (Non-Consolidated, Flow)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks62014,450702,"S.14 Hanehalkı (Konsolide Olmayan, Akım)","S.14 Households (Non-Consolidated, Flow)",ÜÇ AYLIK,Karşı Sektör Verileri
+bie_finhestnks62015,450702,"S.15 Hanehalkına Hizmet Veren Kar Amacı Olmayan Kuruluşlar (Konsolide Olmayan, Akım)","S.15 Non-Profit Institutions Serving Households (Non-Consolidated, Flow)",ÜÇ AYLIK,"TÜİK, Karşı SektörVerileri"
+bie_finhestnks6202,450702,"S.2 Dünyanın Geri Kalanı (Konsolide Olmayan, Akım)","S.2 Rest of The World (Non-Consolidated, Flow)",ÜÇ AYLIK,"BANKALAR, TCMB"
+bie_finhestnks7101,450703,S.1 Toplam Ekonomi (Konsolide Stok),"S.1 Total Economy (Consolidated, Stock)",ÜÇ AYLIK,TCMB
+bie_finhestnks71011,450703,S.11 Finansal Olmayan Kuruluşlar (Konsolide Stok),"S.11 Non-financial Corporations (Consolidated, Stock)",ÜÇ AYLIK,"TÜİK, Karşı SektörVerileri"
+bie_finhestnks71012,450703,S.12 Finansal Kuruluşlar (Konsolide Stok),"S.12 Financial Corporations (Consolidated, Stock)",ÜÇ AYLIK,"BANKALAR,TCMB,SPK,MKK,TAKASBANK,ARACI KURULUŞLAR BİRLİĞİ,BDDK,BIST,SEDDK, TARSİM"
+bie_finhestnks710121,450703,S.121 TCMB (Konsolide Stok),"S.121 CBRT (Consolidated, Stock)",ÜÇ AYLIK,TCMB
+bie_finhestnks710122,450703,S.122 Mevduat Kabul Eden Kuruluşlar (Konsolide Stok),"S.122 Deposit Taking Corporations (Consolidated, Stock)",ÜÇ AYLIK,BANKALAR
+bie_finhestnks710123,450703,S.123 Para Piyasası Fonları (Konsolide Stok),"S.123 Money Market Funds (Consolidated, Stock)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks710124,450703,S.124 Para Piyasası Fonları Dışındaki Yatırım Fonları (Konsolide Stok),"S.124 Non-MMF Investment Funds (Consolidated, Stock)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks710125,450703,S.125 Diğer Finansal Aracılar (Konsolide Stok),"S.125 Other Financial Intermediaries (Consolidated, Stock)",ÜÇ AYLIK,"Aracı Kuruluşlar Birliği, BDDK"
+bie_finhestnks710126,450703,S.126 Finansal Yardımcılar (Konsolide Stok),"S.126 Financial Auxiliaries (Consolidated, Stock)",ÜÇ AYLIK,"BDDK,SPK,BIST,MKK"
+bie_finhestnks710127,450703,S.128 + S.129 Sigorta Şirketleri ve Emeklilik Fonları (Konsolide Stok),"S.128 + S.129 Insurance Corporations and Pension Funds (Consolidated, Stock)",ÜÇ AYLIK,"SEDDK, TARSİM, TAKASBANK"
+bie_finhestnks710128,450703,S.128 Sigorta Şirketleri (Konsolide Stok),"S.128 Insurance Corporations (Consolidated, Stock)",ÜÇ AYLIK,"SEDDK, TARSİM"
+bie_finhestnks710129,450703,S.129 Emeklilik Fonları (Konsolide Stok),"S.129 Pension Funds (Consolidated, Stock)",ÜÇ AYLIK,"MKK, TAKASBANK"
+bie_finhestnks71012t,450703,S.121 + S.122 + S.123 Parasal ve Finansal Kuruluşlar (Konsolide Stok),"S.121 + S.122 + S.123 Monetary Financial Institutions (Consolidated, Stock)",ÜÇ AYLIK,"BANKALAR,TCMB,MKK,TAKASBANK"
+bie_finhestnks71013,450703,S.13 Genel Yönetim (Konsolide Stok),"S.13 General Government (Consolidated, Stock)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks7101311,450703,S.1311 Merkezi Yönetim (Konsolide Stok),"S.1311 Central Government (Consolidated, Stock)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks7101313,450703,S.1313 Yerel Yönetimler (Konsolide Stok),"S.1313 Local Governments (Consolidated, Stock)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks7101314,450703,S.1314 Sosyal Güvenlik Kuruluşları (Konsolide Stok),"S.1314 Social Security Institutions (Consolidated, Stock)",ÜÇ AYLIK,Hazine ve Maliye Bakanlığı
+bie_finhestnks71014,450703,S.14 Hanehalkı (Konsolide Stok),"S.14 Households (Consolidated, Stock)",ÜÇ AYLIK,Karşı Sektör Verileri
+bie_finhestnks71015,450703,S.15 Hanehalkına Hizmet Veren Kar Amacı Olmayan Kuruluşlar (Konsolide Stok),"S.15 Non-Profit Institutions Serving Households (Consolidated, Stock)",ÜÇ AYLIK,"TÜİK, Karşı SektörVerileri"
+bie_finhestnks7102,450703,S.2 Dünyanın Geri Kalanı (Konsolide Stok),"S.2 Rest of The World (Consolidated, Stock)",ÜÇ AYLIK,"BANKALAR, TCMB"
+bie_finkre,9998006,Finansman Şirketleri Kredi Hacmi (Arşiv),Finance Companies Credit Volume (Archive),HAFTALIK(CUMA),BANKALAR
+bie_finsveri1,4504,Banka Dışı Finansal Kuruluşlar Sektörel Bilançosu,Non-bank Financial Corporations Sectoral Balance Sheet,ÜÇ AYLIK,BANKA DIŞIFİNANSAL KURULUŞLAR
+bie_finsveri2,4504,Sigorta Şirketleri ve Emeklilik Fonları Sektörel Bilançosu,Insurance Corporations and Pension Funds Sectoral Balance Sheet,ÜÇ AYLIK,BANKA DIŞIFİNANSAL KURULUŞLAR
+bie_finsveri3,4504,Finansal Aracılar Sektörel Bilançosu,Financial Intermediaries Sectoral Balance Sheet,ÜÇ AYLIK,BANKA DIŞIFİNANSAL KURULUŞLAR
+bie_finsveri4,4504,Finansal Yardımcılar Sektörel Bilançosu,Financial Auxiliaries Sectoral Balance Sheet,ÜÇ AYLIK,BANKA DIŞIFİNANSAL KURULUŞLAR
+bie_fobe2,100303,Gıda ve İçecekler,Food & Beverages,AYLIK,TCMB
+bie_fs101a,450502,Finansman Şirketleri Kredi Faiz Oranları (Stok),Financing Companies Interest Rates on Loans (Stock Data),AYLIK,Finansman Şirketleri
+bie_fxswap,3002,Türk Lirası Depoları Karşılığı Döviz Depoları İhaleleri,Foreign Exchange Deposits Against Turkish Lira Deposits Auctions,İŞ GÜNÜ,TCMB
+bie_gayrfsermol,150201,"Gayrisafi Sabit Sermaye Oluşumu, Cari Fiyatlarla","Gross Fixed Capital Formation, Current Prices",ÜÇ AYLIK,TÜİK
+bie_gaysafserzinc,150201,"Gayrisafi Sabit Sermaye Oluşumu, Zincirlenmiş Hacim Endeksi (2009=100)",Gross Fixed Capital Formation (Chained Volume) (2009=100),ÜÇ AYLIK,TÜİK
+bie_gelirmea,150202,"Gayrisafi Yurt İçi Hasıla - Gelir Yöntemiyle, Mevsim Etkisinden Arındırılmış, Cari Fiyatlarla","Gross Domestic Product - Income Approach, Seasonally Adjusted, Current Prices",ÜÇ AYLIK,TÜİK
+bie_goldimprt,2502,Altın İthalatı (BİST),Gold Imports (BIST),AYLIK,Borsa İstanbul
+bie_gsyhcrarnd,150201,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemiyle, Mevsim Etkisinden Arındırılmış, Cari Fiyatlarla","Gross Domestic Product - Expenditure Approach, Seasonally Adjusted, Current Prices",ÜÇ AYLIK,TÜİK
+bie_gsyhendex,150201,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemiyle, Zincirlenmiş Endeks (2009=100)","Gross Domestic Product - Expenditure Approach, Chained Index (2009=100)",ÜÇ AYLIK,TÜİK
+bie_gsyhgelrcar,150202,"Gayrisafi Yurt İçi Hasıla - Gelir Yöntemiyle, Cari Fiyatlarla","Gross Domestic Product - Income Approach, Current Prices",ÜÇ AYLIK,TÜİK
+bie_gsyhhrccar,150201,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemiyle, Cari Fiyatlarla","Gross Domestic Product - Expenditure Approach, Current Prices",ÜÇ AYLIK,TÜİK
+bie_gsyhhrczinc,150201,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemiyle, Zincirlenmiş Hacim","Gross Domestic Product - Expenditure Approach, Chained Volume",ÜÇ AYLIK,TÜİK
+bie_gsyhmevset,150201,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemiyle, Mevsim Etkisinden Arındırılmış Zincirlenmiş Hacim Endeksi (2009=100)","Gross Domestic Product - Expenditure Approach, Seasonally Adjusted Chained Volume Index (2009=100)",ÜÇ AYLIK,TÜİK
+bie_gsyhnihayil,150701,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemine Göre, Hanehalkı Nihai Tüketim Harcamaları, Zincirlenmiş Hacim Endeksi (2009=100)","Gross Domestic Product - Household Final Consumption, by Expenditure Category, Chained Volume Index (2009=100)",YILLIK,TÜİK
+bie_gsyhnihayilcr,150701,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemine Göre, Hanehalkı Nihai Tüketim Harcamaları, Cari Fiyatlarla","Gross Domestic Product - Household Final Consumption, by Expenditure Category, Current Prices",YILLIK,TÜİK
+bie_gsyhuretcar,150203,"Gayrisafi Yurt İçi Hasıla - Üretim Yöntemiyle, İktisadi Faaliyet Kollarına (A10) Göre, Cari Fiyatlarla","Gross Domestic Product - Production Approach, By Economic Activity (A10), Current Prices",ÜÇ AYLIK,TÜİK
+bie_gsyhuretzinc,150203,"Gayrisafi Yurt İçi Hasıla - Üretim Yöntemiyle, İktisadi Faaliyet Kollarına (A10) Göre, Zincirlenmiş Hacim","Gross Domestic Product - Production Approach, By Economic Activity (A10), Chained Volume",ÜÇ AYLIK,TÜİK
+bie_gsyihhy,9992004,GSYİH-Harcamalar Yöntemiyle (Cari ve Sabit (1998) Fiyatlarla) (Yeni Seri) (Arşiv),GDP_Expenditure Based (At Current and Fixed (1998) Prices) (New Series) (Archive),ÜÇ AYLIK,TÜİK
+bie_gsyihtf,9992004,GSYİH-Iktisadi Faaliyet Kollarına Gore Temel Fiyatlarla (Cari ve Sabit (1998) Fiyatlarla) (Yeni Seri) (Arşiv),GDP_By Kind Of Economic Activity in Basic Prices (At Current and Fixed (1998) Prices) (New Series) (Archive),ÜÇ AYLIK,TÜİK
+bie_gsyzhend,150201,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemiyle, Mevsim ve Takvim Etkisinden Arındırılmış Zincirlenmiş Hacim Endeksi (2009=100)","Gross Domestic Product - Expenditure Approach, Seasonally and Calendar Adjusted Chained Volume Index (2009=100)",ÜÇ AYLIK,TÜİK
+bie_gsyzhtaken,150201,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemiyle, Takvim Etkisinden Arındırılmış Zincirlenmiş Hacim Endeksi (2009=100)","Gross Domestic Product - Expenditure Approach, Calendar Adjusted Chained Volume Index (2009=100)",ÜÇ AYLIK,TÜİK
+bie_hanebek,1007,Hanehalkı Beklenti İstatistikleri,Household Expectations Statistics,AYLIK,"TCMB, TÜİK"
+bie_hanebekdag,1007,Hanehalkı Enflasyon Beklentilerinin Dağılımları,Distributions of Households’ Inflation Expectations,AYLIK,"TCMB, TÜİK"
+bie_hanebekdemog,1007,Demografik Kırılımda Sonuçlar,Results in Demographic Breakdown,AYLIK,"TCMB, TÜİK"
+bie_hariccariacik,4001,"Cari İşlemler Hesabı, Parasal Olmayan Altın ve Enerji Dış Ticareti","Current Account, Non-Monetary Gold and Energy Foreign Trade",AYLIK,"TÜİK, TCMB"
+bie_hdbsc,9998003,"Şirketlerce Yurt Dışında İhraç Edilen Borçlanma Senetleri (ABD doları, Piyasa Değeri, Stok (Arşiv)","Corporate Bonds Issued Abroad (US dollars, Market Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, REUTERS, MKK, BANKALAR, ARACILAR"
+bie_hdbsn,9998003,"Şirketlerce Yurt Dışında İhraç Edilen Borçlanma Senetleri (ABD doları, Nominal Değer, Stok (Arşiv)","Corporate Bonds Issued Abroad (US dollars, Nominal Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, REUTERS, MKK, BANKALAR, ARACILAR"
+bie_hkfe,99940,Konut Fiyat Endeksi (KFE) (2017=100) (Arşiv),Residential Property Price Index (RPPI) (2017=100) (Archive),AYLIK,TCMB
+bie_hpbitablo1,4502,Para Arzı,Monetary Aggregates,HAFTALIK(CUMA),"Bankalar, TCMB, Takasbank, MKK, HMB"
+bie_hpbitablo2,4502,Bankacılık Sektörü Seçilmiş Bilanço Büyüklükleri (Yurt İçi Şubeler),Banking Sector Selected Balance Sheet Items (Domestic Branches),HAFTALIK(CUMA),"Bankalar, TMSF"
+bie_hpbitablo3,4502,Bankacılık Sektörü Türk Lirası Mevduatı (Yurt İçi Şubeler),Banking Sector Turkish Lira Deposits (Domestic Branches),HAFTALIK(CUMA),Bankalar
+bie_hpbitablo4,4502,Bankacılık Sektörü Yabancı Para Mevduatı (Yurt İçi Şubeler),Banking Sector Foreign Exchange Deposits (Domestic Branches),HAFTALIK(CUMA),Bankalar
+bie_hpbitablo5,4502,Yabancı Para Mevduatta Haftalık Değişim ve Parite Etkisi (Yurt İçi Şubeler),Weekly Change in Foreign Exchange Deposits and Parity Effect (Domestic Branches),HAFTALIK(CUMA),Bankalar
+bie_hpbitablo6,4502,Bankacılık Sektörü Seçilmiş Kredi Büyüklükleri (Yurt İçi Şubeler),Banking Sector Selected Loans (Domestic Branches),HAFTALIK(CUMA),Bankalar
+bie_hpbitablo7,4502,Finansman Şirketleri Seçilmiş Kredi Büyüklükleri,Financing Companies' Selected Loans,HAFTALIK(CUMA),Finansman Şirketleri
+bie_hpbitablo8,4502,Bankaların Yurt Dışı Şubelerinin Seçilmiş Bilanço Büyüklükleri,Selected Balance Sheet Items of Banks' Branches Abroad With Residents in Türkiye,HAFTALIK(CUMA),Bankalar
+bie_hufe,2007,Hizmet Üretici Fiyat Endeksi,Service Producer Price Index,AYLIK,TÜİK
+bie_ihracatbec,400702,Genel Ticaret Sistemine Göre Dış Ticaret Geniş Ekonomik Grupların Sınıflamasına (BEC) Göre İhracat,Foreign Trade by General Trade System Exports by Classification of Broad Economic Categories (BEC) (TURKSTAT),AYLIK,TÜİK
+bie_ihrisicrev4,400702,"Genel Ticaret Sistemine Göre Dış Ticaret Ekonomik Faaliyetlere (ISIC, Rev. 4) Göre İhracat","Foreign Trade by General Trade System Exports by Economic Activities (ISIC, Rev.4) (TURKSTAT)",AYLIK,TÜİK
+bie_imdgkk,9999003,Kazanç Endeksi-İmalat Sanayi-Diğer İşlerde Çalışan Kişi Başına (1997=100) (Arşiv),Index Of Earning Per Other Worker In Manufacturing Industry (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imdgkkr,9999003,Kazanç Endeksi (Reel)-İmalat Sanayi-Diğer İşlerde Çalışan Kişi Başına (1997=100) (Arşiv),Index Of Real Earning Per Other Worker In Manufacturing Industry (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imfca,5501,IMF - Cari İşlemler Dengesi Net (ABD doları),IMF - Current Account Balance Net (USD),ÜÇ AYLIK,Uluslararası Para Fonu
+bie_imfcpind,5501,IMF - Tüketici Fiyat Endeksi (2010=100),IMF - Consumer Price Index (2010=100),AYLIK,Uluslararası Para Fonu
+bie_imfgdpn,5501,"IMF - GSYH, Nominal (Ulusal Para Birimi)","IMF - GDP, Nominal (Domestic Currency)",ÜÇ AYLIK,Uluslararası Para Fonu
+bie_imfgdpr,5501,"IMF - GSYH, Reel (Ulusal Para Birimi)","IMF - GDP, Real (Domestic Currency)",ÜÇ AYLIK,Uluslararası Para Fonu
+bie_imfgdpusdn,5501,"IMF - GSYH, Nominal (ABD doları)","IMF - GDP, Nominal (USD)",YILLIK,Uluslararası Para Fonu
+bie_imfgdpusdpc,5501,"IMF - GSYH, Nominal, Kişi Başı (ABD doları)","IMF - GDP, Nominal, Per Capita (USD)",YILLIK,Uluslararası Para Fonu
+bie_imfiip,5501,IMF - Uluslararası Yatırım Pozisyonu (Net),IMF - Net International Investment Position,ÜÇ AYLIK,Uluslararası Para Fonu
+bie_imfmbm,5501,IMF - Geniş Para Arzı (M3) (Ulusal Para Birimi),"IMF - Monetary, Broad Money, (Domestic Currency)",AYLIK,Uluslararası Para Fonu
+bie_imurk,9992002,Çalışanlar Endeksi-İmalat Sanayi Üretiminde (1997=100) (Arşiv),Index of Production Workers Working in Manufacturing Industry (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imurkk,9999003,Kazanç Endeksi-İmalat Sanayi-Üretimde Çalışan Kişi Başına (1997=100) (Arşiv),Index Of Earning Per Production Worker In Manufacturing Industry (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imurkkr,9999003,Kazanç Endeksi (Reel)-İmalat Sanayi-Üretimde Çalışan Kişi Başına (1997=100) (Arşiv),Index Of Real Earning Per Production Worker In Manufacturing Industry (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imurkv,9999003,Kısmi Verimlilik Endeksi-İmalat Sanayi-Üretimde Çalışan Kişi Başına (1997=100) (Arşiv),Index Of Partial Productivity Per Production Worker (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imurs,9992002,Çalışılan Saat Endeksi-İmalat Sanayi Üretiminde (1997=100) (Arşiv),Index of Production Hours Worked in Manufacturing Industry (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imursu,9992002,Ücret Endeksi-İmalat Sanayi-Üretimde Çalışılan Saat (Arşiv),Index of Wages Per Production Hour Worked in Manufacturing Industry (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imursur,9999003,Ücret Endeksi (Reel)-İmalat Sanayi-Üretimde Çalışılan Saat (Arşiv),Index Of Real Wages Per Production Hour Worked In Manufacturing Industry (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_imursv,9999003,Kısmi Verimlilik Endeksi-İmalat Sanayi-Üretimde Çalışılan Saat Başına (1997=100) (Arşiv),Index Of Partial Productivity Per Production Hour Worked (1997=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_intm2,100303,Ara Malları,Intermediate Goods,AYLIK,TCMB
+bie_inve2,100303,Yatırım Malları,Investment Goods,AYLIK,TCMB
+bie_inypkl,9999002,İnşaat İstatistikleri-Yapı Kullanma İzin Belgelerine Göre 1991 _ 2004 (Arşiv),Construction Statistics According To Occupancy Permits 1991 _ 2004 (Archive),AYLIK,TÜİK
+bie_inypkl1,9999002,İnşaat İstatistikler -Yapı Kullanma İzin Belgelerine Göre (Arşiv),Construction Statistics According to Occupancy Permits (Archive),AYLIK,TÜİK
+bie_inypkl2,5002,İnşaat İstatistikleri-Yapı Kullanma İzin Belgelerine Göre,Construction Statistics According to Occupancy Permits,AYLIK,TÜİK
+bie_inyprh,9999002,İnşaat İstatistikleri-Yapı Ruhsatına Göre (Arşiv),Construction Statistics According To Construction Permits (Archive),AYLIK,TÜİK
+bie_inyprh1,9999002,İnşaat İstatistikleri-Yapı Ruhsatına Göre 2002 _ 2025 (Arşiv),Construction Statistics According to Construction Permits 2002 _ 2025 (Archive),AYLIK,TÜİK
+bie_inyprh2,5002,İnşaat İstatistikleri-Yapı Ruhsatına Göre,Construction Statistics According to Construction Permits,AYLIK,TÜİK
+bie_isgucarsiv,9992002,Temel İş Gücü (Arşiv),"Basic Labour Force Indicators (Ins,15+Age) (Archive)",AYLIK,TÜİK
+bie_iskko,9999001,Kapasite Kullanım Oranı-İmalat Sanayi (Ağırlıklı-NACE REV.1.1) (Arşiv),Capacity Utilization Rate Of Manufacturing Industry (Weighted_Nace Rev.1.1) _ Central Bank (Archive),AYLIK,TÜİK
+bie_istihsk2,9992002,İstihdam Edilenlerin İktisadi Faaliyet Kollarına Göre Dağılımı (ADNKS'ye Göre) (Arşiv),Employment by Branch of Activity (After Abprs) (Archive),AYLIK,TÜİK
+bie_istihsk3,9992002,İstihdam Edilenlerin İktisadi Faaliyet Kollarına Göre Dağılımı (ADNKS'ye Göre) (NACE REV 1.1) (Arşiv),Employment by Branch of Activity (After Abprs) (Nace Rev 1.1) (Archive),AYLIK,TÜİK
+bie_istihsk4,9992002,İstihdam Edilenlerin İktisadi Faaliyet Kollarına Göre Dağılımı (NACE REV 2) (Yeni Nüfus Projeksiyonlarına Göre) (Arşiv),Employment by Branch of Activity (Nace Rev 2) (By The New Population Projections) (Archive),AYLIK,TÜİK
+bie_istirakbs,450108,İştirakler - Bankacılık Sektörü,Participations and Subsidiaries - Banking Sector,AYLIK,BANKALAR
+bie_ithalatbec,400702,Genel Ticaret Sistemine Göre Dış Ticaret Geniş Ekonomik Grupların Sınıflamasına (BEC) Göre İthalat,Foreign Trade by General Trade System Imports by Classification of Broad Economic Categories (BEC) (TURKSTAT),AYLIK,TÜİK
+bie_ithisicrev4,400702,"Genel Ticaret Sistemine Göre Dış Ticaret Ekonomik Faaliyetlere (ISIC, Rev. 4) Göre İthalat","Foreign Trade by General Trade System Imports by Economic Activities (ISIC, Rev.4) (TURKSTAT)",AYLIK,TÜİK
+bie_ito68,2002,Geçinme Endeksi (Ücretliler) (1968=100),Living Index (Wage Earners) (1968=100),AYLIK,İstanbul Ticaret Odası (İTO)
+bie_ito95,2002,Geçinme Endeksi (Ücretliler),Living Index (Wage Earners),AYLIK,İstanbul Ticaret Odası (İTO)
+bie_itotefe,2002,Toptan Eşya Fiyat Endeksi,Wholesale Goods Price Index,AYLIK,İstanbul Ticaret Odası (İTO)
+bie_itoteuc,2002,İstanbul Toptan Eşya Fiyat ve Ücretliler Geçinme Endeksleri (Tüm Seriler),Istanbul Wholesale Goods Price and Wage Earners' Living Indexes (All Series),AYLIK,İstanbul Ticaret Odası (İTO)
+bie_itouge2023,2002,İstanbul Tüketici Fiyat Endeksi,Istanbul Consumer Price Index,AYLIK,İstanbul Ticaret Odası (İTO)
+bie_itouge85,2002,İstanbul Geçinme Endeksi (Ücretliler),Istanbul Living Index (Wage Earners),AYLIK,İstanbul Ticaret Odası (İTO)
+bie_iyabgs2s,100304,Çalışan Sayısı 250'den Az Olan Firmalar,Firms with Less Than 250 Employees,AYLIK,TCMB
+bie_iyabgs3s,100304,Çalışan Sayısı 250 İle 499 Arasında Olan Firmalar,Firms with 250 to 499 Employees,AYLIK,TCMB
+bie_iyabgs4s,100304,Çalışan Sayısı 500 ve Üzeri Olan Firmalar,Firms with 500 or More Employees,AYLIK,TCMB
+bie_iyama,100302,İktisadi Yönelim İstatistikleri Mevsimsellikten Arındırılmış,Business Tendency Statistics Seasonally Adjusted,AYLIK,TCMB
+bie_iyaw2,100302,İktisadi Yönelim İstatistikleri,Business Tendency Statistics,AYLIK,TCMB
+bie_kalanvade,400401,Kalan Vadeye Göre Borç,Debt Stock on a Remaining Maturity Basis,AYLIK,TCMB
+bie_kalvadbg,400401,Kalan Vadeye Göre Borç-Borçlu Bazında,Debt Stock on a Remaining Maturity Basis By Sector,AYLIK,TCMB
+bie_kamuborcy,9992003,Kamu Kesimi Borçlanma Gereği (SBB) (Arşiv),Public Sector Borrowing Requirement (SBO) (Archive),YILLIK,T.C. Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı
+bie_kartmetre,4508,BKM - Kartlı Ödeme Endeksi (Nisan 2015=100),BKM - Card Payment Index (April 2015=100),AYLIK,Banka Kartları Merkezi
+bie_kavramsal,4502,Para Arzı Endeksi (30.12.2005=100),Index of Monetary Aggregates (30.12.2005=100),HAFTALIK(CUMA),"Bankalar, TCMB, Takasbank, MKK, HMB"
+bie_kbdvdy,450106,Dış Varlık Yükümlülükler - Katılım Bankaları,Foreign Assets and Liabilities - Participation Banks,AYLIK,BANKALAR
+bie_kbgelir,9992003,Konsolide Bütçe Gelirleri (Arşiv),Consolidated Budget Revenues (Archive),AYLIK,Hazine ve Maliye Bakanlığı
+bie_kbgely,9992003,Konsolide Bütçe Gelirleri-Yeni Tanım (Arşiv),Consolidated Budget Revenues_New Description (Archive),AYLIK,Hazine ve Maliye Bakanlığı
+bie_kbgen,1503,Genel Bütçe Dengesi ve Finansmanı,General Budget Balance and Financing,AYLIK,T.C. Hazine ve Maliye Bakanlığı
+bie_kbgider,9992003,Konsolide Bütçe Giderleri (Arşiv),Consolidated Budget Expenditures (Archive),AYLIK,Hazine ve Maliye Bakanlığı
+bie_kbgidf,9992003,Konsolide Bütçe Kümülatif Gerçekleşmeleri-Fonksiyonel ve Ekonomik Sınıflandırma Düzeyinde (Arşiv),Cross Classification Of Functional and Economic Classifications Of Cumulative Expenses (Archive),AYLIK,Hazine ve Maliye Bakanlığı
+bie_kbgidy,9992003,Konsolide Bütçe Giderleri-Yeni Tanım (Arşiv),Consolidated Budget Expenditures_New Description (Archive),AYLIK,Hazine ve Maliye Bakanlığı
+bie_kbicborc,1505,İç Borç Stoku,Domestic Debt Stock,AYLIK,T.C. Hazine ve Maliye Bakanlığı
+bie_kbkborc,9992003,Kamu Kesimi Borçlanma Gereği (Arşiv),Public Sector Borrowing Requirement (MOD) (Archive),YILLIK,T.C. Kalkınma Bakanlığı
+bie_kbkmkre,450105,Krediler - Katılım Bankaları,Loans - Participation Banks,AYLIK,BANKALAR
+bie_kbkons,9992003,Konsolide Bütçe (Arşiv),Consolidated Budget (Archive),AYLIK,Hazine ve Maliye Bakanlığı
+bie_kbkony,9992003,Konsolide Bütçe Gerçekleşmeleri Kümülatif)-Yeni Tanım (Arşiv),Consolidated Budget Realizations_New Description (Archive),AYLIK,Hazine ve Maliye Bakanlığı
+bie_kbmgel,1503,Merkezi Yönetim Bütçe Gelirleri-Yeni Tanım,Central Government Budget Revenues - New Definition,AYLIK,T.C. Hazine ve Maliye Bakanlığı
+bie_kbmgid,1503,Merkezi Yönetim Bütçe Harcamaları-Yeni Tanım,Central Government Budget Expenses - New Definition,AYLIK,T.C. Hazine ve Maliye Bakanlığı
+bie_kbozgel,1506,Özelleştirmeden Elde Edilen Gelirler,Privatization Revenue,YILLIK,Özelleştirme İdaresi Başkanlığı
+bie_kbsecbil,9998006,Katılım Bankaları Seçilmiş Bilanço Büyüklükleri (Arşiv),Selected Balance Sheet Items Of Participation Banks (Archive),HAFTALIK(CUMA),BANKALAR
+bie_kbtukkre,9998006,Katılım Bankaları Tüketici Kredileri (Orijinal Vadeye Göre) (TL+YP) (Arşiv),Participation Banks' Consumer Loans (By Original Maturity) (TRY+FX) (Archive),HAFTALIK(CUMA),BANKALAR
+bie_kfe,2003,Konut Fiyat Endeksi,Residential Property Price Index,AYLIK,TCMB
+bie_kisavadeborc,400401,Borçluya Göre Dağılım,Sectoral Classification,AYLIK,TCMB
+bie_kisavadeborcarsiv,9997004,Kısa Vadeli Dış Borç Stoku (Borçluya Göre) (Arşiv),Short_Term External Debt Stock By Borrower (Archive),AYLIK,TCMB
+bie_kkhartut,4508,Banka Kartı ve Kredi Kartı Harcama Tutarı (Akım),Debit Card and Credit Card Total Expenditure Amount (Flow),HAFTALIK(CUMA),Bankalar
+bie_kkislade,4508,Banka Kartı ve Kredi Kartı İşlem Adedi (Akım),"Weekly, Debit Card and Credit Card Number of Transactions (Flow)",HAFTALIK(CUMA),Bankalar
+bie_kkm,450104,Kur Korumalı Mevduat ve Katılma Hesapları (Stok),Foreign Exchange Protected Deposit and Participation Accounts (Outstanding),AYLIK,BANKALAR
+bie_kko2,5001,İmalat Sanayi Kapasite Kullanım Oranı,Capacity Utilization Rate of Manufacturing Industry,AYLIK,TCMB
+bie_kkoisma,5001,İmalat Sanayi Kapasite Kullanım Oranı - Mevsimsellikten Arındırılmış,Capacity Utilization Rate of Manufacturing Industry - Seasonally Adjusted,AYLIK,TCMB
+bie_kmbmcz,9998006,Mevduat Bankaları ve Kalkınma ve Yatırım Bankalarının Gerçeğe Uygun Değ.Farkı Kar/Zarara Yan.ve Sat.Hazır Menkul Değerler (Menkul Kıymet Türlerine Göre) (Arşiv),Deposit Money Banks' and Investment and Development Banks' Sec. At Fair Value Thr. Profit Or Loss and Securities Available For Sale (By Type Of Securities) (Archive),HAFTALIK(CUMA),BANKALAR
+bie_kmbscz,450107,Menkul Değerler - Bankacılık Sektörü,Securities - Banking Sector,AYLIK,BANKALAR
+bie_kmkart,9998006,"Mevduat Bankaları Tüketici Kredileri, Taksitli Ticari Krediler ve Kredi Kartları (Arşiv)","Deposit Money Banks Consumer Loans, Commercial Installment Loans and Credit Cards (Archive)",HAFTALIK(CUMA),BANKALAR
+bie_kmkbksmv,450104,Toplanan Fonlar (Kurumsal Sektörlere Göre) - Katılım Bankaları,Funds Raised (Sectoral Breakdown) - Participation Banks,AYLIK,BANKALAR
+bie_kmkbtrmv,450104,Toplanan Fonlar (Türlerine Göre) - Katılım Bankaları,Funds Raised (Deposit Types) - Participation Banks,AYLIK,BANKALAR
+bie_kmkbvdmv,450104,Toplanan Fonlar (Vade Gruplarına Göre) - Katılım Bankaları,Funds Raised (Maturity Breakdown) - Participation Banks,AYLIK,BANKALAR
+bie_kmkhac,9998006,"Bankacılık Sektörü Kredi Hacmi,Katılım Bankaları Hariç (Arşiv)",Banking Sector Credit Volume_Excluding Participation Banks (Archive),HAFTALIK(CUMA),BANKALAR
+bie_kmkykre,450105,Krediler - Kalkınma ve Yatırım Bankaları,Loans - Investment and Development Banks,AYLIK,BANKALAR
+bie_kmmbgmv,450104,Mevduat (Vade Gruplarına Göre) - Mevduat Bankaları,Deposits (Maturity Breakdown) - Deposit Money Banks,AYLIK,BANKALAR
+bie_kmmbkcz,450107,Menkul Değerler (Kurumsal Sektörlere Göre) - Mevduat Bankaları,Securities (Sectoral Breakdown) - Deposit Money Banks,AYLIK,BANKALAR
+bie_kmmbkmv,450104,Mevduat (Kurumsal Sektörlere Göre) - Mevduat Bankaları,Deposits (Sectoral Breakdown) - Deposit Money Banks,AYLIK,BANKALAR
+bie_kmmbkre,450105,Krediler - Mevduat Bankaları,Loans - Deposit Money Banks,AYLIK,BANKALAR
+bie_kmmbmev,9998006,Mevduat Bankalarındaki Mevduat (Arşiv),Deposits With Deposit Money Banks (Archive),HAFTALIK(CUMA),BANKALAR
+bie_kmmbtcz,9998004,"Mevduat Bankaları, Menkul Değerler (Türlerine Göre) (Arşiv)","Securities (Security Types), Deposit Money Banks (Archive)",AYLIK,BANKALAR
+bie_kmmbtmv,450104,Mevduat (Türlerine Göre) - Mevduat Bankaları,Deposits (Deposit Types) - Deposit Money Banks,AYLIK,BANKALAR
+bie_kmmenk,9998006,Mevduat Bankaları ve Kalkınma ve Yatırım Bankalarının Vadeye Kadar Elde Tutulacak Menkul Değerleri-Menkul Kıymet Türlerine Göre (Arşiv),Deposit Money Banks' and Investment and Development Banks' Investment Securities To Be Held Till Maturity_By Type Of Securities (Archive),HAFTALIK(CUMA),BANKALAR
+bie_kmyikrhc,9998004,"Bankacılık Sektörü,Yurt İçi Kredi Hacmi (Arşiv)","Domestic Loans, Banking Sector (Archive)",AYLIK,BANKALAR
+bie_kredi,9998006,Krediler - Bankacılık Sektörü (Arşiv),Loans - Banking Sector (Archive),HAFTALIK(CUMA),"BANKALAR, TCMB"
+bie_krehacbs,450105,Krediler - Bankacılık Sektörü,Loans - Banking Sector,AYLIK,Bankalar
+bie_kt100h,450501,Kredi Faiz Oranları (Akım),Interest Rates on Loans (Flow Data),HAFTALIK(CUMA),"Mevduat, Kalkınma ve Yatırım Bankaları"
+bie_kt200h,450501,Kredi Kâr Oranları (Akım),Profit Rates on Loans (Flow Data),HAFTALIK(CUMA),Katılım Bankaları
+bie_kt210a,450502,Kredi Faiz Oranları (Stok),Interest Rates on Loans (Stock Data),AYLIK,"Mevduat, Kalkınma ve Yatırım Bankaları"
+bie_kt210aisl,450503,Bankalarca İşletme Kredilerine Fiilen Uygulanan Azami Faiz Oranları,Banks Effective Maximum Interest Rate on Business Loans,AYLIK,"Mevduat, Kalkınma ve Yatırım Bankaları"
+bie_kt210aks,450502,Kredi Kâr Oranları (Stok),Profit Rates on Loans (Stock Data),AYLIK,Katılım Bankaları
+bie_kvadealacakli,400401,Alacaklıya Göre Dağılım,Creditor Composition,ÜÇ AYLIK,TCMB
+bie_kvadedovkomp,400401,Döviz Kompozisyonu,Currency Composition,ÜÇ AYLIK,TCMB
+bie_kvdbs,400401,Kısa Vadeli Borç Stoku,Short Term Debt Stock,AYLIK,TCMB
+bie_kvdbsarsiv,9997004,Kısa Vadeli Dış Borç Stoku (Arşiv),Short_Term External Debt Stock (Archive),AYLIK,TCMB
+bie_kybkatfon,4506,Zorunlu Karşılığa Tabi Katılım Fonları,Participation Funds Subject To Reserve Requirements,HAFTALIK(CUMA),TCMB
+bie_kybtkov,9998006,Kalkınma ve Yatırım Bankaları Tüketici Kredileri (Orijinal Vadeye Göre) (TL+YP) (Arşiv),Investment and Development Banks Consumer Loans (By Original Maturity) (TRY+FX) (Archive),HAFTALIK(CUMA),BANKALAR
+bie_kybtkttk,9998006,Kalkınma ve Yatırım Bankaları Tüketici Kredileri ve Taksitli Ticari Krediler (Arşiv),Investment and Development Banks Consumer Loans and Commercial Installment Loans (Archive),HAFTALIK(CUMA),BANKALAR
+bie_kydvdy,450106,Dış Varlık Yükümlülükler - Kalkınma ve Yatırım Bankaları,Foreign Assets and Liabilities - Investment and Development Banks,AYLIK,BANKALAR
+bie_mbblnca,3003,Merkez Bankası Bilançosu (Yeni),Central Bank Balance Sheet (New),AYLIK,TCMB
+bie_mbblnch,3004,Merkez Bankası Haftalık Vaziyeti (Yeni),Central Bank Weekly Statement (New),HAFTALIK(CUMA),TCMB
+bie_mbbmdc,9998006,Mevduat Bankalarının Vadeye Kadar Elde Tutulacak Menkul Değerleri-Banka Grupları ve Menkul Kıymet Türlerine Göre (Arşiv),Deposit Money Banks Investment Securities To Be Held Till Maturity_By Bank Groups and Type Of Securities (Archive),HAFTALIK(CUMA),BANKALAR
+bie_mbdvdy,450106,Dış Varlık Yükümlülükler - Mevduat Bankaları,Foreign Assets and Liabilities - Deposit Money Banks,AYLIK,BANKALAR
+bie_mbgven,9991003,Tüketici Güven Endeksi ve Tüketici Eğilim Anketi Sorularına İlişkin Endeksler (Arşiv),Consumer Confidence Index and Indices of Consumer Tendency Survey Questions (Archive),AYLIK,TÜİK
+bie_mbgven2,1006,Tüketici Güven Endeksi ve Tüketici Eğilim Anketi Sorularına İlişkin Mevsim Etkilerinden Arındırılmamış Endeksler,Seasonally Unadjusted Consumer Confidence Index and Indices of Consumer Tendency Survey Questions,AYLIK,TÜİK
+bie_mbrkge,9991001,Güven Endeksi-Reel Kesim (MBRKGE) (Arşiv),Confidence Index_Real Sector (Archive),AYLIK,TÜİK
+bie_mbrkgey,9991001,Güven Endeksi-Reel Kesim (MBRKGE) Ağırlıklı-NACE REV.1.1 (Arşiv),Confidence Index_Real Sector (RSCI) Weighted_Nace Rev.1.1 (Archive),AYLIK,TÜİK
+bie_mbtkeg,9991003,Tüketici Eğilim Anketi (Arşiv),Consumer Tendency Survey (Archive),AYLIK,TÜİK
+bie_menkul,9998006,Menkul Değerler - Bankacılık Sektörü (Arşiv),Securities - Banking Sector (Archive),HAFTALIK(CUMA),BANKALAR
+bie_metalihr,400702,71.Fasıl İhracatı,Chapter 71 Exports,AYLIK,TÜİK
+bie_metalith,400702,71.Fasıl İthalatı,Chapter 71 Imports,AYLIK,TÜİK
+bie_mevduat,9998006,Mevduatlar - Bankacılık Sektörü (Arşiv),Deposits - Banking Sector (Archive),HAFTALIK(CUMA),BANKALAR
+bie_mkaltytl,2502,Altın Fiyatları (Ankara Kuyumcular ve Saatçiler Odası),Gold Prices (Ankara Chamber of Jewelers and Watchmakers),AYLIK,Serbest Piyasa
+bie_mkbral,9993001,Altın Borsası İşlemleri-İstanbul (Arşiv),Istanbul Gold Exchange (Archive),İŞ GÜNÜ,Borsa İstanbul
+bie_mkbrgn,3002,Borsa İstanbul Endeksi ve Günlük İşlem Hacmi,Borsa Istanbul Index and Daily Trading Volume,İŞ GÜNÜ,Borsa İstanbul
+bie_mknethar,450301,Yurt Dışı Yerleşikler Menkul Kıymet Portföyü,Securities Portfolio Held By Non-Residents,HAFTALIK(CUMA),"TCMB, TAKASBANK, MKK, HMB, BIST, BANKALAR, ARACI KURUMLAR"
+bie_mt100h,450501,Mevduat Faiz Oranları (Akım),Interest Rates on Deposits (Flow Data),HAFTALIK(CUMA),Mevduat Bankaları
+bie_mt200h,450501,Katılma Hesabı Kâr Oranları (Akım),Profit Rates on Participation Accounts (Flow Data),HAFTALIK(CUMA),Katılım Bankaları
+bie_mt210ags,450502,Mevduat Faiz Oranları (Stok),Interest Rates on Deposits (Stock Data),AYLIK,Mevduat Bankaları
+bie_mt210ak,450503,Kamu Bankalarınca Mevduatlara Fiilen Uygulanan Azami Faiz Oranları,Effective Maximum Interest Rates on Deposits of State Banks,AYLIK,Mevduat Bankaları
+bie_mt210as,450503,Bankalarca Mevduatlara Fiilen Uygulanan Azami Faiz Oranları,Effective Maximum Interest Rates on Deposits of Banks,AYLIK,Mevduat Bankaları
+bie_mvbdp,9998006,Mevduat Bankalar ve Katılım Bankaları Nezdindeki Yurt İçi Yerleşiklere Ait Döviz Mevduat Hesaplarının Döviz Kompozisyonu (Arşiv),Currency Composition Of Foreign Exchange Deposits Of Residents With Deposit Money Banks and Participation Banks (Archive),HAFTALIK(CUMA),BANKALAR
+bie_netdisborc,400403,Net Dış Borç Stoku,Net External Debt Position,ÜÇ AYLIK,TCMB
+bie_nihaitukh,150201,"Gayrisafi Yurt İçi Hasıla - Harcama Yöntemine Göre, Hanehalkı Nihai Tüketim Harcamaları, Dayanıklılık Türüne Göre, Cari Fiyatlarla","Gross Domestic Product - Expenditure Approach, Household Final Consumption Expenditures, By Durability, Current Prices",ÜÇ AYLIK,TÜİK
+bie_obfy,2004,Ofis Birim Fiyatları,Office Unit Prices,YILLIK,TCMB
+bie_odana6,4001,Ödemeler Dengesi-Analitik Sunum,Balance of Payments Developments-Analytic Presentation,AYLIK,TCMB
+bie_odayr5,9997005,Ödemeler Dengesi Ayrıntılı Sunum (5.El Kitabı) (Arşiv),Balance Of Payments Detailed Presentation (Bpm5) (Archive),AYLIK,TCMB
+bie_odeayrsunum6,4001,Ödemeler Dengesi-Ayrıntılı Sunum,Balance of Payments Developments-Detailed Presentation,AYLIK,TCMB
+bie_odeayrsunumarsv,9997005,Ödemeler Dengesi Ayrıntılı Sunum (6. El Kitabı) (Arşiv),Balance Of Payments Detailed Presentation (Bpm6) (Archive),AYLIK,TCMB
+bie_odemesis,99960,Ödeme Sistemleri - Perakende Ödeme Sistemi (PÖS) İşlemleri (Arşiv),Retail Payment System Operations (Archive),İŞ GÜNÜ,TCMB
+bie_odemgzs,4001,Milliyetlere Göre Ziyaretçi Sayısı,Tourists by Nationalities,AYLIK,T.C. Kültür ve Turizm Bakanlığı
+bie_oderoll,4001,Dış Borç Çevirme Oranları,Roll-Over Ratio,AYLIK,TCMB
+bie_odeydiebs,4001,Yurt Dışında İhraç Edilen Borçlanma Senetleri,Debt Securities Issued Abroad,AYLIK,TCMB
+bie_odod3,9997005,Ödemeler Dengesi Ayrıntılı Sunum (Arşiv),Balance Of Payments Detailed Presentation (Archive),AYLIK,TCMB
+bie_odoz3,9997005,Ödemeler Dengesi Analitik Sunum (5.El Kitabı) (Arşiv),Balance Of Payments Analytic Presentation (Bpm5) (Archive),AYLIK,TCMB
+bie_oecdoncu,5503,OECD - Kompozit Öncü Göstergeler Endeksi (CLI),OECD Composite Leading Indicator (CLI)(Index),AYLIK,OECD
+bie_ofe,2004,Ofis Fiyat Endeksi,Office Price Index,ÜÇ AYLIK,TCMB
+bie_oktug2025,2005,Özel Kapsamlı TÜFE Göstergeleri (2025=100),Indicators For The CPIs Having Specified Coverage (2025=100),AYLIK,TÜİK
+bie_onrepof,9995002,Bankalararası Gecelik Repo Faizleri (Arşiv),Over/Night Interbank Interest Rates (Archive),İŞ GÜNÜ,Borsa İstanbul
+bie_onrepofbap,3002,Borsa İstanbul Gecelik Repo Faiz Oranları,Borsa Istanbul Overnight Repo Rates,İŞ GÜNÜ,Borsa İstanbul
+bie_osgmfast,3503,Fonların Anlık ve Sürekli Transferi (FAST) Sistemi İşlemleri,Instant and Continuous Transfer of Funds (FAST) System Operations,GÜNLÜK,TCMB
+bie_osgmpos,3503,Perakende Ödeme Sistemi İşlemleri,Retail Payment System Operations,İŞ GÜNÜ,TCMB
+bie_oskvag,9997008,Kısa Vadeli Krediler - Alacaklıya Göre (Arşiv),Short Term Loans-By Creditor (Archive),AYLIK,TCMB
+bie_oskvbg,9997008,Sektörlere Göre Kısa Vadeli Krediler (Arşiv),Short Term Loans-By Sector (Archive),AYLIK,TCMB
+bie_osuvag,9997008,Uzun Vadeli Krediler - Alacaklıya Göre (Arşiv),Long Term Loans-By Creditor (Archive),AYLIK,TCMB
+bie_osuvbg,9997008,Uzun Vadeli Krediler - Sektörlere Göre (Arşiv),Long Term Loans-By Sector (Archive),AYLIK,TCMB
+bie_pbbanal1,9998004,Bankalar Durumu (Arşiv),Banking Survey (Archive),AYLIK,BANKALAR
+bie_pbpanal1,450101,Parasal Durum,Monetary Survey,AYLIK,Bankalar
+bie_pbpanal2,450101,Para Arzı ve Karşılık Kalemleri,Monetary Aggregates and Counterpart Items,AYLIK,Bankalar
+bie_pbtablo1,9995001,Merkez Bankası Bilançosu (Arşiv),Central Bank Balance Sheet (Archive),AYLIK,TCMB
+bie_pbtablo2,450102,Mevduat Bankaları Bilançosu,Deposit Money Banks Balance Sheet,AYLIK,BANKALAR
+bie_pbtablo3,450102,Kalkınma ve Yatırım Bankaları Bilançosu,Investment and Development Banks Balance Sheet,AYLIK,BANKALAR
+bie_pbtablo4,9998004,"Merkez Bankası, Sektörel Bilanço (Arşiv)","Sectoral Balance Sheet, Central Bank (Archive)",AYLIK,BANKALAR
+bie_pbtablo5,450103,Mevduat Bankaları Sektörel Bilançosu,Deposit Money Banks Sectoral Balance Sheet,AYLIK,BANKALAR
+bie_pbtablo6,450103,Kalkınma ve Yatırım Bankaları Sektörel Bilançosu,Investment and Development Banks Sectoral Balance Sheet,AYLIK,BANKALAR
+bie_pbtablo7,450102,Katılım Bankaları Bilançosu,Participation Banks Balance Sheet,AYLIK,BANKALAR
+bie_pbtablo8,450103,Katılım Bankaları Sektörel Bilançosu,Participation Banks Sectoral Balance Sheet,AYLIK,BANKALAR
+bie_pbtop,450103,Bankacılık Sektörü Bilançosu,Banking Sector Balance Sheet,AYLIK,BANKALAR
+bie_pfvpbi01,9998004,"Merkez Bankası, Dış Varlık ve Yükümlülükler (Arşiv)","Foreign Assets and Foreign Liabilities, Central Bank (Archive)",AYLIK,TCMB
+bie_pfvpbi02,9998004,"Merkez Bankası, Krediler (Arşiv)","Loans, Central Bank (Archive)",AYLIK,TCMB
+bie_pfvpbi03,9998004,"Merkez Bankası, Mevduat (Kurumsal Sektörlere Göre) (Arşiv)","Deposits (Sectoral Breakdown), Central Bank (Archive)",AYLIK,TCMB
+bie_pfvpbi04,9998004,"Merkez Bankası, Mevduat (Türlerine Göre) (Arşiv)","Deposits (Deposit Types), Central Bank (Archive)",AYLIK,TCMB
+bie_pfvpbi05,9998004,"Mevduat Bankaları, İştirakler (Arşiv)","Participations and Subsidiaries, Deposit Money Banks (Archive)",AYLIK,BANKALAR
+bie_pfvpbi06,9998004,"Katılım Bankaları, İştirakler (Arşiv)","Participations and Subsidiaries, Paticipation Banks (Archive)",AYLIK,BANKALAR
+bie_pfvpbi07,9998004,"Kalkınma ve Yatırım Bankaları, İştirakler (Arşiv)","Participations and Subsidiaries, Investment and Development Banks (Archive)",AYLIK,BANKALAR
+bie_pfvpbi08,9998004,"Bankacılık Sektörü,Yurt Dışı Kredi Hacmi (Arşiv)","Loans Abroad, Banking Sector (Archive)",AYLIK,BANKALAR
+bie_pfvpbi09,9998004,"Tasfiye Olunacak Alacaklar, Bankacılık Sektörü ve TMSF (Arşiv)",Banking Sector and Sdif Past_Due Loans (Archive),AYLIK,BANKALAR
+bie_pfvpbi10,9998004,"Mevduat Bankaları, Kar-Zarar Hesabı (Arşiv)","Aggregated Profit_Loss Accounts, Deposit Money Banks (Archive)",AYLIK,BANKALAR
+bie_pfvpbi11,9998004,"Kalkınma ve Yatırım Bankaları, Kar-Zarar Hesabı (Arşiv)","Aggregated Profit_Loss Accounts, Investment and Development Banks (Archive)",AYLIK,BANKALAR
+bie_pfvpbi12,9998004,"Katılım Bankaları, Kar-Zarar Hesabı (Arşiv)","Aggregated Profit_Loss Accounts, Participation Banks (Archive)",AYLIK,BANKALAR
+bie_pfvpbi13,9998004,"Merkez Bankası, Kredi Mektuplu Döviz Tevdiat Hesapları (Arşiv)",Foreign Exchange Deposits By Citizens Abroad (Archive),AYLIK,TCMB
+bie_pkauo,1004,Uygun Ortalamalar,Modified Mean,AYLIK,TCMB
+bie_ppblik,450103,Para Piyasası Fonları Sektörel Bilançosu,Money Market Funds Sectoral Balance Sheet,AYLIK,BANKALAR
+bie_ppibsm,3002,Bankalar Serbest Mevduatı ve Gün Başı Toplam Likidite,Free Deposits of Banks and Total Liquidity (Beginning of The Day),İŞ GÜNÜ,TCMB
+bie_prarz,9998006,Para Arzı (Arşiv),Monetary Aggregates (Archive),HAFTALIK(CUMA),"BANKALAR, TCMB, TAKASBANK, MKK, HMB"
+bie_pyamevd,4002,Yurt Dışı Yerleşik Kişilerin Mevduat Hesapları,Non-Residents' Deposit Accounts in Türkiye,ÜÇ AYLIK,TCMB
+bie_pyascog,4002,Portföy Varlıkları-Coğrafi Dağılım,Portfolio Investment Assets in Foreign Securities-Geographical Allocation,ÜÇ AYLIK,TCMB
+bie_pyasens,4002,Portföy Varlıkları-Enstrüman Dağılımı,Residents' Portfolio Investment Assets in Foreign Securities - By Instrument,ÜÇ AYLIK,TCMB
+bie_pydibs,3002,Devlet İç Borçlanma Senetlerinin Gösterge Niteliğindeki Değerleri,Indicative Values of Government Domestic Debt Instruments,GÜNLÜK,TCMB
+bie_pydibsarsiv,9998003,Devlet İç Borçlanma Senetlerinin Gösterge Niteliğindeki Günlük Değerleri (Arşiv),Indicative Nature Values Of Government Domestic Debt Instruments Determined By CBRT (Archive),GÜNLÜK,TCMB
+bie_pydovef,3002,Döviz ve Efektif Piyasası İşlemleri,Foreign and Effective Exchange Rate Market Transactions,İŞ GÜNÜ,TCMB
+bie_pyintbnk,3002,Bankalararası Para Piyasası İşlem Özetleri,Interbank Money Market Transactions Summary,İŞ GÜNÜ,TCMB
+bie_pyrepo,3002,Açık Piyasa Repo ve Ters Repo İşlemleri,Open Market Repo and Reverse Repo Transactions,AYLIK,TCMB
+bie_redkurigm,2504,Reel Efektif Döviz Kuru-Birim İş Gücü Maliyeti Bazlı,Unit Labor Cost Based Real Effective Exchange Rate,YILLIK,TCMB
+bie_reesavans,450504,Reeskont ve Avans Faiz Oranları,Rediscount and Advance Interest Rates,GÜNLÜK,TCMB
+bie_refkure,9993002,Kurlar-Reel Efektif Döviz Kuru Endeksleri (1995=100) (Arşiv),Effective Exchange Rate Index (Real) (1995=100) (Archive),AYLIK,TCMB
+bie_rkbigm,9993002,Kurlar- (Eski) Reel Efektif Döviz Kuru-Birim İş Gücü Maliyeti Bazlı (2003=100) (Arşiv),Exchange Rates_ (Previous) Unit Labor Cost Based Real Effective Exchange Rate (2003=100) (Archive),ÜÇ AYLIK,TCMB
+bie_rkbigmy,9993002,Kurlar-Reel Efektif Döviz Kuru-Gelişmiş Ülkeler Birim İş Gücü Maliyeti Bazlı (2003=100) (Arşiv),Exchange Rates_Unit Labor Cost_Developed Countries Based Real Effective Exchange Rate (2003=100) (Archive),ÜÇ AYLIK,TCMB
+bie_rkdrk,4003,Reeskont Kredilerinin Döviz Rezervlerine Katkısı,Rediscount Credits' Contribution To FX Reserves (CBRT),AYLIK,TCMB
+bie_rkgema,100301,Reel Kesim Güven Endeksi Mevsimsellikten Arındırılmış,Real Sector Confidence Index Seasonally Adjusted,AYLIK,TCMB
+bie_rkgey2,100301,Reel Kesim Güven Endeksi,Real Sector Confidence Index,AYLIK,TCMB
+bie_rktufey,2504,Reel Efektif Döviz Kuru - TÜFE Bazlı,CPI Based Real Effective Exchange Rate,AYLIK,TCMB
+bie_rkufey,2504,Reel Efektif Döviz Kuru - Yİ - ÜFE Bazlı,Domestic - PPI Based Real Effective Exchange Rate,AYLIK,TCMB
+bie_rsistihn,9992002,"İstihdamın İktisadi Faaliyet Kollarına Göre Dağılımı (Yeni Seri NACE, 1.1) (Arşiv)","Employment by Branch of Economic Activity (New Series Nace, 1.1) (Archive)",ÜÇ AYLIK,TÜİK
+bie_rsistihs,9992002,İstihdamın İktisadi Faaliyet Kollarına Göre Dağılımı (Arşiv),Employment by Branch of Economic Activity (Archive),ALTI AYLIK,TÜİK
+bie_rsistihy,9992002,İstihdamın İktisadi Faaliyet Kollarına Göre Dağılımı (Yeni Seri) (Arşiv),Employment by Branch of Economic Activity (New Series) (Archive),ÜÇ AYLIK,TÜİK
+bie_rssivil,9992002,İş Gücü Durumu-Kurumsal Olmayan Sivil Nüfusa Ait (Arşiv),Non_Institutional Civilian Population by Labour Force Status (Archive),ALTI AYLIK,TÜİK
+bie_rssivily,9992002,İş Gücü Durumu-Kurumsal Olmayan Sivil Nüfusa Ait (Yeni Seri) (Arşiv),Non_Institutional Civilian Population by Labour Force Status (New Series) ) (Archive),ÜÇ AYLIK,TÜİK
+bie_rtrnr,3002,Repo ve Ters Repo İşlemleri,Repo and Reverse Repo Operations,İŞ GÜNÜ,TCMB
+bie_sanayrev11,9999003,Sanayi Üretim Endeksi - Mevsim ve Takvim Etkisinden (Arşiv),Turkstat - Industrial Production Index - Seasonal and Calendar Adjusted (2015=100) (Archive),AYLIK,TÜİK
+bie_sanayrev4,9999003,Sanayi Üretim Endeksi (Arşiv),Turkstat - Industrial Production Index (2015=100) (Archive),AYLIK,TÜİK
+bie_sekbil1001,500601,Bilanço - Dönen Varlıklar.,Balance Sheet - Current Assets.,YILLIK,TCMB
+bie_sekbil1057,500601,Bilanço - Duran Varlıklar.,Balance Sheet - Fixed Assets.,YILLIK,TCMB
+bie_sekbil1122,500601,Bilanço - Aktif (Varlıklar).,Balance Sheet - Total Assets.,YILLIK,TCMB
+bie_sekbil3001,500601,Bilanço - Kısa Vadeli Yabancı Kaynaklar.,Balance Sheet - Short - Term Liabilities.,YILLIK,TCMB
+bie_sekbil3051,500601,Bilanço - Uzun Vadeli Yabancı Kaynaklar.,Balance Sheet - Long - Term Liabilities.,YILLIK,TCMB
+bie_sekbil3086,500601,Bilanço - Öz Kaynaklar.,Balance Sheet - Shareholders Equity.,YILLIK,TCMB
+bie_sekbil3111,500601,Bilanço - Pasif (Kaynaklar).,Balance Sheet - Total Liabilities.,YILLIK,TCMB
+bie_sekbil5001,500602,Gelir Tablosu - Brüt Satışlar.,Income Statement - Gross Sales.,YILLIK,TCMB
+bie_sekbil5009,500602,Gelir Tablosu - Net Satışlar.,Income Statement - Net Sales.,YILLIK,TCMB
+bie_sekbil5010,500602,Gelir Tablosu - Satışların Maliyeti.,Income Statement - Cost of Goods Sold (-).,YILLIK,TCMB
+bie_sekbil5015,500602,Gelir Tablosu - Brüt Satış Karı Veya Zararı.,Income Statement - Gross Profit Or Loss.,YILLIK,TCMB
+bie_sekbil5016,500602,Gelir Tablosu - Faaliyet Giderleri.,Income Statement - Operating Expenses (-).,YILLIK,TCMB
+bie_sekbil5020,500602,Gelir Tablosu - Faaliyet Karı Veya Zararı.,Income Statement - Operating Profit Or Loss.,YILLIK,TCMB
+bie_sekbil5039,500602,Gelir Tablosu - Finansman Giderleri.,Income Statement - Financing Expenses (-).,YILLIK,TCMB
+bie_sekbil5050,500602,Gelir Tablosu - Dönem Kar Veya Zararı.,Income Statement - Profit Or Loss Before Taxes.,YILLIK,TCMB
+bie_sekbil5051,500602,"Gelir Tablosu - Dönem Karı, Vergi ve Diğer Yasal Yükümlülük Karşılıkları.",Income Statement - Provisions For Inc. Tax & Oth. Liab. To Gov..,YILLIK,TCMB
+bie_sekbila01a,500603,Likidite Oranları - Cari Oran.,Liquidity Ratios - Current Ratio.,YILLIK,TCMB
+bie_sekbila02a,500603,Likidite Oranları - Likidite (Asit Test) Oranı.,Liquidity Ratios - Quick (Acid - Test) Ratio.,YILLIK,TCMB
+bie_sekbila03a,500603,Likidite Oranları - Nakit Oranı.,Liquidity Ratios - Cash Ratio.,YILLIK,TCMB
+bie_sekbila1001,500401,Bilanço - Dönen Varlıklar,Balance Sheet - Current Assets,YILLIK,TCMB
+bie_sekbila1057,500401,Bilanço - Duran Varlıklar,Balance Sheet - Fixed Assets,YILLIK,TCMB
+bie_sekbila1122,500401,Bilanço - Aktif (Varlıklar),Balance Sheet - Total Assets,YILLIK,TCMB
+bie_sekbila3001,500401,Bilanço - Kısa Vadeli Yabancı Kaynaklar,Balance Sheet - Short - Term Liabilities,YILLIK,TCMB
+bie_sekbila3051,500401,Bilanço - Uzun Vadeli Yabancı Kaynaklar,Balance Sheet - Long - Term Liabilities,YILLIK,TCMB
+bie_sekbila3086,500401,Bilanço - Öz Kaynaklar,Balance Sheet - Shareholders Equity,YILLIK,TCMB
+bie_sekbila3111,500401,Bilanço - Pasif (Kaynaklar),Balance Sheet - Total Liabilities,YILLIK,TCMB
+bie_sekbila5001,500402,Gelir Tablosu - Brüt Satışlar,Income Statement - Gross Sales,YILLIK,TCMB
+bie_sekbila5009,500402,Gelir Tablosu - Net Satışlar,Income Statement - Net Sales,YILLIK,TCMB
+bie_sekbila5010,500402,Gelir Tablosu - Satışların Maliyeti,Income Statement - Cost of Goods Sold (-),YILLIK,TCMB
+bie_sekbila5015,500402,Gelir Tablosu - Brüt Satış Karı Veya Zararı,Income Statement - Gross Profit Or Loss,YILLIK,TCMB
+bie_sekbila5016,500402,Gelir Tablosu - Faaliyet Giderleri,Income Statement - Operating Expenses (-),YILLIK,TCMB
+bie_sekbila5020,500402,Gelir Tablosu - Faaliyet Karı Veya Zararı,Income Statement - Operating Profit Or Loss,YILLIK,TCMB
+bie_sekbila5039,500402,Gelir Tablosu - Finansman Giderleri,Income Statement - Financing Expenses (-),YILLIK,TCMB
+bie_sekbila5050,500402,Gelir Tablosu - Dönem Kar Veya Zararı,Income Statement - Profit Or Loss Before Taxes,YILLIK,TCMB
+bie_sekbila5051,500402,"Gelir Tablosu - Dönem Karı, Vergi ve Diğer Yasal Yükümlülük Karşılıkları",Income Statement - Provisions For Inc. Tax & Oth. Liab. To Gov.,YILLIK,TCMB
+bie_sekbilaa01a,500403,Likidite Oranları - Cari Oran,Liquidity Ratios - Current Ratio,YILLIK,TCMB
+bie_sekbilaa02a,500403,Likidite Oranları - Likidite (Asit Test) Oranı,Liquidity Ratios - Quick (Acid - Test) Ratio,YILLIK,TCMB
+bie_sekbilaa03a,500403,Likidite Oranları - Nakit Oranı,Liquidity Ratios - Cash Ratio,YILLIK,TCMB
+bie_sekbilab01a,500403,Finansal Yapı Oranları - Yabancı Kaynaklar Toplamı / Aktif Topl. Oranı,Ratios of Financial Position - Total Loans / Total Assets (Leverage Ratio),YILLIK,TCMB
+bie_sekbilab02a,500403,Finansal Yapı Oranları - Öz Kaynaklar / Aktif Toplamı Oranı,Ratios of Financial Position - Shareholders Equity / Total Assets,YILLIK,TCMB
+bie_sekbilab13a,500403,Finansal Yapı Oranları - Kısa Vad. Banka Kredileri /Kısa Vad. Yabancı Kaynakl.Oranı,Ratios of Financial Position - Short - Term Bank Loans / Short - Term Liabilities,YILLIK,TCMB
+bie_sekbilab14a,500403,Finansal Yapı Oranları - Banka Kredileri / Yabancı Kaynaklar Toplamı Oranı,Ratios of Financial Position - Bank Loans / Total Loans,YILLIK,TCMB
+bie_sekbilab15a,500403,Finansal Yapı Oranları - Dönen Varlıklar / Aktif Toplamı Oranı,Ratios of Financial Position - Current Assets / Total Assets,YILLIK,TCMB
+bie_sekbilab16a,500403,Finansal Yapı Oranları - Maddi Duran Varlıklar (Net) / Aktif Toplamı Oranı,Ratios of Financial Position - Tangible Fixed Assets (Net) / Total Assets,YILLIK,TCMB
+bie_sekbilac02a,500403,Devir Hızları - Alacak Devir Hızı,Turnover Ratios - Receivables Turnover,YILLIK,TCMB
+bie_sekbilac03a,500403,Devir Hızları - Çalışma Sermayesi Devir Hızı,Turnover Ratios - Net Working Capital Turnover,YILLIK,TCMB
+bie_sekbilad01d,500403,Karlılık Oranları - Net Kar (Zarar) / Aktif Toplamı Oranı,Profitability Ratios - Net Profit / Total Assets,YILLIK,TCMB
+bie_sekbilad02a,500403,Karlılık Oranları - Faaliyet Karı (Zararı) / Net Satışlar Oranı,Profitability Ratios - Operating Profit / Net Sales,YILLIK,TCMB
+bie_sekbilad02b,500403,Karlılık Oranları - Brüt Satış Karı (Zararı) / Net Satışlar Oranı,Profitability Ratios - Gross Profit / Net Sales,YILLIK,TCMB
+bie_sekbilad02c,500403,Karlılık Oranları - Net Kar (Zarar) / Net Satışlar Oranı,Profitability Ratios - Net Profit / Net Sales,YILLIK,TCMB
+bie_sekbilad02e,500403,Karlılık Oranları - Faaliyet Giderleri / Net Satışlar Oranı,Profitability Ratios - Operating Expens / Net Sales,YILLIK,TCMB
+bie_sekbilad02f,500403,Karlılık Oranları - Faiz Giderleri / Net Satışlar Oranı,Profitability Ratios - Interest Expenses / Net Sales,YILLIK,TCMB
+bie_sekbilatga,500404,Sektör Riski - Tasfiye Olunacak Kredi,Credits To The Sector - Bad Debts,YILLIK,TCMB
+bie_sekbilatpgn,500404,Sektör Riski - Gayri Nakdi (TL),Credits To The Sector - Credits in Non-Cash (TRL),YILLIK,TCMB
+bie_sekbilatpn,500404,Sektör Riski - Nakdi (TL),Credits To The Sector - Credits in Cash (TRL),YILLIK,TCMB
+bie_sekbilay01a,500403,Devir Hızları - Borç Devir Hızı,Turnover Ratios - Debt Turnover,YILLIK,TCMB
+bie_sekbilaypgn,500404,Sektör Riski - Gayri Nakdi (YP),Credits To The Sector - Credits in Non-Cash (Fx),YILLIK,TCMB
+bie_sekbilaypn,500404,Sektör Riski - Nakdi (YP),Credits To The Sector - Credits in Cash (Fx),YILLIK,TCMB
+bie_sekbilb01a,500603,Finansal Yapı Oranları - Yabancı Kaynaklar Toplamı / Aktif Topl. Oranı.,Ratios of Financial Position - Total Loans / Total Assets (Leverage Ratio).,YILLIK,TCMB
+bie_sekbilb02a,500603,Finansal Yapı Oranları - Öz Kaynaklar / Aktif Toplamı Oranı.,Ratios of Financial Position - Shareholders Equity / Total Assets.,YILLIK,TCMB
+bie_sekbilb13a,500603,Finansal Yapı Oranları - Kısa Vad. Banka Kredileri /Kısa Vad. Yabancı Kaynakl.Oranı.,Ratios of Financial Position - Short - Term Bank Loans / Short - Term Liabilities.,YILLIK,TCMB
+bie_sekbilb14a,500603,Finansal Yapı Oranları - Banka Kredileri / Yabancı Kaynaklar Toplamı Oranı.,Ratios of Financial Position - Bank Loans / Total Loans.,YILLIK,TCMB
+bie_sekbilb15a,500603,Finansal Yapı Oranları - Dönen Varlıklar / Aktif Toplamı Oranı.,Ratios of Financial Position - Current Assets / Total Assets.,YILLIK,TCMB
+bie_sekbilb16a,500603,Finansal Yapı Oranları - Maddi Duran Varlıklar (Net) / Aktif Toplamı Oranı.,Ratios of Financial Position - Tangible Fixed Assets (Net) / Total Assets.,YILLIK,TCMB
+bie_sekbilc02a,500603,Devir Hızları - Alacak Devir Hızı.,Turnover Ratios - Receivables Turnover.,YILLIK,TCMB
+bie_sekbilc03a,500603,Devir Hızları - Çalışma Sermayesi Devir Hızı.,Turnover Ratios - Net Working Capital Turnover.,YILLIK,TCMB
+bie_sekbild01d,500603,Karlılık Oranları - Net Kar (Zarar) / Aktif Toplamı Oranı.,Profitability Ratios - Net Profit / Total Assets.,YILLIK,TCMB
+bie_sekbild02a,500603,Karlılık Oranları - Faaliyet Karı (Zararı) / Net Satışlar Oranı.,Profitability Ratios - Operating Profit / Net Sales.,YILLIK,TCMB
+bie_sekbild02b,500603,Karlılık Oranları - Brüt Satış Karı (Zararı) / Net Satışlar Oranı.,Profitability Ratios - Gross Profit / Net Sales.,YILLIK,TCMB
+bie_sekbild02c,500603,Karlılık Oranları - Net Kar (Zarar) / Net Satışlar Oranı.,Profitability Ratios - Net Profit / Net Sales.,YILLIK,TCMB
+bie_sekbild02e,500603,Karlılık Oranları - Faaliyet Giderleri / Net Satışlar Oranı.,Profitability Ratios - Operating Expens / Net Sales.,YILLIK,TCMB
+bie_sekbild02f,500603,Karlılık Oranları - Faiz Giderleri / Net Satışlar Oranı.,Profitability Ratios - Interest Expenses / Net Sales.,YILLIK,TCMB
+bie_sekbiltga,500604,Sektör Riski - Tasfiye Olunacak Kredi.,Credits To The Sector - Bad Debts.,YILLIK,TCMB
+bie_sekbiltpgn,500604,Sektör Riski - Gayri Nakdi (TL).,Credits To The Sector - Credits in Non-Cash (TRL).,YILLIK,TCMB
+bie_sekbiltpn,500604,Sektör Riski - Nakdi (TL).,Credits To The Sector - Credits in Cash (TRL).,YILLIK,TCMB
+bie_sekbily01a,500603,Devir Hızları - Borç Devir Hızı.,Turnover Ratios - Debt Turnover.,YILLIK,TCMB
+bie_sekbilypgn,500604,Sektör Riski - Gayri Nakdi (YP).,Credits To The Sector - Credits in Non-Cash (Fx).,YILLIK,TCMB
+bie_sekbilypn,500604,Sektör Riski - Nakdi (YP).,Credits To The Sector - Credits in Cash (Fx).,YILLIK,TCMB
+bie_senfbek,9991004,Sektörel Enflasyon Beklentileri (Arşiv),Sectoral Inflation Expectations (Archive),AYLIK,"TCMB, TÜİK"
+bie_sgegi,4001,Seyahat Gelirleri ve Giderleri,Travel Incomes and Expenses,AYLIK,TÜİK
+bie_sivilis2,9992002,Kurumsal Olmayan Sivil Nüfusun İşgücü Durumu (ADNKS'ye Göre) (Arşiv),Non_Institutional Civilian Population by Labour Force Status (After Abprs) (Turksat) (Archive),AYLIK,TÜİK
+bie_swaptektarf,3002,TCMB Taraflı Swap İşlemleri,CBRT Swap Transactions,İŞ GÜNÜ,TCMB
+bie_tarimgfe,2009,Tarımsal Girdi Fiyat Endeksi,Agricultural Input Price Index,AYLIK,TÜİK
+bie_tarimufe,2008,Tarım Ürünleri Üretici Fiyat Endeksi,Agricultural Products Producer Price Index,AYLIK,TÜİK
+bie_tcbf,99940,Konut Birim Fiyatları (Arşiv),Housing Unit Prices (Archive),AYLIK,TCMB
+bie_tedavuladt,3502,Tedavüldeki Banknotların Kupür Dağılımı (Adet),Banknotes in Circulation By Denomination (Number),AYLIK,TCMB
+bie_tedavultut,3502,Tedavüldeki Banknotların Kupür Dağılımı (Tutar TL),Banknotes in Circulation By Denomination (Amount TRY),AYLIK,TCMB
+bie_tevdsuv,4001,Uzun Vadeli Kredi Kullanımları-Borçluya Göre,Long Term Credit Disbursements by Borrower,AYLIK,TCMB
+bie_tgfe,2004,Ticari Gayrimenkul Fiyat Endeksi,Commercial Property Price Index,ÜÇ AYLIK,TCMB
+bie_thedonikykfe,99940,Yeni Konutlar Fiyat Endeksi (YKFE) (2017=100) (Arşiv),Residential Property Price Index For New Dwellings (NRPPI) (2017=100) (Archive),AYLIK,TCMB
+bie_thedonikyokfe,99940,Yeni Olmayan Konutlar Fiyat Endeksi (YOKFE) (2017=100) (Arşiv),Residential Property Price Index For Existing Dwellings (ERPPI) (2017=100) (Archive),AYLIK,TCMB
+bie_tisguc,1501,Temel İşgücü Göstergeleri (Mevsimsellikten Arındırılmış),Main Labour Force Indicators (Seasonally Adjusted),AYLIK,TÜİK
+bie_tkfe,99940,Konut Fiyat Endeksi (KFE) (2010=100) (Arşiv),Residential Property Price Index (RPPI) (2010=100) (Archive),AYLIK,TCMB
+bie_tldov,3002,Bankaların Türk Lirası Karşılığı Döviz İşlem Hacimleri,Foreign Exchange Transaction Volumes of Banks in Turkish Lira Equivalents,İŞ GÜNÜ,TCMB
+bie_tldthvade,4506,Zorunlu Karşılığa Tabi Türk Lirası Mevduat ve DTH'larının Vadelerine Göre Dağılımı,Breakdown of Turkish Lira and Foreign Exchange Deposits Subject To Reserve Requirements by Maturity,HAFTALIK(CUMA),TCMB
+bie_todeapara,4001,Kredi Geri Ödemeleri - Anapara,Loan Repayment - Principal,AYLIK,TCMB
+bie_todedfaiz,4001,Kredi Geri Ödemeleri - Faiz,Loan Repayment - Interest,AYLIK,TCMB
+bie_toisso,9992002,Toplu İş Sözleşmeleri Grev ve Lokavt Uygulamaları (Arşiv),Establishments and Labourers Covered by Collective Bargaining Strikes and Lock Outs (Ministry of Labor and Social Security) (Number) (Archive),AYLIK,T.C. Çalışma Bakanlığı
+bie_toktg,99940,Fiyat Endeksi-Özel Kapsamlı TÜFE Göstergeleri (2003=100) (Arşiv),Price Index_Indicators For The CPI's Having Specified Coverages (2003=100) (Archive),AYLIK,TÜİK
+bie_topfiy1,99940,Toptan Eşya Fiyat Endeksi (1981=100) (Arşiv),Wholesale Prices Index (1981=100) (Archive),AYLIK,TÜİK
+bie_tsanay,9999003,Sanayi Üretim Endeksi. (1997=100) (Arşiv),Industrial Production Index (1997=100) (Archive),AYLIK,TÜİK
+bie_tsanaymt2021,5003,Sanayi Üretim Endeksi - Mevsim ve Takvim Etkisinden Arındırılmış (TÜİK),Industrial Production Index - Seasonal and Calendar Adjusted (TURKSTAT),AYLIK,TÜİK
+bie_tsenetler,3501,Tahsile Alınan Ticari Senetler,Commercial Bills Received For Collection,AYLIK,Bankalar
+bie_tsny05,9999003,Sanayi Üretim Endeksi (2005=100) (Arşiv),Industrial Production Index (2005=100) (Nace Rev.1.1) (Archive),AYLIK,TÜİK
+bie_tsny05n2,9999003,Sanayi Üretim Endeksi (2005=100) (NACE REV.2) (Arşiv),Industrial Production Index (2005=100) (Nace Rev.2) (Archive),AYLIK,TÜİK
+bie_tsny2010,9999003,Sanayi Üretim Endeksi (2010=100) (NACE REV.2) (Arşiv),Industrial Production Index (2010=100) (Nace Rev.2) (Archive),AYLIK,TÜİK
+bie_tufe1,99940,Fiyat Endeksi (Üretici Fiyatları) (2003=100) (Arşiv),Producer Price Index (2003=100) (Archive),AYLIK,TÜİK
+bie_tufe1yi,2006,Yurt İçi Üretici Fiyat Endeksi,Domestic Producer Price Index,AYLIK,TÜİK
+bie_tukfiy1,99940,Fiyat Endeksi (Tüketici) (1978-1979=100) (Arşiv),Consumer Price Index (1978_1979=100) (Archive),AYLIK,TÜİK
+bie_tukfiy2003,2005,Tüketici Fiyat Endeksi (Genel) (2003=100),Consumer Price Index (General) (2003=100),AYLIK,TÜİK
+bie_tukfiy2025,2005,Tüketici Fiyat Endeksi (2025=100),Consumer Price Index (2025=100),AYLIK,TÜİK
+bie_tukfiy4,99940,Tüketici Fiyat Endeksi (2003=100) (Arşiv) (Arşiv),Consumer Price Index (2003=100) (Archive) (Archive) (Archive),AYLIK,TÜİK
+bie_tukkre,9998006,Tüketici Kredileri (Orijinal Vadeye Göre) - Bankacılık Sektörü (Arşiv),Consumer Loans (By Original Maturity) - Banking Sector (Archive),HAFTALIK(CUMA),BANKALAR
+bie_tuksehir,99940,Fiyat Endeksi (Tüketici) (Bölge ve İllere Göre) (1994=100) (Arşiv),Consumer Price Index By Region and Province (1994=100) (Archive),AYLIK,TÜİK
+bie_tuksehir2,99940,Fiyat Endeksi (Tüketici) (İstatistiki Bölgelere Göre) (2003=100) (Arşiv),Consumer Price Index and Indices By Regions (2003=100) (Archive),AYLIK,TÜİK
+bie_turhar,9997006,Milliyetlere Göre Turizm Geliri ve Ortalama Harcama (Arşiv),"Tourism Income & Average Expenditures By Nationalities_Ministry Of Tourism, CBRT (Archive)",YILLIK,TÜİK
+bie_turizmgelgit,4006,Turizm Gelir ve Giderleri,Tourism Revenue and Expenditure,AYLIK,TÜİK
+bie_turizmyzs,4006,Çıkış Yapan Ziyaretçiler,Outbound Travellers,AYLIK,TÜİK
+bie_turizmyzsy,4006,Çıkış Yapan Ziyaretçi Sayısı – Ülke Dağılımı,Number of Outbound Visitors – Country Breakdown,ÜÇ AYLIK,TÜİK
+bie_turizmzyvs,4006,Giriş Yapan Vatandaşlar,Inbound Visitors,AYLIK,TÜİK
+bie_tuufe,99940,Tarım Ürünleri Üretici Fiyat Endeksi (2010=100) (Arşiv),Producer Price Index Of Agriculture Products (2010=100) (Archive),AYLIK,TÜİK
+bie_tuufey,99940,Tarım Ürünleri Üretici Fiyat Endeksi (2015=100) (Arşiv),Producer Price Index of Agriculture Products (2015=100) (Archive),AYLIK,TÜİK
+bie_tykfe,99940,Yeni Konutlar Fiyat Endeksi (YKFE) (2010=100) (Arşiv),Residential Property Price Index For New Dwellings (NRPPI) (2010=100) (Archive),AYLIK,TCMB
+bie_ufeyd,2001,Yurt Dışı Üretici Fiyat Endeksi,Foreign Producer Price Index,AYLIK,TÜİK
+bie_ulgrkur,9993002,Kurlar-Ülke Gruplarına Göre Reel Efektif Döviz Kuru-TÜFE Bazlı (2003=100) (Arşiv),Exchange Rates_ Cpi Based Real Effective Exchange Rate By Country Groups (2003=100) (Archive),AYLIK,TCMB
+bie_ulusdovlkd,4003,Uluslararası Rezervler ve Döviz Likiditesi Tablosu,International Reserves and Foreign Currency Liquidity Table,AYLIK,TCMB
+bie_undnakliyeroro,400703,Araç ve Treyler Takip Sistemi - Tüm Araçlar Kara ve Roro Ayrımı,Vehicle and Trailer Tracking System - All Vehicles Land and Roro Separation,AYLIK,Uluslararası Nakliyeciler Derneği
+bie_undnakliyetbg,400703,Araç ve Treyler Takip Sistemi - Türk Araçlar Boş Giriş,"Vehicle and Trailer Tracking System - Turkish Vehicles, Empty Entry",AYLIK,Uluslararası Nakliyeciler Derneği
+bie_undnakliyetih,400703,Araç ve Treyler Takip Sistemi - Türk Araçlar İhracat,"Vehicle and Trailer Tracking System - Turkish Vehicles, Export",AYLIK,Uluslararası Nakliyeciler Derneği
+bie_undnakliyetit,400703,Araç ve Treyler Takip Sistemi - Türk Araçlar İthalat,"Vehicle and Trailer Tracking System - Turkish Vehicles, Imports",AYLIK,Uluslararası Nakliyeciler Derneği
+bie_undnakliyeybg,400703,Araç ve Treyler Takip Sistemi - Yabancı Araçlar Boş Giriş,"Vehicle and Trailer Tracking System - Foreign Vehicles, Empty Entry",AYLIK,Uluslararası Nakliyeciler Derneği
+bie_undnakliyeyih,400703,Araç ve Treyler Takip Sistemi - Yabancı Araçlar İhracat,"Vehicle and Trailer Tracking System - Foreign Vehicles, Export",AYLIK,Uluslararası Nakliyeciler Derneği
+bie_undnakliyeyit,400703,Araç ve Treyler Takip Sistemi - Yabancı Araçlar İthalat,"Vehicle and Trailer Tracking System - Foreign Vehicles, Imports",AYLIK,Uluslararası Nakliyeciler Derneği
+bie_uraltin,2502,"Altın Cevheri Üretimi, Maden Firmaları (BİST)",Gold Ore Production of Mining Companies (BIST),AYLIK,Borsa İstanbul
+bie_urbek,1004,Tanımsal İstatistikler,Descriptive Statistics,AYLIK,TCMB
+bie_urbeka,9991002,Piyasa Katılımcıları Anketi Tanımsal İstatistikleri (15/8/2001 - 31/12/2012 Tarihleri Arası 15 Günlük Veriler (Arşiv),Survey of Market Participants Descriptive Statistics (15 Days Data from 15/8/2001 to 31/12/2012 (Archive),AYDA İKİ KEZ,TCMB
+bie_uretcryil,150703,"Gayrisafi Yurt İçi Hasıla - Üretim Yöntemiyle, İktisadi Faaliyet Kollarına Göre (A21) Düzeyinde, Cari Fiyatlarla","Gross Domestic Product - Production Approach, By Economic Activity (A21), Current Prices",YILLIK,TÜİK
+bie_uretmeacari,150203,"Gayrisafi Yurt İçi Hasıla - Üretim Yöntemiyle, Mevsim Etkisinden Arındırılmış, Cari Fiyatlarla","Gross Domestic Product - Production Approach, Seasonally Adjusted, Current Prices",ÜÇ AYLIK,TÜİK
+bie_uretmkb,150703,"Kişi Başına Gayrisafi Yurt İçi Hasıla, Üretim Yöntemiyle , Cari Fiyatlarla","Gross Domestic Product per Capita, Production Method, Current Prices",YILLIK,TÜİK
+bie_uretmtazincr,150203,"Gayrisafi Yurt İçi Hasıla - Üretim Yöntemiyle, Mevsim ve Takvim Etkisinden Arındırılmış Zincirlenmiş Hacim Endeksi (2009=100)","Gross Domestic Product - Production Approach , Seasonally and Calendar Adjusted Chained Volume Index (2009=100)",ÜÇ AYLIK,TÜİK
+bie_uretzincyil,150703,"Gayrisafi Yurt İçi Hasıla - Üretim Yöntemiyle, İktisadi Faaliyet Kollarına Göre (A21) Düzeyinde, Zincirlenmiş Hacim","Gross Domestic Product - Production Approach, By Economic Activity (A21), Chained Volume",YILLIK,TÜİK
+bie_urgsmhc,9992004,GSMH ve GSYİH-Cari Fiyatlarla (Arşiv),GNP and GDP at Current Prices (Archive),ÜÇ AYLIK,TÜİK
+bie_urgsmhq,9992004,GSMH ve GSYİH-Sabit (1987) Fiyatlarla (Arşiv),GNP and GDP at Fixed (1987) Prices (Archive),ÜÇ AYLIK,TÜİK
+bie_urgsyih,9992004,GSYİH-Bölgeler ve İller İtibariyle-Cari ve 1987 Fiyatlarıyla (Arşiv),Gross Domestic Product by Regions and Province_In Current & 1987 Prices (Archive),YILLIK,TÜİK
+bie_urgsyih2,9992004,GSYİH-İstatistiki Bölge Birimleri Sınıflandırmasına Göre (DÜZEY2) (Arşiv),Gross Domestic Product by Statistical Regions (Nuts 2) (Archive),YILLIK,TÜİK
+bie_urgsyih3,9992004,GSYİH-İstatistiki Bölge Birimleri Sınıflandırmasına Göre (DÜZEY3) (Arşiv),Gross Domestic Product by Statistical Regions (Nuts 3) (Archive),YILLIK,TÜİK
+bie_urhkisi,9992004,GSMH ve GSYİH-Kişi Başına (Arşiv),GNP and GDP Per Capita (Archive),YILLIK,TÜİK
+bie_urimkap,9999001,Kapasite Kullanım Oranı-İmalat Sanayi-Üretim Değeri Ağırlıklı ISIC REV.3 (Arşiv),Capacity Utilization Rates In The Manufacturing Industry_Weighted By Production Value Isic Rev.3 (Archive),AYLIK,TÜİK
+bie_uristsayil,0,Türkiye'ye Gelen Yabancı Ziyaretçilerin Sınır Kapılarının Bağlı Olduğu İllere Göre Dağılımı (KTB) (Arşiv),Distribution of Arriving Foreign Visitors by Provinces (MoCT) (Archive),AYLIK,T.C. Kültür ve Turizm Bakanlığı
+bie_uriya,9991001,İktisadi Yönelim Anketi (Özel Sektör) (Arşiv),Business Tendency Survey (Private Sector) (Archive),AYLIK,TCMB
+bie_uriyacdur,9991001,İktisadi Yönelim Anketi-Dayanıklı Tüketim Malları (Ağırlıklı-NACE REV.1.1) (Arşiv),Business Tendency Survey_Durable Consumer Goods (Weighted_Nace Rev.1.1) (Archive),AYLIK,TCMB
+bie_uriyacndu,9991001,İktisadi Yönelim Anketi-Dayanıksız Tüketim Malları (Ağırlıklı- NACE REV.1.1) (Arşiv),Business Tendency Survey_Non_Durable Consumer Goods (Weighted_Nace Rev.1.1) (Archive),AYLIK,TCMB
+bie_uriyacons,9991001,İktisadi Yönelim Anketi-Tüketim Malları (Ağırlıklı-NACE REV.1.1) (Arşiv),Business Tendency Survey_Consumer Goods (Weighted_Nace Rev.1.1) (Archive),AYLIK,TCMB
+bie_uriyafobe,9991001,İktisadi Yönelim Anketi-Gıda ve İçecekler (Ağırlıklı-NACE REV.1.1) (Arşiv),Business Tendency Survey_Food & Beverages (Weighted_Nace Rev.1.1) (Archive),AYLIK,TCMB
+bie_uriyaintm,9991001,İktisadi Yönelim Anketi-Ara Malları (Ağırlıklı-NACE REV.1.1) (Arşiv),Business Tendency Survey_Intermediate Goods (Weighted_Nace Rev.1.1) (Archive),AYLIK,TCMB
+bie_uriyainve,9991001,İktisadi Yönelim Anketi-Yatırım Malları (Ağırlıklı-NACE REV.1.1) (Arşiv),Business Tendency Survey_Investment Goods (Weighted_Nace Rev.1.1) (Archive),AYLIK,TCMB
+bie_uriyau,9991001,İktisadi Yönelim Anketi (Ağırlıksız-NACE REV.1.1) (Arşiv) (Arşiv),Business Tendency Survey (Unweighted_Nace Rev.1.1) (Archive),AYLIK,TCMB
+bie_uriyaw,9991001,İktisadi Yönelim Anketi (Ağırlıklı-NACE REV.1.1) (Arşiv),Business Tendency Survey (Weighted_Nace Rev.1.1) (Archive),AYLIK,TCMB
+bie_urkisi,9999003,Üretim Endeksi - Çalışan Kişi Başına (2005=100) (Arşiv),Index Of Production Per Person Employed (2005=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_urkisi10,9999003,Üretim Endeksi - Çalışan Kişi Başına (2010=100) (Arşiv),Index Of Production Per Person Employed (2010=100) (Archive),ÜÇ AYLIK,T.C. Sanayi ve Teknoloji Bakanlığı
+bie_urkisi15,9999003,Üretim Endeksi - Çalışan Kişi Başına (2015=100) (Arşiv),Index of Production Per Person Employed (2015=100) (Archive),ÜÇ AYLIK,T.C. Sanayi ve Teknoloji Bakanlığı
+bie_urkisi21,5007,Üretim Endeksi - Çalışan Kişi Başına,Production Index Per Employee,ÜÇ AYLIK,T.C. Sanayi ve Teknoloji Bakanlığı
+bie_uroto,5003,Otomotiv Sanayii Üretimi (OSD),Cars Automotive Industry Production (OSD),AYLIK,Otomotiv Sanayii Derneği (OSD)
+bie_ursaat,9999003,Üretim Endeksi - Çalışılan Saat Başına (2005=100) (Arşiv),Index Of Production Per Hour Worked (2005=100) (Archive),ÜÇ AYLIK,TÜİK
+bie_ursaat10,9999003,Üretim Endeksi - Çalışılan Saat Başına (2010=100) (Arşiv),Index of Production Per Hour Worked (2010=100) (Archive),ÜÇ AYLIK,T.C. Sanayi ve Teknoloji Bakanlığı
+bie_ursaat15,9999003,Üretim Endeksi - Çalışılan Saat Başına (2015=100) (Arşiv),Index of Production Per Hour Worked (2015=100) (Archive),ÜÇ AYLIK,T.C. Sanayi ve Teknoloji Bakanlığı
+bie_ursaat21,5007,Üretim Endeksi - Çalışılan Saat Başına,Production Index Per Hour Worked,ÜÇ AYLIK,T.C. Sanayi ve Teknoloji Bakanlığı
+bie_ursan97,9999003,Sanayi Maddeleri Üretim Miktarları (Arşiv),Production Amounts Of Selected Industrial Goods 2005 - 2008 (Archive),AYLIK,TÜİK
+bie_ursanayi2,9999003,Sanayi Maddeleri Üretimi (Seçilmiş) (Arşiv),Production Of Selected Industrial Goods (Archive),AYLIK,TÜİK
+bie_ursany,9999003,Sanayi Maddeleri Üretim Miktarları (Seçilmiş) (Arşiv),Production Amounts Of Selected Industrial Goods (Archive),AYLIK,TÜİK
+bie_urucret,9992002,Çalışanlara Yapılan Ödemeler-İmalat Sanayi Üretiminde (Arşiv),Payments to Production Workers in Manufacturing Industry (Archive),AYLIK,TÜİK
+bie_urur3ay,9999003,Sanayi Üretim Endeksi (1997=100) (Arşiv),Industrial Production Index (1997=100) 1980 - 2006 (Archive),ÜÇ AYLIK,TÜİK
+bie_ururet2,9999001,KKO İmalat Sanayi-Üretim Değeri Ağırlıklı ISIC REV.3 1987 _ 2004 (Arşiv),Capacity Utilization Rates In The Manufacturing Industry_Weighted By Production Value Isic Rev.3 1987 _ 2004 (Archive),ÜÇ AYLIK,TÜİK
+bie_ururetim4,9999003,Sanayi Üretim Endeksi (1992=100) (Arşiv),Industrial Production Index (1992=100) (Archive),AYLIK,TÜİK
+bie_uypucay,4002,Uluslararası Yatırım Pozisyonu,International Investment Position,ÜÇ AYLIK,TCMB
+bie_uypucayarsiv,9997003,Uluslararası Yatırım Pozisyonu (Arşiv),International Investment Position Quarterly (Archive),ÜÇ AYLIK,TCMB
+bie_vdkre,9998006,Mevduat Bankaları Tüketici Kredileri (Orijinal Vadeye Göre) (TL+YP) (Arşiv),Deposit Money Banks Consumer Loans (By Originial Maturity) (TRY+Fx) (In TRY) (Archive),HAFTALIK(CUMA),BANKALAR
+bie_ydesgyazdeg,450306,"ÇSY, Yurt Dışı İhraçlar","ESG, Issued in International Market",HAFTALIK(CUMA),"TCMB, MKK, BANKALAR, ARACI KURUMLAR, TİCARİ VERİ SAĞLAYICILARI"
+bie_ydosbapiydeg,450305,"Genel Yönetim Dışı Sektörlerin Eurobondları, Piyasa Değeri","Eurobond Issued by Other Than General Government, Market Value",HAFTALIK(CUMA),"TCMB, MKK, BANKALAR, ARACI KURUMLAR, TİCARİ VERİ SAĞLAYICILARI"
+bie_ydosbavade,450305,"Genel Yönetim Dışı Sektörlerin Eurobondları, Vade ve Para Dağılımı","Eurobond Issued by Other Than General Government, By Maturity",HAFTALIK(CUMA),"TCMB, MKK, BANKALAR, ARACI KURUMLAR, TİCARİ VERİ SAĞLAYICILARI"
+bie_ydosbayazdeg,450305,"Genel Yönetim Dışı Sektörlerin Eurobondları, Yazılı Değer","Eurobond Issued by Other Than General Government, Face Value",HAFTALIK(CUMA),"TCMB, MKK, BANKALAR, ARACI KURUMLAR, TİCARİ VERİ SAĞLAYICILARI"
+bie_ydydyse,400501,Yurt İçine Yapılan Yatırımlar (Akım)-Sektörel Dağılım,Foreign Direct Investments in Türkiye by Sectors (Flow),AYLIK,TCMB
+bie_ydydysektor,400502,Türkiye'ye Yapılan Yatırımlar (Stok)-Sektörel Dağılım,Foreign Direct Investments in Türkiye by Sectors (Stock),YILLIK,TCMB
+bie_ydydyul,400501,Yurt İçine Yapılan Yatırımlar (Akım)-Ülke Dağılımı,Foreign Direct Investments in Türkiye by Countries (Flow),AYLIK,TCMB
+bie_ydydyulke,400502,Türkiye'ye Yapılan Yatırımlar (Stok)-Ülke Dağılımı,Direct Investments in Türkiye by Countries (Stock),YILLIK,TCMB
+bie_ydydyulkenihai,400502,Türkiye'ye Yapılan Yatırımlar (Stok)-Ülke Dağılımı-Nihai Yatırımcı,Direct Investments in Türkiye by Countries-Ultimate Investors (Stock),YILLIK,TCMB
+bie_yiesgyazdeg,450306,"ÇSY, Yurt İçi İhraçlar","ESG, Issued in Domestic Market",HAFTALIK(CUMA),"TCMB, MKK, BANKALAR, ARACI KURUMLAR, TİCARİ VERİ SAĞLAYICILARI"
+bie_yiosbapiydeg,450304,"Genel Yönetim Dışı Sektörlerin Borçlanma Senetleri, Piyasa Değeri","Debt Securities Issued by Other Than General Government, Market Value",HAFTALIK(CUMA),"TCMB, MKK, BIST"
+bie_yiosbavade,450304,"Genel Yönetim Dışı Sektörlerin Borçlanma Senetleri, Vade Dağılımı","Debt Securities Issued by Other Than General Government, By Maturity",HAFTALIK(CUMA),"TCMB, MKK, BIST"
+bie_yiosbayazdeg,450304,"Genel Yönetim Dışı Sektörlerin Borçlanma Senetleri, Yazılı Değer","Debt Securities Issued by Other Than General Government, Face Value",HAFTALIK(CUMA),"TCMB, MKK, BIST"
+bie_yisgucu2,1501,Temel İşgücü Göstergeleri,Main Labour Force Indicators,AYLIK,TÜİK
+bie_yisthsk2,9992002,İstihdam Edilenlerin İktisadi Faaliyet Kollarına Göre Dağılımı (Yeni Nüfus Projeksiyonlarına Göre) (Arşiv),Employment by Branch of Activity (By the New Population Projections) (Archive),AYLIK,TÜİK
+bie_yisthsk3,9992002,İstihdam Edilenlerin İktisadi Faaliyet Kollarına Göre Dağılımı (NACE REV 1.1) (Yeni Nüfus Projeksiyonlarına Göre) (Arşiv),Employment by Branch of Activity (Nace Rev 1.1) (By the New Population Projections) (Archive),AYLIK,TÜİK
+bie_yiydyse,400501,Yurt Dışına Yapılan Yatırımlar (Akım)-Sektörel Dağılım,Residents' Foreign Direct Investments Abroad by Sectors (Flow),AYLIK,TCMB
+bie_yiydysektor,400502,Yurt Dışına Yapılan Yatırımlar (Stok)-Sektörel Dağılım,Residents' Foreign Direct Investments Abroad by Sectors (Stock),YILLIK,TCMB
+bie_yiydyul,400501,Yurt Dışına Yapılan Yatırımlar (Akım)-Ülke Dağılımı,Residents' Foreign Direct Investments Abroad by Countries (Flow),AYLIK,TCMB
+bie_yiydyulke,400502,Yurt Dışına Yapılan Yatırımlar (Stok)-Ülke Dağılımı,Residents' Foreign Direct Investments Abroad by Countries (Stock),YILLIK,TCMB
+bie_ykfe,2003,Yeni Konutlar Fiyat Endeksi,Residential Property Price Index for New Dwellings,AYLIK,TCMB
+bie_ykke,2003,Yeni Kiracı Kira Endeksi,New Tenant Rent Index,AYLIK,TCMB
+bie_yohyituk,99940,Yerleşik ve Yerleşik Olmayan Hanehalklarının Yurt İçi Tüketimi (Cari ve Sabit (1998) Fiyatlarla) (Yeni Seri) (Arşiv),Final Consumption Expenditure Of Resident and Non_Resident Households In Current and Fixed (1998) Prices (New Series) (Archive),ÜÇ AYLIK,TÜİK
+bie_yokfe,99940,Yeni Olmayan Konutlar Fiyat Endeksi (YOKFE) (2010=100) (Arşiv),Residential Property Price Index For Existing Dwellings (ERPPI) (2010=100) (Archive),AYLIK,TCMB
+bie_yokfend,2003,Yeni Olmayan Konutlar Fiyat Endeksi,Residential Property Price Index for Existing Dwellings,AYLIK,TCMB
+bie_ypmevd,9998006,Yabancı Para Mevduatları - Bankacılık Sektörü (Arşiv),Foreign Exchange Deposits - Banking Sector (Archive),HAFTALIK(CUMA),BANKALAR
+bie_ysivils2,9992002,Kurumsal Olmayan Nüfusun İşgücü Durumu (Yeni Nüfus Projeksiyonlarına Göre) (Arşiv),Labour Force Status by Non_Institutional Population (By the New Population Projections) (Archive),AYLIK,TÜİK
+bie_yssk,9997008,Uzun Vadeli Krediler-Finansal Olmayan Kuruluşların Vade Dağılımı (Arşiv),Long Term Loans-Maturity Composition of Non-Financial Institutions (Archive),AYLIK,TCMB
+bie_yydibsc,9998003,"Devlet İç Borçlanma Senetleri (TL, Piyasa Değeri) (Arşiv)","Government Domestic Debt Securities (TRY, Market Value) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, HMB, FRED"
+bie_yydibscu,9998003,"Devlet İç Borçlanma Senetleri (ABD doları, Piyasa Değeri, Stok) (Arşiv)","Government Domestic Debt Securities (US dollars, Market Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, HMB, FRED"
+bie_yydibsn,9998003,"Devlet İç Borçlanma Senetleri (TL, Nominal, Stok) (Arşiv)","Government Domestic Debt Securities (TRY, Nominal Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, HMB, FRED"
+bie_yydibsnu,9998003,"Devlet İç Borçlanma Senetleri (ABD doları, Nominal, Stok) (Arşiv)","Government Domestic Debt Securities (US dollars, Nominal Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, HMB, FRED"
+bie_yydv,9998003,"Devlet İç Borçlanma Senetleri Vade Dağılımı (TL, Piyasa Değeri, Kalan Vade) (Arşiv)","Government Domestic Debt Securities (TRY, Market Value, By Remaining Maturity) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, HMB, FRED"
+bie_yydvusd,9998003,"Devlet İç Borçlanma Senetleri Vade Dağılımı (ABD doları, Piyasa Değeri, Kalan Vade) (Arşiv)","Government Domestic Debt Securities (US dollars, Market Value, By Remaining Maturity) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, HMB, FRED"
+bie_yydvy,9998003,"Devlet İç Borçlanma Senetleri Vade Dağılımı (Piyasa Değeri, Orjinal Vade TL) (Arşiv)","Government Domestic Debt Securities (Market Value, By Original Maturity) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, HMB, FRED"
+bie_yydvyusd,9998003,"Devlet İç Borçlanma Senetleri Vade Dağılımı (Piyasa Değeri, Orjinal Vade USD) (Arşiv)","Government Domestic Debt Securities (Market Value, By Original Maturity USD) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, HMB, FRED"
+bie_yyebc,9998003,"Eurobond (Piyasa Değeri, Stok) (Arşiv)","Eurobond (Market Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, REUTERS, HMB"
+bie_yyebn,9998003,"Eurobond (Nominal Değer, Stok) (Arşiv)","Eurobond (Nominal Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR VE ARACILAR, REUTERS, HMB"
+bie_yymkeyuk,9998003,Yurt Dışında Yerleşik Kişilerin Mülkiyetindeki Yurt Dışında İhraç Edilen Borçlanma Senetleri (ABD doları) (Arşiv),Treasury Bills Issued Abroad Owned By Non Residents (US dollars) (Archive),HAFTALIK(CUMA),TÜİK
+bie_yymkpyuk,9998003,"Yurt Dışı Yerleşiklerin Menkul Kıymet Portföyü (ABD doları, Piyasa Değeri, Stok, Akım) (Arşiv)","Securities Portfolio Of Non_Residents (US dollars, Market Value, Stock, Flow) (Archive)",HAFTALIK(CUMA),"TCMB, TAKASBANK, BANKALAR, ARACILAR, MKK, BORSA İSTANBUL, FRED"
+bie_yyoibsct,9998003,"Özel Sektör Tarafından Yurt İçinde İhraç Edilen Borçlanma Senetleri (TL, Piyasa Değeri, Stok) (Arşiv)","Domestic Debt Securities Issued By Private Sector (TRY, Market Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, REUTERS, MKK"
+bie_yyoibscu,9998003,"Özel Sektör Tarafından Yurt İçinde İhraç Edilen Borçlanma Senetleri (ABD doları, Piyasa Değeri, Stok) (Arşiv)","Domestic Debt Securities Issued By Private Sector (US dollars, Market Value, Stock 2015 - 2021) (Archive)",HAFTALIK(CUMA),"TCMB, REUTERS, MKK"
+bie_yyoibsnt,9998003,"Özel Sektör Tarafından Yurt İçinde İhraç Edilen Borçlanma Senetleri (TL, Nominal Değer, Stok) (Arşiv)","Domestic Debt Securities Issued By Private Sector. (TRY, Nominal Value (Archive)",HAFTALIK(CUMA),"TCMB, REUTERS, MKK"
+bie_yyoibsnu,9997005,"Özel Sektör Tarafından Yurt İçinde İhraç Edilen Borçlanma Senetleri (Nominal Değer, Stok) (Arşiv)","Domestic Debt Securities Issued By Private Sector (Nominal Value, Stock) (Archive)",HAFTALIK(CUMA),"TCMB, REUTERS, MKK"
+bie_yyoibsvt,9998003,"Özel Sektör Tarafından Yurt İçinde İhraç Edilen Borçlanma Senetleri Vade Dağılımı (TL, Piyasa Değeri, Orjinal ve Kalan Vade) (Arşiv)","Private Sector Domestic Debt Securities (TRY, Market Value, By Original and Remaining Maturity) (Archive)",HAFTALIK(CUMA),"TCMB, REUTERS, MKK"
+bie_yyoibsvu,9998003,"Özel Sektör Tarafından Yurt İçinde İhraç Edilen Borçlanma Senetleri Vade Dağılımı (ABD doları, Piyasa Değeri, Orjinal ve Kalan Vade) (Arşiv)","Private Sector Domestic Debt Securities (US dollars, Market Value, By Original and Remaining Maturity 2015 - 2017) (Archive)",HAFTALIK(CUMA),"TCMB, REUTERS, MKK"
+bie_zorundth,4506,Zorunlu Karşılığa Tabi DTH' ların Döviz Cinsine Göre Dağılımı,Foreign Exchange Deposits Subject To Reserve Requirements by Currency,HAFTALIK(CUMA),TCMB

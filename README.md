@@ -4,6 +4,8 @@ TCMB Elektronik Veri Dağıtım Sistemi (EVDS) için [Model Context Protocol](ht
 
 Claude, GPT ve diğer LLM'ler üzerinden doğal dilde TCMB verilerine erişim sağlar. Döviz kurları, enflasyon, faiz, GSYH, cari denge ve binlerce ekonomik seriye ulaşımı kolaylaştırır.
 
+Mevcut tüm veri gruplarının ve serilerin güncel dökümü için: [`data/datagroups.csv`](data/datagroups.csv) ve [`data/series.csv`](data/series.csv).
+
 ## Kurulum
 
 [EVDS](https://evds3.tcmb.gov.tr) sitesinden ücretsiz API anahtarı alın, ardından tek komutla kurun.
@@ -21,9 +23,8 @@ claude mcp add evds-mcp -- uvx --from git+https://github.com/orhoncan/evds-mcp e
 
 Her ikisi de tanımlıysa `EVDS_API_KEY` ortam değişkeni öncelik alır.
 
-
-
 ### Claude Desktop / Kaynak koddan çalıştırma
+
 #### Claude Desktop
 
 `claude_desktop_config.json` dosyasına ekleyin:
@@ -52,12 +53,13 @@ uv run evds-mcp
 ```
 
 ### Claude'dan vb. İsteme
+
 Doğrudan repo bağlantısını paylaşarak Claude'dan ya da diğer sağlayıcılardan kurulum yapmasını isteyebilirsiniz.
 
 ## Araçlar
 
 | Araç | Açıklama |
-|------|----------|
+| ------ | ---------- |
 | `evds_ara` | Anahtar kelimeyle seri arar. Popüler seriler (enflasyon, döviz, faiz, usd, gsyh vb.) için anında eşleşme. |
 | `evds_meta` | Bir serinin metadata'sını getirir: ad, frekans, tarih aralığı, birim. |
 | `evds_cek` | Bir veya daha fazla serinin verisini çeker. Frekans dönüşümü ve formül desteği. |
@@ -107,12 +109,29 @@ ya da aynı sonuç için;
 ```
 
 **Analiz türleri:**
+
 - `ozet` - Ortalama, std, min/max, trend
 - `degisim` - Yüzde değişim (aylık/yıllık/dönemsel)
 - `korelasyon` - Pearson/Spearman korelasyon matrisi
 - `ols` - OLS regresyon (R², F-testi, Durbin-Watson)
 - `arima` - ARIMA/SARIMA tahmin + güven aralıkları
 - `baglam` - Tek seri için MoM/YoY, min/max, trend ve dip noktası (aylık seriler)
+
+## Veri Kataloğu
+
+EVDS'in yapısı kategori → veri grubu → seri şeklinde. `data/` altında iki statik döküm var:
+
+| Dosya | İçerik | Kolonlar |
+|-------|--------|----------|
+| [`data/datagroups.csv`](data/datagroups.csv) | 671 veri grubu | `grup_kodu, kategori_id, grup_adi, grup_adi_eng, frekans, kaynak` |
+| [`data/series.csv`](data/series.csv) | 52.595 seri | `seri_kodu, grup_kodu, seri_adi, seri_adi_eng, frekans, kaynak` |
+
+`series.csv` 9 MB olduğu için tarayıcıda açmak yerine grep'lemek daha pratik:
+
+```bash
+grep -i "konut fiyat" data/series.csv
+grep "^TP.DK.USD" data/series.csv
+```
 
 ## Ekran Görüntüleri
 
@@ -124,7 +143,6 @@ ya da aynı sonuç için;
 <p></p>
 <img width="982" height="480" alt="image" src="https://github.com/user-attachments/assets/db9cd61b-a7a4-4b9c-8aac-a4365ddf0899" />
 <p></p>
-
 
 ## Yapılacaklar
 
