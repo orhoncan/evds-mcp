@@ -1,3 +1,11 @@
+# Resmi EVDS-MCP Sunucusu
+
+Resmi sunucuya ait bilgilere [bu bağlantıdan](https://evds3.tcmb.gov.tr/igmevdsms-dis/documents/showDocument?docId=27) erişebilirsiniz.
+
+Repo arşiv amacıyla bırakılmıştır, ekonometrik modeller harici güncellenme planlanmamaktadır.
+
+
+
 # EVDS MCP Sunucusu
 
 TCMB Elektronik Veri Dağıtım Sistemi (EVDS) için [Model Context Protocol](https://modelcontextprotocol.io/) sunucusu. Becerilere kıyasla daha öngörülebilir düzende çıktı sunar.
